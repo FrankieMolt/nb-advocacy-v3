@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { TrendingDown, Quote, AlertCircle, Zap, Building, DollarSign, Landmark } from "lucide-react";
+import { TrendingDown, AlertCircle } from "lucide-react";
 import { PageWrapper } from "@/components/PageWrapper";
 import { BackLink } from "@/components/BackLink";
 import { PageHeader } from "@/components/PageHeader";
@@ -390,7 +390,7 @@ export default function EconomyPage() {
           <div className="grid gap-4 md:grid-cols-2">
             <SourceCard type="article" title="CBC: Child Poverty 'Alarmingly High'" url="https://www.cbc.ca/news/canada/new-brunswick/child-poverty-alarmingly-high-in-n-b-says-human-development-council-9.7105164" description="21.9% provincial rate, 41.2% in Campbellton" date="FEB 2026" />
             <SourceCard type="pdf" title="Campaign 2000: 2025 NB Report Card" url="https://campaign2000.ca/wp-content/uploads/2026/02/2025-NB-Report-Card-on-Child-and-Family-Poverty.pdf" description="Full report with regional breakdowns" date="FEB 2026" />
-            <SourceCard type="dashboard" title="NB Economic & Social Inclusion Dashboard" url="https://www.nbtogether.ca/gendashboard" description="Official provincial data portal" />
+            <SourceCard type="report" title="NB Economic & Social Inclusion Dashboard" url="https://www.nbtogether.ca/gendashboard" description="Official provincial data portal" />
             <SourceCard type="report" title="Statistics Canada: Poverty Dashboard" url="https://www150.statcan.gc.ca/n1/pub/11-627-m/11-627-m2025053-eng.htm" description="National comparison data" date="NOV 2025" />
             <SourceCard type="article" title="CBC: U.S. Refineries Pay 5x More Property Taxes Than Irving" url="https://www.cbc.ca/news/canada/new-brunswick/propery-taxes-irving-refineries-1.6671058" description="Investigative report on corporate tax inequality" />
             <SourceCard type="organization" title="Human Development Council: Research & Reports" url="https://sjhdc.ca/research-and-reports/" description="Saint John-area poverty and social research" />

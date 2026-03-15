@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { ShieldAlert, AlertTriangle, Scale, Lock, Briefcase, UserCheck, FileWarning, Gavel } from "lucide-react";
+import { ShieldAlert, AlertTriangle, Scale, Lock, Briefcase, UserCheck, FileWarning } from "lucide-react";
 import { PageWrapper } from "@/components/PageWrapper";
 import { BackLink } from "@/components/BackLink";
 import { PageHeader } from "@/components/PageHeader";

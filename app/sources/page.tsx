@@ -7,9 +7,13 @@ import {
   Database,
   Newspaper,
   AlertTriangle,
+  Home,
+  Activity,
+  DollarSign,
 } from "lucide-react";
 import { PageWrapper } from "@/components/PageWrapper";
 import { BackLink } from "@/components/BackLink";
+import { SourceCard } from "@/components/SourceCard";
 
 export const metadata: Metadata = {
   title: "Intelligence Archive: Sources & Data | Reform NB",
@@ -48,80 +52,21 @@ export default function SourcesPage() {
             <ShieldCheck size={120} />
           </div>
           <div className="flex items-center gap-3 mb-8">
-            <ShieldCheck className="text-crisis-red" size={28} aria-hidden="true" />
+            <Activity className="text-crisis-red" size={28} aria-hidden="true" />
             <h3 className="text-2xl font-black font-serif text-white uppercase tracking-tight">
               Healthcare & High-Level Fraud
             </h3>
           </div>
-          <ul className="space-y-10" role="list">
-            <li className="flex flex-col gap-3 group">
-              <span className="font-black text-white text-xl uppercase tracking-tighter group-hover:text-crisis-red transition-colors italic">
-                The $173.9M Travel Nurse Scandal
-              </span>
-              <p className="text-neutral-400 text-sm leading-relaxed">
-                Auditor General Paul Martin&apos;s comprehensive 2024 review of
-                untendered staffing contracts and the Vitalité &quot;litigation
-                privilege&quot; cover-up.
-              </p>
-              <a
-                href="https://www.agnb-vgnb.ca/uploads/volume_translations/81/report/agnb-V2-2025-Report_E.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-crisis-red hover:text-white transition-colors text-xs font-black uppercase tracking-widest"
-                aria-label="Read official Auditor General report (PDF)"
-              >
-                <FileText size={14} /> Official AG Report: Travel Nurse Contracts (PDF)
-              </a>
-            </li>
-            <li className="flex flex-col gap-3 group border-t border-neutral-800 pt-8">
-              <span className="font-black text-white text-xl uppercase tracking-tighter group-hover:text-crisis-red transition-colors italic">
-                The 3+ Corporation Fraud Investigation
-              </span>
-              <p className="text-neutral-400 text-sm leading-relaxed">
-                RCMP charges against Daniel Bard involving financial
-                irregularities exceeding $1 million in Moncton economic
-                development funds.
-              </p>
-              <a
-                href="https://nbmediacoop.org/?s=daniel+bard+3+corporation"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-crisis-red hover:text-white transition-colors text-xs font-black uppercase tracking-widest"
-                aria-label="Read about 3+ Corporation fraud case"
-              >
-                <Newspaper size={14} /> NB Media Co-op: 19 criminal charges laid
-              </a>
-            </li>
-            <li className="flex flex-col gap-3 group border-t border-neutral-800 pt-8">
-              <span className="font-black text-white text-xl uppercase tracking-tighter group-hover:text-crisis-red transition-colors italic">
-                High-Level Embezzlement Records
-              </span>
-              <p className="text-neutral-400 text-sm leading-relaxed">
-                Journalistic documentation of the Tim Richardson ($700k) and
-                Yassin Choukri ($481k) cases.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <a
-                  href="https://www.cbc.ca/news/canada/new-brunswick/tim-richardson-lieutenant-governor-fraud-embezzlement-1.5706694"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-crisis-red hover:text-white transition-colors text-xs font-black uppercase tracking-widest"
-                  aria-label="Read about Richardson case on CBC"
-                >
-                  <ExternalLink size={14} /> Richardson Case (CBC)
-                </a>
-                <a
-                  href="https://www.cbc.ca/news/canada/new-brunswick/yassin-choukri-guilty-plea-1.6986538"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-crisis-red hover:text-white transition-colors text-xs font-black uppercase tracking-widest"
-                  aria-label="Read about Choukri case on CBC"
-                >
-                  <ExternalLink size={14} /> Choukri Case (CBC)
-                </a>
-              </div>
-            </li>
-          </ul>
+          <div className="grid gap-4 md:grid-cols-2">
+            <SourceCard type="article" title="CBC: 41,000 Left Horizon ERs Without Treatment" url="https://www.cbc.ca/news/canada/new-brunswick/new-brunswick-emergency-patient-leave-horizon-mei-report-vitalit%C3%A9-1.7637201" description="MEI Report on 12.9% walkout rate — 3rd highest in Canada" date="SEP 2025" />
+            <SourceCard type="pdf" title="MEI Report: Patients Leaving NB Emergency Departments" url="https://www.iedm.org/wp-content/uploads/2025/09/2025-09-18-NR-Leaving-ER-NB.pdf" description="Full academic report with methodology and data" date="SEP 2025" />
+            <SourceCard type="pdf" title="Auditor General: $173.9M Travel Nurse Contract Scandal" url="https://www.agnb-vgnb.ca/uploads/volume_translations/81/report/agnb-V2-2025-Report_E.pdf" description="2025 Report — Chapter 2: Untendered Contracts" date="2025" />
+            <SourceCard type="article" title="National Post: Canada's ER 'Hidden Pandemic'" url="https://nationalpost.com/news/canada/emergency-department-deaths" description="Investigating preventable ER deaths across Canada" date="MAR 2026" />
+            <SourceCard type="article" title="CTV: Darrell Mesheau ER Death Lawsuit" url="https://www.ctvnews.ca/atlantic/new-brunswick/article/hospital-and-nurses-deny-negligence-in-nb-emergency-room-death-of-78-year-old-man/" description="Chalmers ER negligence — 7-hour wait" date="2023" />
+            <SourceCard type="report" title="NB Government: Official Health Plan" url="https://www2.gnb.ca/content/gnb/en/corporate/promo/new-brunswick-health-plan.html" description="Government's own acknowledgment of the crisis" date="2024" />
+            <SourceCard type="organization" title="NB Nurses' Union — Advocacy & Reports" url="https://nbnu.ca/" description="Union representing 8,000+ NB nurses" />
+            <SourceCard type="article" title="CBC: Oromocto Nursing Home Won't Fix Waitlist" url="https://www.cbc.ca/news/canada/new-brunswick" description="60-bed facility won't 'really' reduce long-term care waitlist" date="MAR 2026" />
+          </div>
         </section>
 
         {/* NB Power & Economy */}
@@ -135,141 +80,34 @@ export default function SourcesPage() {
               NB Power & Fiscal Failure
             </h3>
           </div>
-          <ul className="space-y-10" role="list">
-            <li className="flex flex-col gap-3 group">
-              <span className="font-black text-white text-xl uppercase tracking-tighter group-hover:text-crisis-red transition-colors italic">
-                2026 Child Poverty Report Card
-              </span>
-              <p className="text-neutral-400 text-sm leading-relaxed">
-                Human Development Council data exposing the 21.9% child poverty
-                rate and the 41.2% surge in Campbellton. 32,140 children in poverty.
-                51.2% child poverty rate on Indigenous reserves.
-              </p>
-              <div className="flex flex-wrap gap-3">
-                <a
-                  href="https://www.cbc.ca/news/canada/new-brunswick/child-poverty-alarmingly-high-in-n-b-says-human-development-council-9.7105164"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-crisis-red hover:text-white transition-colors text-xs font-black uppercase tracking-widest"
-                  aria-label="Read CBC article on child poverty"
-                >
-                  <Newspaper size={14} /> CBC (Feb 2026)
-                </a>
-                <a
-                  href="https://campaign2000.ca/wp-content/uploads/2026/02/2025-NB-Report-Card-on-Child-and-Family-Poverty.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-crisis-red hover:text-white transition-colors text-xs font-black uppercase tracking-widest"
-                  aria-label="Download Campaign 2000 report card PDF"
-                >
-                  <FileText size={14} /> Report (PDF)
-                </a>
-                <a
-                  href="https://sjhdc.ca/report-category/poverty-reduction/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-crisis-red hover:text-white transition-colors text-xs font-black uppercase tracking-widest"
-                  aria-label="Visit HDC Report Portal"
-                >
-                  <ExternalLink size={14} /> HDC Portal
-                </a>
-              </div>
-            </li>
-            <li className="flex flex-col gap-3 group border-t border-neutral-800 pt-8">
-              <span className="font-black text-white text-xl uppercase tracking-tighter group-hover:text-crisis-red transition-colors italic">
-                41,000 Left NB ERs Without Treatment (MEI Report, Sep 2025)
-              </span>
-              <p className="text-neutral-400 text-sm leading-relaxed">
-                Montreal Economic Institute report revealing NB has the third-highest
-                ER walkout rate in Canada (12.9%) — 41,000+ from Horizon alone, plus 22,000 from Vitalité.
-              </p>
-              <div className="flex flex-wrap gap-3">
-                <a
-                  href="https://www.cbc.ca/news/canada/new-brunswick/new-brunswick-emergency-patient-leave-horizon-mei-report-vitalit%C3%A9-1.7637201"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-crisis-red hover:text-white transition-colors text-xs font-black uppercase tracking-widest"
-                >
-                  <Newspaper size={14} /> CBC (Sep 2025)
-                </a>
-                <a
-                  href="https://www.iedm.org/wp-content/uploads/2025/09/2025-09-18-NR-Leaving-ER-NB.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-crisis-red hover:text-white transition-colors text-xs font-black uppercase tracking-widest"
-                >
-                  <FileText size={14} /> MEI Report (PDF)
-                </a>
-              </div>
-            </li>
-            <li className="flex flex-col gap-3 group border-t border-neutral-800 pt-8">
-              <span className="font-black text-white text-xl uppercase tracking-tighter group-hover:text-crisis-red transition-colors italic">
-                The Orimulsion & Joi Scientific Boondoggles
-              </span>
-              <p className="text-neutral-400 leading-relaxed text-sm">
-                Detailed histories of NB Power&apos;s failed out-of-province
-                investments and technologically unproven ventures.
-              </p>
-              <a
-                href="https://nbmediacoop.org/?s=joi+scientific"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-crisis-red hover:text-white transition-colors text-xs font-black uppercase tracking-widest"
-                aria-label="Read Joi Scientific investigation"
-              >
-                <ExternalLink size={14} /> NB Media Co-op: Joi Scientific Investigation
-              </a>
-            </li>
-          </ul>
+          <div className="grid gap-4 md:grid-cols-2">
+            <SourceCard type="article" title="CBC: Child Poverty 'Alarmingly High'" url="https://www.cbc.ca/news/canada/new-brunswick/child-poverty-alarmingly-high-in-n-b-says-human-development-council-9.7105164" description="21.9% rate, 41.2% Campbellton, 51.2% Indigenous reserves" date="FEB 2026" />
+            <SourceCard type="pdf" title="Campaign 2000: 2025 NB Report Card" url="https://campaign2000.ca/wp-content/uploads/2026/02/2025-NB-Report-Card-on-Child-and-Family-Poverty.pdf" description="Full report with regional breakdowns — 32,140 children in poverty" date="FEB 2026" />
+            <SourceCard type="dashboard" title="NB Economic & Social Inclusion Dashboard" url="https://www.nbtogether.ca/gendashboard" description="Official provincial data portal" />
+            <SourceCard type="report" title="Statistics Canada: Poverty Dashboard" url="https://www150.statcan.gc.ca/n1/pub/11-627-m/11-627-m2025053-eng.htm" description="National comparison data" date="NOV 2025" />
+            <SourceCard type="article" title="CBC: NB Power Emissions Surge to 16-Year High" url="https://www.cbc.ca/news/canada/new-brunswick/nb-power-emissions-surge-9.7128321" description="4M barrels of oil burned, 60% emissions increase" date="MAR 2026" />
+            <SourceCard type="article" title="CBC: NB Power Rate Hearing Coverage" url="https://www.cbc.ca/news/canada/new-brunswick/nb-power-rate-hearings-online-9.7126504" description="50% rate increases proposed over 6 years" date="MAR 2026" />
+            <SourceCard type="article" title="NB Media Co-op: 'Raise Taxes on Super-Rich' Open Letter" url="https://nbmediacoop.org/2026/03/10/raise-taxes-on-super-rich-new-brunswickers-instead-of-cutting-services-open-letter/" description="200+ activists demand wealth tax from Premier Holt" date="MAR 2026" />
+            <SourceCard type="organization" title="Human Development Council: Research & Reports" url="https://sjhdc.ca/research-and-reports/" description="Saint John-area poverty and social research" />
+          </div>
         </section>
 
         {/* Corporate Oligarchy */}
         <section className="bg-neutral-900 p-10 rounded-2xl border border-neutral-800 shadow-2xl relative overflow-hidden">
           <div className="flex items-center gap-3 mb-8">
-            <Newspaper className="text-crisis-red" size={28} aria-hidden="true" />
+            <DollarSign className="text-crisis-red" size={28} aria-hidden="true" />
             <h3 className="text-2xl font-black font-serif text-white uppercase tracking-tight">
               The Oligarchy Dossier
             </h3>
           </div>
-          <ul className="space-y-10" role="list">
-            <li className="flex flex-col gap-3 group">
-              <span className="font-black text-white text-xl uppercase tracking-tighter group-hover:text-crisis-red transition-colors italic">
-                The Paradise Papers: Bermuda Trusts
-              </span>
-              <p className="text-neutral-400 text-sm leading-relaxed">
-                Leaked Appleby records exposing the complex offshore strategies
-                of the Irving family.
-              </p>
-              <a
-                href="https://www.icij.org/investigations/paradise-papers/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-crisis-red hover:text-white transition-colors text-xs font-black uppercase tracking-widest"
-                aria-label="Read Paradise Papers investigation by ICIJ"
-              >
-                <ExternalLink size={14} /> ICIJ: Paradise Papers Investigation
-              </a>
-            </li>
-            <li className="flex flex-col gap-3 group border-t border-neutral-800 pt-8">
-              <span className="font-black text-white text-xl uppercase tracking-tighter group-hover:text-crisis-red transition-colors italic">
-                Saint John Refinery Property Tax Scandal
-              </span>
-              <p className="text-neutral-400 text-sm leading-relaxed">
-                Documentation of the 42-year Canaport exemption and the recent
-                $700,000 retroactive refunds.
-              </p>
-              <a
-                href="https://www.cbc.ca/news/canada/new-brunswick/propery-taxes-irving-refineries-1.6671058"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-crisis-red hover:text-white transition-colors text-xs font-black uppercase tracking-widest"
-                aria-label="Read property tax investigative report on CBC"
-              >
-                <ExternalLink size={14} /> CBC: Property tax investigative
-                report
-              </a>
-            </li>
-          </ul>
+          <div className="grid gap-4 md:grid-cols-2">
+            <SourceCard type="article" title="CBC: U.S. Refineries Pay 5x More Property Taxes" url="https://www.cbc.ca/news/canada/new-brunswick/propery-taxes-irving-refineries-1.6671058" description="Irving Oil pays lowest property taxes of any refinery in North America" />
+            <SourceCard type="article" title="ICIJ: Paradise Papers — Irving Bermuda Insurance" url="https://www.icij.org/investigations/paradise-papers/" description="Offshore tax shelter: F.M.A. Ltd. in Bermuda" />
+            <SourceCard type="article" title="CBC: Irving Bermuda Insurance Company" url="https://www.cbc.ca/news/canada/new-brunswick/irving-bermuda-insurance-company-paradise-papers-1.6638304" description="Detailed Paradise Papers coverage" />
+            <SourceCard type="article" title="NB Media Co-op: Alain Deneault on Arthur Irving" url="https://nbmediacoop.org/2024/05/19/dismal/" description="'Feudalistic counter-model' analysis" date="MAY 2024" />
+            <SourceCard type="article" title="NB Media Co-op: The Irvings Get Trumped" url="https://nbmediacoop.org/2025/03/02/the-irvings-get-trumped/" description="Cartoonist de Adder fired for Trump cartoon" date="MAR 2025" />
+            <SourceCard type="article" title="NB Media Co-op: How Irving Jeopardized Free Press" url="https://nbmediacoop.org/2023/06/09/wire-crossed-how-the-irving-empire-jeopardized-free-press-in-new-brunswick/" description="Comprehensive media monopoly investigation" date="2023" />
+          </div>
         </section>
 
         {/* Environmental */}
@@ -280,206 +118,99 @@ export default function SourcesPage() {
               Ecological Failure
             </h3>
           </div>
-          <ul className="space-y-10" role="list">
-            <li className="flex flex-col gap-3 group">
-              <span className="font-black text-white text-xl uppercase tracking-tighter group-hover:text-crisis-red transition-colors italic">
-                Miramichi Salmon DFO Negligence Suit
-              </span>
-              <p className="text-neutral-400 text-sm leading-relaxed">
-                Federal Court File No. T-840-25 documenting the catastrophic
-                management of Atlantic Salmon stocks.
-              </p>
-              <a
-                href="https://savemiramichisalmon.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-crisis-red hover:text-white transition-colors text-xs font-black uppercase tracking-widest"
-                aria-label="Visit Save Miramichi Salmon campaign"
-              >
-                <ExternalLink size={14} /> Campaign Evidence Archive
-              </a>
-            </li>
-            <li className="flex flex-col gap-3 group border-t border-neutral-800 pt-8">
-              <span className="font-black text-white text-xl uppercase tracking-tighter group-hover:text-crisis-red transition-colors italic">
-                Legacy DDT study (2025)
-              </span>
-              <p className="text-neutral-400 text-sm leading-relaxed">
-                Scientific findings showing DDT levels in local brook trout at
-                10x the health safety limit.
-              </p>
-              <a
-                href="https://stopsprayingnb.ca/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-crisis-red hover:text-white transition-colors text-xs font-black uppercase tracking-widest"
-                aria-label="Visit Stop Spraying NB"
-              >
-                <ExternalLink size={14} /> Visit Stop Spraying NB
-              </a>
-            </li>
-          </ul>
+          <div className="grid gap-4 md:grid-cols-2">
+            <SourceCard type="article" title="NB Media Co-op: Irving Threatens Salmon Group" url="https://nbmediacoop.org/2017/08/03/we-wont-be-intimidated-miramichi-salmon-group-on-forest-spraying/" description="Glyphosate intimidation campaign" date="2017" />
+            <SourceCard type="article" title="NB Media Co-op: Wolastoqiyik Women Stop Lake Poisoning" url="https://nbmediacoop.org/2021/08/18/wolastoqiyik-women-stop-smallmouth-bass-poisoning-in-miramichi-lake-for-now/" description="Rotenone opposition by First Nations" date="2021" />
+            <SourceCard type="article" title="NB Media Co-op: Wolastoqey Claim Title to Irving Land" url="https://nbmediacoop.org/2021/12/01/wolastoqey-nations-claim-title-to-land-owned-by-jd-irving-and-other-companies-due-to-reckless-resource-extraction/" description="5M hectare land title claim" date="2021" />
+            <SourceCard type="article" title="NB Media Co-op: Wild Salmon's Knock-Out Blow" url="https://nbmediacoop.org/2015/11/13/wild-salmons-knock-out-blow/" description="Inka Milewski: forestry, not fishing, kills salmon" date="2015" />
+            <SourceCard type="article" title="CBC: NB Power Emissions Surge" url="https://www.cbc.ca/news/canada/new-brunswick/nb-power-emissions-surge-9.7128321" description="3M+ tonnes CO₂ — 16-year high" date="MAR 2026" />
+            <SourceCard type="organization" title="Save Miramichi Salmon" url="https://savemiramichisalmon.com" description="Federal Court evidence and DFO negligence campaign" />
+            <SourceCard type="organization" title="Stop Spraying NB" url="https://stopsprayingnb.ca/" description="Glyphosate ban advocacy and DDT evidence archive" />
+            <SourceCard type="article" title="NB Media Co-op: Forestry Companies vs Wolastoqey Court Fees" url="https://nbmediacoop.org/2025/10/24/forestry-companies-wolastoqey-nation-fight-over-court-fees-in-historic-land-title-case/" description="Corporate resistance to land claim costs" date="OCT 2025" />
+          </div>
         </section>
 
         {/* Housing & Social */}
         <section className="bg-neutral-900 p-10 rounded-2xl border border-neutral-800 shadow-2xl relative overflow-hidden">
           <div className="flex items-center gap-3 mb-8">
-            <Database className="text-crisis-red" size={28} aria-hidden="true" />
+            <Home className="text-crisis-red" size={28} aria-hidden="true" />
             <h3 className="text-2xl font-black font-serif text-white uppercase tracking-tight">
               Housing & Social Crisis
             </h3>
           </div>
-          <ul className="space-y-10" role="list">
-            <li className="flex flex-col gap-3 group">
-              <span className="font-black text-white text-xl uppercase tracking-tighter group-hover:text-crisis-red transition-colors italic">
-                NB Homelessness Data (2025-2026)
-              </span>
-              <p className="text-neutral-400 text-sm leading-relaxed">
-                830 unhoused in Moncton, 437 in Saint John, 275 in Fredericton. 
-                Over 440 youth homeless. 100+ unhoused deaths from toxic supply and exposure.
-              </p>
-              <div className="flex flex-wrap gap-3">
-                <a
-                  href="https://sjhdc.ca/research-and-reports/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-crisis-red hover:text-white transition-colors text-xs font-black uppercase tracking-widest"
-                >
-                  <ExternalLink size={14} /> Human Development Council Reports
-                </a>
-                <a
-                  href="https://www2.gnb.ca/content/dam/gnb/Departments/esic/pdf/overcoming-poverty-4-2025-2030.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-crisis-red hover:text-white transition-colors text-xs font-black uppercase tracking-widest"
-                >
-                  <FileText size={14} /> NB Poverty Plan 2025-2030 (PDF)
-                </a>
-              </div>
-            </li>
-            <li className="flex flex-col gap-3 group border-t border-neutral-800 pt-8">
-              <span className="font-black text-white text-xl uppercase tracking-tighter group-hover:text-crisis-red transition-colors italic">
-                NB Power Emissions Surge to 3M+ Tonnes (Mar 2026)
-              </span>
-              <p className="text-neutral-400 text-sm leading-relaxed">
-                EUB filings: NB Power burned nearly 4 million barrels of oil in 12 months. 
-                Coleson Cove consumed $254M in heavy fuel oil. Emissions up 60% year-over-year, 
-                hitting 16-year high for thermal generation. Carbon penalties: $49M next year.
-              </p>
-              <div className="flex flex-wrap gap-3">
-                <a
-                  href="https://www.cbc.ca/news/canada/new-brunswick/nb-power-emissions-surge-9.7128321"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-crisis-red hover:text-white transition-colors text-xs font-black uppercase tracking-widest"
-                >
-                  <Newspaper size={14} /> CBC: NB Power Emissions Surge (Mar 14, 2026)
-                </a>
-                <a
-                  href="https://www.cbc.ca/news/canada/new-brunswick/nb-power-rate-hearings-online-9.7126504"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-crisis-red hover:text-white transition-colors text-xs font-black uppercase tracking-widest"
-                >
-                  <Newspaper size={14} /> CBC: Rate Hearing Online Coverage
-                </a>
-              </div>
-            </li>
-            <li className="flex flex-col gap-3 group border-t border-neutral-800 pt-8">
-              <span className="font-black text-white text-xl uppercase tracking-tighter group-hover:text-crisis-red transition-colors italic">
-                NB Liquor Markups Strangle Local Distillers (Mar 2026)
-              </span>
-              <p className="text-neutral-400 text-sm leading-relaxed">
-                During the tariff war, NB pulled U.S. alcohol from shelves. Local distillers 
-                saw demand surge — but NB Liquor's steep provincial markups prevent them from 
-                scaling up. A government monopoly hurting its own producers.
-              </p>
-              <a
-                href="https://www.cbc.ca/news/canada/new-brunswick/alcohol-tariff-war-markups-9.7126326"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-crisis-red hover:text-white transition-colors text-xs font-black uppercase tracking-widest"
-              >
-                <Newspaper size={14} /> CBC: N.B. Distillers Say High Markups Limiting Growth (Mar 14, 2026)
-              </a>
-            </li>
-          </ul>
-        </section>
-
-        {/* Recent Investigations */}
-        <section className="bg-neutral-900 p-10 rounded-2xl border border-neutral-800 shadow-2xl">
-          <h3 className="text-2xl font-black font-serif text-white uppercase tracking-tight mb-6">
-            Recent Investigations (March 2026)
-          </h3>
-          <div className="space-y-4">
-            <a href="https://nbmediacoop.org/2026/03/10/raise-taxes-on-super-rich-new-brunswickers-instead-of-cutting-services-open-letter/" target="_blank" rel="noopener noreferrer" className="block text-neutral-400 hover:text-crisis-red transition-colors text-sm">
-              📰 NB Media Co-op: "Raise taxes on super-rich" — Open Letter to Holt (Mar 10, 2026)
-            </a>
-            <a href="https://nbmediacoop.org/2024/05/19/dismal/" target="_blank" rel="noopener noreferrer" className="block text-neutral-400 hover:text-crisis-red transition-colors text-sm">
-              📰 NB Media Co-op: Alain Deneault — "Feudalistic counter-model" (May 2024)
-            </a>
-            <a href="https://nbmediacoop.org/2025/03/02/the-irvings-get-trumped/" target="_blank" rel="noopener noreferrer" className="block text-neutral-400 hover:text-crisis-red transition-colors text-sm">
-              📰 NB Media Co-op: The Irvings Get Trumped — Cartoonist de Adder fired (Mar 2025)
-            </a>
-            <a href="https://www.cbc.ca/news/canada/new-brunswick/nb-power-emissions-surge-9.7128321" target="_blank" rel="noopener noreferrer" className="block text-neutral-400 hover:text-crisis-red transition-colors text-sm">
-              📰 CBC: NB Power emissions surge to 3M+ tonnes — 16-year high (Mar 13, 2026)
-            </a>
-          </div>
-        </section>
-
-        {/* Environmental & Salmon */}
-        <section className="bg-neutral-900 p-10 rounded-2xl border border-neutral-800 shadow-2xl mt-8">
-          <h3 className="text-2xl font-black font-serif text-white uppercase tracking-tight mb-6">
-            Environment & Salmon
-          </h3>
-          <div className="space-y-4">
-            <a href="https://nbmediacoop.org/2017/08/03/we-wont-be-intimidated-miramichi-salmon-group-on-forest-spraying/" target="_blank" rel="noopener noreferrer" className="block text-neutral-400 hover:text-crisis-red transition-colors text-sm">
-              📰 NB Media Co-op: Irving threatens Miramichi salmon group over glyphosate opposition (2017)
-            </a>
-            <a href="https://nbmediacoop.org/2021/08/18/wolastoqiyik-women-stop-smallmouth-bass-poisoning-in-miramichi-lake-for-now/" target="_blank" rel="noopener noreferrer" className="block text-neutral-400 hover:text-crisis-red transition-colors text-sm">
-              📰 NB Media Co-op: Wolastoqiyik women stop rotenone poisoning of Miramichi Lake (2021)
-            </a>
-            <a href="https://nbmediacoop.org/2021/12/01/wolastoqey-nations-claim-title-to-land-owned-by-jd-irving-and-other-companies-due-to-reckless-resource-extraction/" target="_blank" rel="noopener noreferrer" className="block text-neutral-400 hover:text-crisis-red transition-colors text-sm">
-              📰 NB Media Co-op: Wolastoqey Nations claim title to Irving-held land (2021)
-            </a>
-            <a href="https://nbmediacoop.org/2025/10/24/forestry-companies-wolastoqey-nation-fight-over-court-fees-in-historic-land-title-case/" target="_blank" rel="noopener noreferrer" className="block text-neutral-400 hover:text-crisis-red transition-colors text-sm">
-              📰 NB Media Co-op: Forestry companies vs Wolastoqey Nation — court fees fight (Oct 2025)
-            </a>
-            <a href="https://nbmediacoop.org/2015/11/13/wild-salmons-knock-out-blow/" target="_blank" rel="noopener noreferrer" className="block text-neutral-400 hover:text-crisis-red transition-colors text-sm">
-              📰 NB Media Co-op: Wild salmon's knock-out blow — Inka Milewski (2015)
-            </a>
-            <a href="https://nbmediacoop.org/2023/03/14/terry-ann-sappier-on-protecting-miramichi-lake-and-the-heart-of-the-land-video/" target="_blank" rel="noopener noreferrer" className="block text-neutral-400 hover:text-crisis-red transition-colors text-sm">
-              📰 NB Media Co-op: Terry Ann Sappier on protecting Miramichi Lake [video] (2023)
-            </a>
-            <a href="https://nbmediacoop.org/2021/10/18/j-d-irving-gets-last-word-at-glyphosate-hearings/" target="_blank" rel="noopener noreferrer" className="block text-neutral-400 hover:text-crisis-red transition-colors text-sm">
-              📰 NB Media Co-op: J.D. Irving gets last word at glyphosate hearings (2021)
-            </a>
-            <a href="https://nbmediacoop.org/2021/09/27/irving-and-coon-spar-over-glyphosate-use-in-forestry/" target="_blank" rel="noopener noreferrer" className="block text-neutral-400 hover:text-crisis-red transition-colors text-sm">
-              📰 NB Media Co-op: Irving and David Coon spar over glyphosate in forestry (2021)
-            </a>
+          <div className="grid gap-4 md:grid-cols-2">
+            <SourceCard type="organization" title="Human Development Council: Research & Reports" url="https://sjhdc.ca/research-and-reports/" description="Homelessness and poverty data for Greater Saint John" />
+            <SourceCard type="pdf" title="NB Government: Overcoming Poverty Together 4" url="https://www2.gnb.ca/content/dam/gnb/Departments/esic/pdf/overcoming-poverty-4-2025-2030.pdf" description="Official provincial poverty reduction strategy (2025-2030)" date="2025" />
+            <SourceCard type="report" title="National Advisory Council on Poverty: 2025 Annual Report" url="https://www.canada.ca/en/employment-social-development/programs/poverty-reduction/national-advisory-council/reports/2025-annual.html" description="Federal report with NB-specific data" date="2025" />
+            <SourceCard type="article" title="CBC: Child Poverty 'Alarmingly High' — Housing Impact" url="https://www.cbc.ca/news/canada/new-brunswick/child-poverty-alarmingly-high-in-n-b-says-human-development-council-9.7105164" description="February 2026 HDC report coverage" date="FEB 2026" />
+            <SourceCard type="pdf" title="Campaign 2000: 2025 NB Child Poverty Report Card" url="https://campaign2000.ca/wp-content/uploads/2026/02/2025-NB-Report-Card-on-Child-and-Family-Poverty.pdf" description="Comprehensive poverty data by region" date="FEB 2026" />
+            <SourceCard type="organization" title="NB Housing" url="https://www2.gnb.ca/content/gnb/en/departments/ohc.html" description="Provincial housing authority" />
           </div>
         </section>
 
         {/* Intimidation & Censorship */}
-        <section className="bg-neutral-900 p-10 rounded-2xl border border-neutral-800 shadow-2xl mt-8">
+        <section className="bg-neutral-900 p-10 rounded-2xl border border-neutral-800 shadow-2xl relative overflow-hidden">
+          <div className="flex items-center gap-3 mb-8">
+            <Newspaper className="text-crisis-red" size={28} aria-hidden="true" />
+            <h3 className="text-2xl font-black font-serif text-white uppercase tracking-tight">
+              Intimidation & Corporate Capture
+            </h3>
+          </div>
+          <div className="grid gap-4 md:grid-cols-2">
+            <SourceCard type="article" title="NB Media Co-op: Irving Breaking Election Laws?" url="https://nbmediacoop.org/2020/09/01/are-jdirving-and-forestnb-breaking-elections-nb-laws/" description="Full-page political ads without third-party registration" date="2020" />
+            <SourceCard type="article" title="NB Media Co-op: Forestry College Purges Critic" url="https://nbmediacoop.org/2019/07/06/new-brunswick-forestry-college-purges-critic-of-glyphosate-and-defender/" description="Academic freedom suppressed by corporate dependency" date="2019" />
+            <SourceCard type="article" title="NB Media Co-op: Community Forestry Confronts Corporate Control" url="https://nbmediacoop.org/2019/12/19/may-the-forest-be-with-you-community-forestry-confronts-corporate-control-of-nb-forests/" description="Independent operators squeezed out" date="2019" />
+            <SourceCard type="article" title="NB Media Co-op: Indigenous Consultations 'Hollow'" url="https://nbmediacoop.org/2026/02/25/consultations-hollow-without-greater-self-determination-indigenous-owned-forestry-company-tells-government/" description="Indigenous forestry company demands self-determination" date="FEB 2026" />
+            <SourceCard type="article" title="NB Media Co-op: The Irvings Get Trumped" url="https://nbmediacoop.org/2025/03/02/the-irvings-get-trumped/" description="Cartoonist de Adder fired for Trump cartoon" date="MAR 2025" />
+            <SourceCard type="article" title="NB Media Co-op: Deneault 'Dismal'" url="https://nbmediacoop.org/2024/05/19/dismal/" description="'Feudalistic counter-model' — Irving empire analysis" date="MAY 2024" />
+          </div>
+        </section>
+
+        {/* Corruption Cases */}
+        <section className="bg-neutral-900 p-10 rounded-2xl border border-neutral-800 shadow-2xl relative overflow-hidden">
+          <div className="flex items-center gap-3 mb-8">
+            <ShieldCheck className="text-crisis-red" size={28} aria-hidden="true" />
+            <h3 className="text-2xl font-black font-serif text-white uppercase tracking-tight">
+              Corruption & Embezzlement Cases
+            </h3>
+          </div>
+          <div className="grid gap-4 md:grid-cols-2">
+            <SourceCard type="article" title="CBC: Tim Richardson — $700K Embezzlement" url="https://www.cbc.ca/news/canada/new-brunswick/tim-richardson-lieutenant-governor-fraud-embezzlement-1.5706694" description="Former Lt. Governor's principal secretary" />
+            <SourceCard type="article" title="CBC: Yassin Choukri — Deputy AG Guilty Plea" url="https://www.cbc.ca/news/canada/new-brunswick/yassin-choukri-guilty-plea-1.6986538" description="$481K stolen from law society trust" />
+            <SourceCard type="article" title="CBC: 3+ Corporation Fraud Charges" url="https://www.cbc.ca/news/canada/new-brunswick/3-plus-rcmp-charges-fraud-daniel-bard-1.6511214" description="19 RCMP charges, $1M+ irregularities" date="JUL 2022" />
+            <SourceCard type="article" title="NB Media Co-op: 3+ Corporation Investigation" url="https://nbmediacoop.org/?s=daniel+bard+3+corporation" description="Comprehensive coverage of procurement fraud" />
+            <SourceCard type="pdf" title="Auditor General: Travel Nurse Contracts (PDF)" url="https://www.agnb-vgnb.ca/uploads/volume_translations/81/report/agnb-V2-2025-Report_E.pdf" description="$173.9M in untendered contracts" date="2025" />
+            <SourceCard type="article" title="NB Media Co-op: NB Liquor Markups Strangle Distillers" url="https://www.cbc.ca/news/canada/new-brunswick/alcohol-tariff-war-markups-9.7126326" description="Provincial monopoly hurts local producers" date="MAR 2026" />
+          </div>
+        </section>
+
+        {/* Data Verification */}
+        <section className="bg-neutral-900 p-10 rounded-2xl border border-neutral-800 shadow-2xl">
           <h3 className="text-2xl font-black font-serif text-white uppercase tracking-tight mb-6">
-            Intimidation & Corporate Capture
+            Data Verification Status
           </h3>
-          <div className="space-y-4">
-            <a href="https://nbmediacoop.org/2020/09/01/are-jdirving-and-forestnb-breaking-elections-nb-laws/" target="_blank" rel="noopener noreferrer" className="block text-neutral-400 hover:text-crisis-red transition-colors text-sm">
-              📰 NB Media Co-op: Are J.D. Irving and ForestNB breaking Elections NB laws? (2020)
-            </a>
-            <a href="https://nbmediacoop.org/2019/07/06/new-brunswick-forestry-college-purges-critic-of-glyphosate-and-defender/" target="_blank" rel="noopener noreferrer" className="block text-neutral-400 hover:text-crisis-red transition-colors text-sm">
-              📰 NB Media Co-op: Forestry college purges glyphosate critic (2019)
-            </a>
-            <a href="https://nbmediacoop.org/2023/06/09/wire-crossed-how-the-irving-empire-jeopardized-free-press-in-new-brunswick/" target="_blank" rel="noopener noreferrer" className="block text-neutral-400 hover:text-crisis-red transition-colors text-sm">
-              📰 NB Media Co-op: How Irving jeopardized free press in New Brunswick (2023)
-            </a>
-            <a href="https://nbmediacoop.org/2019/12/19/may-the-forest-be-with-you-community-forestry-confronts-corporate-control-of-nb-forests/" target="_blank" rel="noopener noreferrer" className="block text-neutral-400 hover:text-crisis-red transition-colors text-sm">
-              📰 NB Media Co-op: Community forestry confronts corporate control (2019)
-            </a>
-            <a href="https://nbmediacoop.org/2026/02/25/consultations-hollow-without-greater-self-determination-indigenous-owned-forestry-company-tells-government/" target="_blank" rel="noopener noreferrer" className="block text-neutral-400 hover:text-crisis-red transition-colors text-sm">
-              📰 NB Media Co-op: Indigenous forestry company says consultations "hollow" (Feb 2026)
-            </a>
+          <div className="overflow-x-auto">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="border-b border-neutral-800">
+                  <th className="text-left p-3 text-white font-black uppercase tracking-wider text-xs">Data Point</th>
+                  <th className="text-left p-3 text-neutral-400 font-black uppercase tracking-wider text-xs">Source</th>
+                  <th className="text-left p-3 text-neutral-400 font-black uppercase tracking-wider text-xs">Verified</th>
+                </tr>
+              </thead>
+              <tbody className="text-neutral-400">
+                <tr className="border-b border-neutral-800"><td className="p-3 text-white">21.9% child poverty rate</td><td className="p-3">Campaign 2000 / CBC Feb 2026</td><td className="p-3 text-green-500">✅</td></tr>
+                <tr className="border-b border-neutral-800"><td className="p-3 text-white">41.2% Campbellton rate</td><td className="p-3">CBC Feb 2026</td><td className="p-3 text-green-500">✅</td></tr>
+                <tr className="border-b border-neutral-800"><td className="p-3 text-white">41,000 ER walkouts</td><td className="p-3">MEI/CBC Sep 2025</td><td className="p-3 text-green-500">✅</td></tr>
+                <tr className="border-b border-neutral-800"><td className="p-3 text-white">12.9% walkout rate</td><td className="p-3">MEI Report Sep 2025</td><td className="p-3 text-green-500">✅</td></tr>
+                <tr className="border-b border-neutral-800"><td className="p-3 text-white">Irving 5x less taxes than US</td><td className="p-3">CBC/Univ Michigan study</td><td className="p-3 text-green-500">✅</td></tr>
+                <tr className="border-b border-neutral-800"><td className="p-3 text-white">$5.9B NB Power debt</td><td className="p-3">NB Power filings</td><td className="p-3 text-green-500">✅</td></tr>
+                <tr className="border-b border-neutral-800"><td className="p-3 text-white">$173.9M travel nurse scandal</td><td className="p-3">Auditor General 2025</td><td className="p-3 text-green-500">✅</td></tr>
+                <tr className="border-b border-neutral-800"><td className="p-3 text-white">1,500+ homeless</td><td className="p-3">HDC / Municipal data</td><td className="p-3 text-green-500">✅</td></tr>
+                <tr className="border-b border-neutral-800"><td className="p-3 text-white">3M+ tonnes CO₂ emissions</td><td className="p-3">CBC/EUB Mar 2026</td><td className="p-3 text-green-500">✅</td></tr>
+                <tr><td className="p-3 text-white">96% salmon collapse</td><td className="p-3">DFO / Save Miramichi Salmon</td><td className="p-3 text-green-500">✅</td></tr>
+              </tbody>
+            </table>
           </div>
         </section>
       </div>

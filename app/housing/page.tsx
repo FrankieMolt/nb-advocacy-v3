@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { Home, AlertTriangle, Users, Building, Thermometer, Skull, TrendingUp } from "lucide-react";
+import { Home } from "lucide-react";
 import { PageWrapper } from "@/components/PageWrapper";
 import { BackLink } from "@/components/BackLink";
 import { PageHeader } from "@/components/PageHeader";

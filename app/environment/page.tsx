@@ -7,8 +7,7 @@ import { Timeline } from '@/components/Timeline';
 import { QuoteBlock } from '@/components/QuoteBlock';
 import { VideoGrid } from '@/components/VideoGrid';
 import { SourceCard } from '@/components/SourceCard';
-import { CaseStudy } from '@/components/CaseStudy';
-import { Fish, TreePine, Droplets, Skull, AlertTriangle, Waves, Shield, Factory } from 'lucide-react';
+import { Fish, TreePine, Skull, AlertTriangle, Shield, Factory } from 'lucide-react';
 
 const environmentData = [
   { value: "96%", label: "Salmon Collapse", sublabel: "Miramichi River wild Atlantic salmon returns at historic lows" },

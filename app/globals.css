@@ -6,7 +6,6 @@
   --crisis-red: #b30000;
   --crisis-dark: #0a0a0a;
   --crisis-gold: #d4a017;
-  --crisis-blue: #1e3a5f;
 }
 
 @theme inline {
@@ -15,7 +14,6 @@
   --color-crisis-red: var(--crisis-red);
   --color-crisis-dark: var(--crisis-dark);
   --color-crisis-gold: var(--crisis-gold);
-  --color-crisis-blue: var(--crisis-blue);
   
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   --font-serif: var(--font-playfair), ui-serif, Georgia, serif;
@@ -38,31 +36,6 @@ body {
   color: var(--foreground);
   scroll-behavior: smooth;
   letter-spacing: -0.01em;
-}
-
-/* Custom UI classes for the 'Intelligence' look */
-.intel-border {
-  @apply border border-neutral-800 bg-neutral-900/30 backdrop-blur-sm transition-all hover:border-neutral-700;
-}
-
-.intel-heading {
-  @apply font-black uppercase tracking-tighter italic;
-}
-
-.hero-badge {
-  @apply inline-block bg-crisis-red text-white text-[10px] font-black uppercase tracking-[0.4em] px-6 py-3 mb-8 shadow-2xl;
-}
-
-.stat-item {
-  @apply p-10 border border-neutral-800 bg-neutral-900/50 transition-all hover:border-crisis-red hover:-translate-y-1 shadow-xl;
-}
-
-.stat-val {
-  @apply block text-6xl font-black text-white mb-2 tracking-tighter;
-}
-
-.stat-label {
-  @apply text-[10px] uppercase font-black text-neutral-500 tracking-[0.3em];
 }
 
 /* Custom noise overlay */

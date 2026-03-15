@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { Activity, Quote, AlertTriangle, TrendingDown, Users, Building2 } from "lucide-react";
+import { Activity, AlertTriangle } from "lucide-react";
 import { PageWrapper } from "@/components/PageWrapper";
 import { BackLink } from "@/components/BackLink";
 import { PageHeader } from "@/components/PageHeader";
