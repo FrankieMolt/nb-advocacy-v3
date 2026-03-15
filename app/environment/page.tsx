@@ -58,7 +58,7 @@ export default function EnvironmentPage() {
       {/* Hero Image */}
       <div className="my-10 rounded-2xl overflow-hidden shadow-2xl">
         <Image
-          src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=1200&q=80"
+          src="https://i.cbc.ca/ais/1.7649604,1759431860000/full/max/0/default.jpg?im=Crop%2Crect%3D%2830%2C0%2C1516%2C852%29%3BResize%3D1200"
           alt="Aerial view of forest clearcutting - devastated landscape"
           fill
           sizes="(max-width: 768px) 100vw, 1200px"
@@ -293,7 +293,7 @@ export default function EnvironmentPage() {
         {/* Polluted Water Image */}
         <div className="my-12 rounded-2xl overflow-hidden shadow-2xl">
           <Image
-            src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1200&q=80"
+            src="https://i.cbc.ca/ais/1.6943853,1692727406000/full/max/0/default.jpg?im=Crop%2Crect%3D%2865%2C0%2C1490%2C838%29%3BResize%3D1200"
             alt="Foggy forest landscape representing environmental degradation in New Brunswick"
             fill
             sizes="(max-width: 768px) 100vw, 1200px"

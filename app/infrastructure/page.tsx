@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: "Crumbling Infrastructure | Reform NB",
@@ -51,6 +52,20 @@ export default function InfrastructurePage() {
           297 bridges failing. $20 billion repair backlog. Fire response compromised.
           New Brunswick's infrastructure is collapsing while the province defers maintenance.
         </p>
+      </div>
+
+      {/* Hero Image - Closed Covered Bridge */}
+      <div className="mb-12 rounded-2xl overflow-hidden shadow-2xl">
+        <Image
+          src="https://i.cbc.ca/ais/1.7272399,1721752607000/full/max/0/default.jpg?im=Crop%2Crect%3D%2820%2C87%2C645%2C362%29%3BResize%3D1200"
+          alt="Closed covered bridge in New Brunswick showing infrastructure neglect"
+          width={1200}
+          height={675}
+          className="w-full h-auto"
+        />
+        <div className="bg-neutral-900 p-4 text-xs text-neutral-500 uppercase tracking-widest text-center">
+          Wheaton Covered Bridge closed due to structural neglect | <span className="text-neutral-600">CBC/Radio-Canada</span>
+        </div>
       </div>
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">

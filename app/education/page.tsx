@@ -7,6 +7,7 @@ import { CTASection } from "@/components/CTASection";
 import { DataCard } from "@/components/DataCard";
 import { Timeline } from "@/components/Timeline";
 import { SourceCard } from "@/components/SourceCard";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Education Crisis | Reform NB",
@@ -36,6 +37,21 @@ export default function EducationPage() {
         icon={GraduationCap}
         title="Education: Failing Our Children"
       />
+
+      {/* Hero Image - Uncertified Teachers */}
+      <div className="mb-12 rounded-2xl overflow-hidden shadow-2xl">
+        <Image 
+          src="https://i.cbc.ca/ais/1.7598315,1753966961000/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C163%2C4032%2C2268%29%3BResize%3D1200" 
+          alt="New Brunswick classroom with uncertified teachers filling shortage gaps"
+          width={1200}
+          height={675}
+          className="w-full h-auto"
+        />
+        <div className="bg-neutral-900 p-4 text-xs text-neutral-500 uppercase tracking-widest text-center">
+          Nearly 200 uncertified teachers now fill NB classrooms as shortage worsens | <span className="text-neutral-600">CBC/Radio-Canada</span>
+        </div>
+      </div>
+
       <p className="text-neutral-300 mb-8 leading-relaxed text-lg">
         New Brunswick's education system ranks last in Canada in reading and near-bottom in math and science. 
         Schools are half-empty while costs soar — but no government has made real reform a priority.

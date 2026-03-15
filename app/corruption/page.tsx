@@ -47,13 +47,13 @@ export default function CorruptionPage() {
       {/* Hero Image */}
       <div className="mb-12 rounded-2xl overflow-hidden shadow-2xl">
         <Image 
-          src="https://images.unsplash.com/photo-1523292562811-8fa7962a78c8?w=1200&q=80" 
+          src="https://i.cbc.ca/ais/1.7450203,1738694479000/full/max/0/default.jpg?im=Crop%2Crect%3D%2890%2C327%2C3795%2C2134%29%3BResize%3D1200" 
           alt="Government building representing systemic corruption in New Brunswick"
           fill
           sizes="(max-width: 768px) 100vw, 1200px"
         />
         <div className="bg-neutral-900 p-4 text-xs text-neutral-500 uppercase tracking-widest text-center">
-          Government corruption, untendered contracts, and whistleblower suppression — accountability has been replaced by &quot;litigation privilege&quot;
+          Daniel Bard court proceedings — 19 RCMP charges for financial irregularities | <span className="text-neutral-600">CBC/Radio-Canada</span>
         </div>
       </div>
 

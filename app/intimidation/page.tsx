@@ -58,7 +58,7 @@ export default function IntimidationPage() {
       {/* Hero Image */}
       <div className="my-10 rounded-2xl overflow-hidden shadow-2xl">
         <img
-          src="https://images.unsplash.com/photo-1504711434969-e33886168d6c?w=1200&q=80"
+          src="https://i.cbc.ca/ais/1.5183857,1706136546000/full/max/0/default.jpg?im=Crop%2Crect%3D%282%2C0%2C1236%2C695%29%3BResize%3D1200"
           alt="Censored newspaper with redaction marks"
           className="w-full h-64 md:h-80 object-cover"
         />
@@ -254,7 +254,7 @@ export default function IntimidationPage() {
         {/* Censored Image */}
         <div className="my-12 rounded-2xl overflow-hidden shadow-2xl">
           <img
-            src="https://images.unsplash.com/photo-1495020689067-958852a7765e?w=1200&q=80"
+            src="https://i.cbc.ca/ais/1.5058551,1552675328000/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C278%2C4032%2C2268%29%3BResize%3D1200"
             alt="Newspapers representing media control and censorship"
             className="w-full h-48 md:h-64 object-cover"
           />
