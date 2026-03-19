@@ -3,6 +3,7 @@ import { Home } from "lucide-react";
 import { PageWrapper } from "@/components/PageWrapper";
 import { BackLink } from "@/components/BackLink";
 import { PageHeader } from "@/components/PageHeader";
+import { RelatedPages } from "@/components/RelatedPages";
 import { CTASection } from "@/components/CTASection";
 import { CaseStudy } from "@/components/CaseStudy";
 import { DataCard } from "@/components/DataCard";
@@ -51,12 +52,12 @@ export default function HousingPage() {
       {/* Hero Image */}
       <div className="mb-12 rounded-2xl overflow-hidden shadow-2xl">
         <Image 
-          src="https://i.cbc.ca/ais/2a1d4054-ff17-43cd-98ff-f193d398a82f,1767887619910/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C0%2C2048%2C1152%29%3BResize%3D1200" 
+          src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80" 
           alt="Affordable housing need representing New Brunswick housing crisis"
           fill
           sizes="(max-width: 768px) 100vw, 1200px"
         />
-        <div className="bg-neutral-900 p-4 text-xs text-neutral-500 uppercase tracking-widest text-center">
+        <div className="bg-neutral-900 p-4 text-xs text-neutral-400 uppercase tracking-widest text-center">
           1,500+ New Brunswickers chronically homeless while housing remains unaffordable and corporate landlords profit
         </div>
         <div className="bg-neutral-900 p-2 text-xs text-neutral-400 uppercase tracking-widest text-center">
@@ -88,13 +89,7 @@ export default function HousingPage() {
             impossible. Vacancy rates? Less than 1%. Good luck.
           </p>
           <p className="text-neutral-400 leading-relaxed">
-            Moncton's story is just as brutal. The city's growth - fueled by people seeking 
-            opportunity - has been met not with homes, but with speculation. What rented for 
-            $800 in 2020 now goes for $1,500-2,000. A city that was affordable is becoming 
-            one of the most expensive places to live in Atlantic Canada.
-          </p>
-          <p className="text-neutral-400 leading-relaxed">
-            In Moncton, the situation is equally dire. The city&apos;s rapid population 
+            Moncton&apos;s story is just as brutal. The city&apos;s rapid population 
             growth — fueled by immigration and interprovincial migration — has been 
             met not with proportional housing construction, but with speculative 
             investment. Properties that rented for $800/month in 2020 now command 
@@ -122,7 +117,7 @@ export default function HousingPage() {
           </p>
           <p className="text-neutral-400 leading-relaxed mb-6">
             The intersection of homelessness and the toxic drug supply crisis creates a 
-            <strong className="text-white"> lethal synergy</strong>. Unhoused individuals are disproportionately exposed 
+            <strong className="text-white"> lethal combination</strong>. Unhoused individuals are disproportionately exposed 
             to a drug supply contaminated with carfentanil — an opioid 100 times more 
             potent than fentanyl. Without supervised consumption sites or adequate 
             harm reduction services, the death toll mounts monthly. Front-line workers 
@@ -144,7 +139,7 @@ export default function HousingPage() {
             columns={1}
             videos={[
               {
-                videoId: "czMaU4f8qg0",
+                videoId: "N9I-HY3wfVM",
                 title: "CBC: Moncton homelessness encampment crisis",
                 caption: "Moncton's homelessness crisis has reached emergency levels, with over 830 people unhoused in the city alone."
               }
@@ -155,12 +150,12 @@ export default function HousingPage() {
         {/* Tent City Image */}
         <div className="my-12 rounded-2xl overflow-hidden shadow-2xl">
           <Image 
-            src="https://i.cbc.ca/ais/d80e8653-d327-427a-9ce8-92f1a14714c7,1766090265595/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C378%2C4032%2C2268%29%3BResize%3D1200" 
+            src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80" 
             alt="Tent encampment representing New Brunswick's homelessness crisis"
             fill
             sizes="(max-width: 768px) 100vw, 1200px"
           />
-          <div className="bg-neutral-900 p-3 text-xs text-neutral-500 uppercase tracking-widest text-center">
+          <div className="bg-neutral-900 p-3 text-xs text-neutral-400 uppercase tracking-widest text-center">
             Encampments have become permanent fixtures in Moncton, Saint John, and Fredericton — the visible face of systemic failure
           </div>
           <div className="bg-neutral-900 p-2 text-xs text-neutral-400 uppercase tracking-widest text-center">
@@ -197,12 +192,13 @@ export default function HousingPage() {
 
         {/* Winter Image */}
         <div className="my-12 rounded-2xl overflow-hidden shadow-2xl">
-          <img 
+          <Image 
             src="https://images.unsplash.com/photo-1491002052546-bf38f186af56?w=1200&q=80" 
             alt="Winter conditions representing the housing crisis for New Brunswick's unhoused population"
-            className="w-full h-48 md:h-64 object-cover"
+            fill
+            sizes="(max-width: 768px) 100vw, 1200px"
           />
-          <div className="bg-neutral-900 p-3 text-xs text-neutral-500 uppercase tracking-widest text-center">
+          <div className="bg-neutral-900 p-3 text-xs text-neutral-400 uppercase tracking-widest text-center relative z-10">
             Winter conditions make the housing crisis deadly — over 100 unhoused deaths in 2025 from exposure and toxic supply
           </div>
         </div>
@@ -329,12 +325,13 @@ export default function HousingPage() {
 
         {/* Second Image: Urban Decay */}
         <div className="my-12 rounded-2xl overflow-hidden shadow-2xl">
-          <img 
-            src="https://images.unsplash.com/photo-1464938050520-ef2571e0c6c0?w=1200&q=80" 
+          <Image 
+            src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&q=80" 
             alt="Urban decay and abandoned buildings representing the housing infrastructure crisis"
-            className="w-full h-48 md:h-64 object-cover"
+            fill
+            sizes="(max-width: 768px) 100vw, 1200px"
           />
-          <div className="bg-neutral-900 p-3 text-xs text-neutral-500 uppercase tracking-widest text-center">
+          <div className="bg-neutral-900 p-3 text-xs text-neutral-400 uppercase tracking-widest text-center relative z-10">
             Abandoned properties sit empty while 1,500+ sleep outside — the market has failed
           </div>
         </div>
@@ -355,11 +352,18 @@ export default function HousingPage() {
             <SourceCard type="pdf" title="NB Government: Overcoming Poverty Together 4 (2025-2030)" url="https://www2.gnb.ca/content/dam/gnb/Departments/esic/pdf/overcoming-poverty-4-2025-2030.pdf" description="Official provincial poverty reduction strategy" date="2025" />
             <SourceCard type="report" title="National Advisory Council on Poverty: 2025 Annual Report" url="https://www.canada.ca/en/employment-social-development/programs/poverty-reduction/national-advisory-council/reports/2025-annual.html" description="Federal report with NB-specific data" date="2025" />
             <SourceCard type="article" title="CBC: Child Poverty 'Alarmingly High' — Housing & Poverty Linked" url="https://www.cbc.ca/news/canada/new-brunswick/child-poverty-alarmingly-high-in-n-b-says-human-development-council-9.7105164" description="February 2026 HDC report coverage" date="FEB 2026" />
-            <SourceCard type="pdf" title="Campaign 2000: 2025 NB Child and Family Poverty Report Card" url="https://campaign2000.ca/wp-content/uploads/2026/02/2025-NB-Report-Card-on-Child-and-Family-Poverty.pdf" description="Comprehensive poverty data by region" date="FEB 2026" />
+            <SourceCard type="pdf" title="Campaign 2000: 2025 NB Child and Family Poverty Report Card" url="https://campaign2000.ca/wp-content/uploads/2026/02/2025-NB-Report-Card-on-Child-and-Family-Poverty.pdf" description="Full poverty breakdown by region" date="FEB 2026" />
             <SourceCard type="organization" title="NB Housing" url="https://www.gnb.ca/housing" description="Provincial housing authority" />
           </div>
         </section>
       </div>
+
+      
+      <RelatedPages pages={[
+        { href: '/healthcare', title: 'Healthcare Collapse', description: '238K without family doctors. 2,199 ER deaths.' },
+        { href: '/child-poverty', title: 'Child Poverty', description: 'Housing crisis drives child poverty to record levels.' },
+        { href: '/climate-energy', title: 'Energy Poverty', description: '50% NB Power rate hikes push families into homelessness.' }
+      ]} />
 
       <CTASection
         icon={Home}

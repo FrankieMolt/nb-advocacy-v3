@@ -3,6 +3,7 @@ import { Activity, AlertTriangle } from "lucide-react";
 import { PageWrapper } from "@/components/PageWrapper";
 import { BackLink } from "@/components/BackLink";
 import { PageHeader } from "@/components/PageHeader";
+import { RelatedPages } from "@/components/RelatedPages";
 import { CTASection } from "@/components/CTASection";
 import { CaseStudy } from "@/components/CaseStudy";
 import { DataCard } from "@/components/DataCard";
@@ -53,12 +54,12 @@ export default function HealthcarePage() {
       {/* Hero Image */}
       <div className="mb-12 rounded-2xl overflow-hidden shadow-2xl">
         <Image 
-          src="https://i.cbc.ca/ais/1.4510834,1713200915000/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C0%2C620%2C348%29%3BResize%3D1200" 
+          src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1200&q=80" 
           alt="Empty hospital corridor representing the healthcare crisis in New Brunswick"
           fill
           sizes="(max-width: 768px) 100vw, 1200px"
         />
-        <div className="bg-neutral-900 p-4 text-xs text-neutral-500 uppercase tracking-widest text-center">
+        <div className="bg-neutral-900 p-4 text-xs text-neutral-400 uppercase tracking-widest text-center">
           238,000 New Brunswickers without a family doctor — patients dying in waiting rooms while the government calls it &quot;efficiency&quot;
         </div>
         <div className="bg-neutral-900 p-2 text-xs text-neutral-400 uppercase tracking-widest text-center">
@@ -175,7 +176,7 @@ export default function HealthcarePage() {
             columns={1}
             videos={[
               {
-                videoId: "cPWEAFGmX1U",
+                videoId: "FLGCGc7sAUw",
                 title: "CBC: 41,000 New Brunswickers left Horizon ERs before being seen",
                 caption: "A 2025 Montreal Economic Institute report revealed NB has the third-highest ER walkout rate in Canada."
               }
@@ -206,7 +207,7 @@ export default function HealthcarePage() {
             <strong className="text-white">12.9% walkout rate</strong> (over <strong className="text-white">41,000 patients</strong> from Horizon alone, plus 22,000 from Vitalité — totaling over 63,000) seen last
             year. Patients are triaged in parking lots because there is
             physically no room left.{" "}
-            <a href="https://www.cbc.ca/news/canada/new-brunswick/new-brunswick-emergency-patient-leave-horizon-mei-report-vitalit%C3%A9-1.7637201" target="_blank" rel="noopener noreferrer" className="text-crisis-red hover:text-white underline">[CBC / MEI Report, Sep 2025]</a>
+            <a href="https://www.cbc.ca/news/canada/new-brunswick/new-brunswick-emergency-patient-leave-horizon-mei-report-vitalit%C3%A9-1.7637201" target="_blank" rel="noopener noreferrer" className="text-crisis-text hover:text-white underline">[CBC / MEI Report, Sep 2025]</a>
           </p>
           <p className="text-neutral-400 leading-relaxed mt-4">
             The numbers are staggering. Horizon Health Network reported <strong className="text-white">635 ALC (Alternate Level of Care) patients</strong> occupying acute 
@@ -220,17 +221,17 @@ export default function HealthcarePage() {
             responsible for seniors admitted it will <strong className="text-white">&quot;not really&quot;</strong> reduce 
             the existing waitlist. With the province needing thousands of new long-term care spaces, 
             not dozens, the gap between demand and capacity continues to widen. 
-            <a href="https://www.cbc.ca/news/canada/new-brunswick" target="_blank" rel="noopener noreferrer" className="text-crisis-red hover:text-white underline">[CBC NB, Mar 2026]</a>
+            <a href="https://www.cbc.ca/news/canada/new-brunswick" target="_blank" rel="noopener noreferrer" className="text-crisis-text hover:text-white underline">[CBC NB, Mar 2026]</a>
           </p>
         </section>
 
         {/* Second Video */}
         <div className="my-12">
           <YouTubeEmbed
-            videoId="WoKn8xhE-m4"
+            videoId="N9I-HY3wfVM"
             title="National Post: Canada's ER 'hidden pandemic' of preventable deaths"
           />
-          <p className="text-center text-sm text-neutral-500 mt-4 italic">
+          <p className="text-center text-sm text-neutral-400 mt-4 italic">
             National coverage of the preventable deaths occurring in Canadian emergency rooms — a crisis New Brunswick exemplifies.
           </p>
         </div>
@@ -263,32 +264,32 @@ export default function HealthcarePage() {
           </p>
 
           <div className="bg-neutral-900 border border-neutral-800 rounded-2xl p-8 my-8">
-            <h4 className="text-crisis-red font-black uppercase text-xs tracking-widest mb-4 flex items-center gap-2">
+            <h4 className="text-crisis-text font-black uppercase text-xs tracking-widest mb-4 flex items-center gap-2">
               <AlertTriangle size={16} aria-hidden="true" /> Key Revelations
             </h4>
             <ul className="space-y-3 text-neutral-300 text-sm" role="list">
               <li className="flex items-start gap-3">
-                <span className="text-crisis-red font-black">•</span>
+                <span className="text-crisis-text font-black">•</span>
                 <span>CHL paid <strong>$300.72/hour</strong> per travel nurse vs. $45-55/hour for local RNs</span>
               </li>
               <li className="flex items-start gap-3">
-                <span className="text-crisis-red font-black">•</span>
+                <span className="text-crisis-text font-black">•</span>
                 <span>Total contracts exceeded <strong>$173.9M</strong> — all untendered</span>
               </li>
               <li className="flex items-start gap-3">
-                <span className="text-crisis-red font-black">•</span>
+                <span className="text-crisis-text font-black">•</span>
                 <span>Vitalité used <strong>&quot;litigation privilege&quot;</strong> to block Auditor General access</span>
               </li>
               <li className="flex items-start gap-3">
-                <span className="text-crisis-red font-black">•</span>
+                <span className="text-crisis-text font-black">•</span>
                 <span>Chief Justice DeWare ruled AG&apos;s mandate is <strong>overridden</strong> by privilege</span>
               </li>
               <li className="flex items-start gap-3">
-                <span className="text-crisis-red font-black">•</span>
+                <span className="text-crisis-text font-black">•</span>
                 <span>Local nurses received <strong>no comparable wage increases</strong> during the same period</span>
               </li>
               <li className="flex items-start gap-3">
-                <span className="text-crisis-red font-black">•</span>
+                <span className="text-crisis-text font-black">•</span>
                 <span>Travel nurses often <strong>less experienced</strong> than permanent staff they replaced</span>
               </li>
             </ul>
@@ -298,12 +299,12 @@ export default function HealthcarePage() {
         {/* Nurse Burnout Image */}
         <div className="my-12 rounded-2xl overflow-hidden shadow-2xl">
           <Image 
-            src="https://i.cbc.ca/ais/8074aef2-7467-470c-b7e5-824bfa023934,1770926786521/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C40%2C1309%2C736%29%3BResize%3D1200" 
+            src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1200&q=80" 
             alt="Healthcare worker representing nurse burnout and staffing crisis in NB"
             fill
             sizes="(max-width: 768px) 100vw, 1200px"
           />
-          <div className="bg-neutral-900 p-3 text-xs text-neutral-500 uppercase tracking-widest text-center">
+          <div className="bg-neutral-900 p-3 text-xs text-neutral-400 uppercase tracking-widest text-center">
             Nurse burnout and unsafe staffing ratios while $173.9M flows to private travel agencies
           </div>
           <div className="bg-neutral-900 p-2 text-xs text-neutral-400 uppercase tracking-widest text-center">
@@ -336,7 +337,7 @@ export default function HealthcarePage() {
             and formal complaints to regulatory bodies. The NBNU has called for a full public 
             inquiry into healthcare staffing, arguing that the current trajectory is 
             <strong className="text-white"> unsustainable and dangerous</strong>.{" "}
-            <a href="https://nbnu.ca/" target="_blank" rel="noopener noreferrer" className="text-crisis-red hover:text-white underline">[NB Nurses&apos; Union]</a>
+            <a href="https://nbnu.ca/" target="_blank" rel="noopener noreferrer" className="text-crisis-text hover:text-white underline">[NB Nurses&apos; Union]</a>
           </p>
         </section>
 
@@ -359,7 +360,7 @@ export default function HealthcarePage() {
             Brunswick. The province currently lacks any centralized resource for
             transgender healthcare, forcing patients to navigate a patchwork of
             reluctant providers or leave the province entirely.{" "}
-            <a href="https://www.cbc.ca/news/canada/new-brunswick" target="_blank" rel="noopener noreferrer" className="text-crisis-red hover:text-white underline">[CBC NB, Mar 2026]</a>
+            <a href="https://www.cbc.ca/news/canada/new-brunswick" target="_blank" rel="noopener noreferrer" className="text-crisis-text hover:text-white underline">[CBC NB, Mar 2026]</a>
           </p>
           <p className="text-neutral-400 leading-relaxed">
             Advocates describe a system where transgender patients face <strong className="text-white">multi-year waits</strong> for 
@@ -388,35 +389,35 @@ export default function HealthcarePage() {
               <thead>
                 <tr className="border-b border-neutral-800">
                   <th className="text-left p-4 text-white font-black uppercase tracking-wider text-xs">Metric</th>
-                  <th className="text-left p-4 text-crisis-red font-black uppercase tracking-wider text-xs">NB</th>
+                  <th className="text-left p-4 text-crisis-text font-black uppercase tracking-wider text-xs">NB</th>
                   <th className="text-left p-4 text-neutral-400 font-black uppercase tracking-wider text-xs">National Avg</th>
                 </tr>
               </thead>
               <tbody>
                 <tr className="border-b border-neutral-800">
                   <td className="p-4 text-neutral-300">ER Walkout Rate</td>
-                  <td className="p-4 text-crisis-red font-bold">12.9%</td>
-                  <td className="p-4 text-neutral-500">7.8%</td>
+                  <td className="p-4 text-crisis-text font-bold">12.9%</td>
+                  <td className="p-4 text-neutral-400">7.8%</td>
                 </tr>
                 <tr className="border-b border-neutral-800">
                   <td className="p-4 text-neutral-300">Without Family Doctor</td>
-                  <td className="p-4 text-crisis-red font-bold">~30%</td>
-                  <td className="p-4 text-neutral-500">~15%</td>
+                  <td className="p-4 text-crisis-text font-bold">~30%</td>
+                  <td className="p-4 text-neutral-400">~15%</td>
                 </tr>
                 <tr className="border-b border-neutral-800">
                   <td className="p-4 text-neutral-300">Physicians per 100K</td>
-                  <td className="p-4 text-crisis-red font-bold">~220</td>
-                  <td className="p-4 text-neutral-500">~260</td>
+                  <td className="p-4 text-crisis-text font-bold">~220</td>
+                  <td className="p-4 text-neutral-400">~260</td>
                 </tr>
                 <tr className="border-b border-neutral-800">
                   <td className="p-4 text-neutral-300">ALC Bed Occupancy</td>
-                  <td className="p-4 text-crisis-red font-bold">40%+</td>
-                  <td className="p-4 text-neutral-500">~15%</td>
+                  <td className="p-4 text-crisis-text font-bold">40%+</td>
+                  <td className="p-4 text-neutral-400">~15%</td>
                 </tr>
                 <tr>
                   <td className="p-4 text-neutral-300">Median ER Wait (CTAS 3)</td>
-                  <td className="p-4 text-crisis-red font-bold">8+ hours</td>
-                  <td className="p-4 text-neutral-500">~4 hours</td>
+                  <td className="p-4 text-crisis-text font-bold">8+ hours</td>
+                  <td className="p-4 text-neutral-400">~4 hours</td>
                 </tr>
               </tbody>
             </table>
@@ -434,7 +435,7 @@ export default function HealthcarePage() {
             fill
             sizes="(max-width: 768px) 100vw, 1200px"
           />
-          <div className="bg-neutral-900 p-3 text-xs text-neutral-500 uppercase tracking-widest text-center">
+          <div className="bg-neutral-900 p-3 text-xs text-neutral-400 uppercase tracking-widest text-center">
             Emergency rooms overwhelmed — patients triaged in parking lots, 63,000 leaving untreated annually
           </div>
         </div>
@@ -449,12 +450,13 @@ export default function HealthcarePage() {
 
         {/* Medical Equipment Image */}
         <div className="my-12 rounded-2xl overflow-hidden shadow-2xl">
-          <img 
+          <Image 
             src="https://images.unsplash.com/photo-1516549655169-df83a0774514?w=1200&q=80" 
             alt="Medical equipment representing systemic healthcare infrastructure failure"
-            className="w-full h-48 md:h-64 object-cover"
+            fill
+            sizes="(max-width: 768px) 100vw, 1200px"
           />
-          <div className="bg-neutral-900 p-3 text-xs text-neutral-500 uppercase tracking-widest text-center">
+          <div className="bg-neutral-900 p-3 text-xs text-neutral-400 uppercase tracking-widest text-center relative z-10">
             Aging infrastructure, understaffed facilities, and a system designed for a population half its current size
           </div>
         </div>
@@ -473,6 +475,10 @@ export default function HealthcarePage() {
             <SourceCard type="article" title="CTV: Darrell Mesheau ER Death Lawsuit" url="https://www.ctvnews.ca/atlantic/new-brunswick/article/hospital-and-nurses-deny-negligence-in-nb-emergency-room-death-of-78-year-old-man/" description="Chalmers ER negligence case" date="2023" />
             <SourceCard type="report" title="NB Government: Official Health Plan" url="https://www2.gnb.ca/content/gnb/en/corporate/promo/new-brunswick-health-plan.html" description="Government's own acknowledgment of the crisis" date="2024" />
             <SourceCard type="organization" title="NB Nurses' Union — Advocacy & Reports" url="https://nbnu.ca/" description="Union representing 8,000+ NB nurses" />
+
+            <SourceCard type="article" title="Global News: Patients in hospitals waiting for nursing home beds at crisis point" url="https://globalnews.ca/news/11665212/horizon-health-ceo-nursing-home-beds-hospitals-crissi-point" description="Horizon Health CEO: ALC patients blocking acute care beds reached crisis point" date="MAR 2026" />
+            <SourceCard type="article" title="Telegraph-Journal: NB ER under threat of losing accreditation to train doctors" url="https://tj.news/new-brunswick/new-brunswick-er-under-threat-of-losing-accreditation-to-train-doctors" description="Emergency room physician training at risk due to overcrowding and safety concerns" date="2026" />
+            <SourceCard type="article" title="CTV: $270M agreement rewards NB physicians for taking on more patients" url="https://www.ctvnews.ca/atlantic/new-brunswick/article/new-270-million-agreement-rewards-nb-physicians-for-taking-on-more-patients/" description="New physician compensation deal aims to reduce 238K patient waitlist" date="2026" />
             <SourceCard type="organization" title="Horizon Health Network" url="https://www.horizonnb.ca/" description="Largest health authority in NB" />
           </div>
         </section>
@@ -510,7 +516,7 @@ export default function HealthcarePage() {
           94 people wait in hospital for nursing home placement.
         </p>
         <div className="bg-zinc-900 border border-crisis-red/30 rounded-lg p-6 mb-6">
-          <h3 className="text-lg font-bold text-crisis-red mb-3">The Math Doesn&apos;t Add Up</h3>
+          <h3 className="text-lg font-bold text-crisis-text mb-3">The Math Doesn&apos;t Add Up</h3>
           <ul className="space-y-2 text-neutral-300 text-sm">
             <li>• 60 new beds opened in Oromocto → filled in 57 days → waitlist barely moved</li>
             <li>• 471 hospital beds blocked by seniors waiting for long-term care</li>
@@ -520,6 +526,13 @@ export default function HealthcarePage() {
           </ul>
         </div>
       </div>
+      
+      <RelatedPages pages={[
+        { href: '/mental-health', title: 'Mental Health Crisis', description: 'NB has worst mental health outcomes in Canada. Wait times exceed 2 years.' },
+        { href: '/seniors', title: 'Seniors & Long-Term Care', description: '40% of acute beds blocked by ALC seniors. Waitlists of 3+ years.' },
+        { href: '/budget-2026', title: 'Budget 2026 Analysis', description: 'Record $1.39B deficit while healthcare system crumbles.' }
+      ]} />
+
       <CTASection
         icon={Activity}
         title="The Silence is Fatal."

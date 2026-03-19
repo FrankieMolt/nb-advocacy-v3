@@ -19,7 +19,7 @@ export function VideoGrid({ videos, columns = 1, className = '' }: VideoGridProp
         <div key={index}>
           <YouTubeEmbed videoId={video.videoId} title={video.title} />
           {video.caption && (
-            <p className="text-center text-sm text-neutral-500 mt-4 italic">
+            <p className="text-center text-sm text-white mt-4 italic">
               {video.caption}
             </p>
           )}

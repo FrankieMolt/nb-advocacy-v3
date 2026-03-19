@@ -90,7 +90,7 @@ export default function ContactPage() {
             aria-invalid={!!errors.name}
           />
           {errors.name && (
-            <p className="text-crisis-red text-xs mt-1" role="alert">
+            <p className="text-crisis-text text-xs mt-1" role="alert">
               {errors.name}
             </p>
           )}
@@ -118,7 +118,7 @@ export default function ContactPage() {
             aria-invalid={!!errors.email}
           />
           {errors.email && (
-            <p className="text-crisis-red text-xs mt-1" role="alert">
+            <p className="text-crisis-text text-xs mt-1" role="alert">
               {errors.email}
             </p>
           )}
@@ -146,7 +146,7 @@ export default function ContactPage() {
             aria-invalid={!!errors.message}
           />
           {errors.message && (
-            <p className="text-crisis-red text-xs mt-1" role="alert">
+            <p className="text-crisis-text text-xs mt-1" role="alert">
               {errors.message}
             </p>
           )}
@@ -175,7 +175,7 @@ export default function ContactPage() {
         <p className="text-neutral-400 text-sm leading-relaxed mb-4">
           For sensitive information, contact us via encrypted email:
         </p>
-        <code className="text-crisis-red font-mono text-sm select-all">
+        <code className="text-crisis-text font-mono text-sm select-all">
           reformnb-tips@proton.me
         </code>
       </div>

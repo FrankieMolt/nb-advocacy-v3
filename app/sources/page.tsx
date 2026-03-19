@@ -52,7 +52,7 @@ export default function SourcesPage() {
             <ShieldCheck size={120} />
           </div>
           <div className="flex items-center gap-3 mb-8">
-            <Activity className="text-crisis-red" size={28} aria-hidden="true" />
+            <Activity className="text-crisis-text" size={28} aria-hidden="true" />
             <h3 className="text-2xl font-black font-serif text-white uppercase tracking-tight">
               Healthcare & High-Level Fraud
             </h3>
@@ -75,7 +75,7 @@ export default function SourcesPage() {
             <Database size={120} />
           </div>
           <div className="flex items-center gap-3 mb-8">
-            <Database className="text-crisis-red" size={28} aria-hidden="true" />
+            <Database className="text-crisis-text" size={28} aria-hidden="true" />
             <h3 className="text-2xl font-black font-serif text-white uppercase tracking-tight">
               NB Power & Fiscal Failure
             </h3>
@@ -95,7 +95,7 @@ export default function SourcesPage() {
         {/* Corporate Oligarchy */}
         <section className="bg-neutral-900 p-10 rounded-2xl border border-neutral-800 shadow-2xl relative overflow-hidden">
           <div className="flex items-center gap-3 mb-8">
-            <DollarSign className="text-crisis-red" size={28} aria-hidden="true" />
+            <DollarSign className="text-crisis-text" size={28} aria-hidden="true" />
             <h3 className="text-2xl font-black font-serif text-white uppercase tracking-tight">
               The Oligarchy Dossier
             </h3>
@@ -106,14 +106,14 @@ export default function SourcesPage() {
             <SourceCard type="article" title="CBC: Irving Bermuda Insurance Company" url="https://www.cbc.ca/news/canada/new-brunswick" description="Detailed Paradise Papers coverage" />
             <SourceCard type="article" title="NB Media Co-op: Alain Deneault on Arthur Irving" url="https://nbmediacoop.org/2024/05/19/dismal/" description="'Feudalistic counter-model' analysis" date="MAY 2024" />
             <SourceCard type="article" title="NB Media Co-op: The Irvings Get Trumped" url="https://nbmediacoop.org/2025/03/02/the-irvings-get-trumped/" description="Cartoonist de Adder fired for Trump cartoon" date="MAR 2025" />
-            <SourceCard type="article" title="NB Media Co-op: How Irving Jeopardized Free Press" url="https://nbmediacoop.org/2023/06/09/wire-crossed-how-the-irving-empire-jeopardized-free-press-in-new-brunswick/" description="Comprehensive media monopoly investigation" date="2023" />
+            <SourceCard type="article" title="NB Media Co-op: How Irving Jeopardized Free Press" url="https://nbmediacoop.org/2023/06/09/wire-crossed-how-the-irving-empire-jeopardized-free-press-in-new-brunswick/" description="Detailed media monopoly probe" date="2023" />
           </div>
         </section>
 
         {/* Environmental */}
         <section className="bg-neutral-900 p-10 rounded-2xl border border-neutral-800 shadow-2xl relative overflow-hidden">
           <div className="flex items-center gap-3 mb-8">
-            <AlertTriangle className="text-crisis-red" size={28} aria-hidden="true" />
+            <AlertTriangle className="text-crisis-text" size={28} aria-hidden="true" />
             <h3 className="text-2xl font-black font-serif text-white uppercase tracking-tight">
               Ecological Failure
             </h3>
@@ -133,7 +133,7 @@ export default function SourcesPage() {
         {/* Housing & Social */}
         <section className="bg-neutral-900 p-10 rounded-2xl border border-neutral-800 shadow-2xl relative overflow-hidden">
           <div className="flex items-center gap-3 mb-8">
-            <Home className="text-crisis-red" size={28} aria-hidden="true" />
+            <Home className="text-crisis-text" size={28} aria-hidden="true" />
             <h3 className="text-2xl font-black font-serif text-white uppercase tracking-tight">
               Housing & Social Crisis
             </h3>
@@ -143,7 +143,7 @@ export default function SourcesPage() {
             <SourceCard type="pdf" title="NB Government: Overcoming Poverty Together 4" url="https://www2.gnb.ca/content/dam/gnb/Departments/esic/pdf/overcoming-poverty-4-2025-2030.pdf" description="Official provincial poverty reduction strategy (2025-2030)" date="2025" />
             <SourceCard type="report" title="National Advisory Council on Poverty: 2025 Annual Report" url="https://www.canada.ca/en/employment-social-development/programs/poverty-reduction/national-advisory-council/reports/2025-annual.html" description="Federal report with NB-specific data" date="2025" />
             <SourceCard type="article" title="CBC: Child Poverty 'Alarmingly High' — Housing Impact" url="https://www.cbc.ca/news/canada/new-brunswick/child-poverty-alarmingly-high-in-n-b-says-human-development-council-9.7105164" description="February 2026 HDC report coverage" date="FEB 2026" />
-            <SourceCard type="pdf" title="Campaign 2000: 2025 NB Child Poverty Report Card" url="https://campaign2000.ca/wp-content/uploads/2026/02/2025-NB-Report-Card-on-Child-and-Family-Poverty.pdf" description="Comprehensive poverty data by region" date="FEB 2026" />
+            <SourceCard type="pdf" title="Campaign 2000: 2025 NB Child Poverty Report Card" url="https://campaign2000.ca/wp-content/uploads/2026/02/2025-NB-Report-Card-on-Child-and-Family-Poverty.pdf" description="Full poverty breakdown by region" date="FEB 2026" />
             <SourceCard type="organization" title="NB Housing" url="https://www.gnb.ca/housing" description="Provincial housing authority" />
           </div>
         </section>
@@ -151,7 +151,7 @@ export default function SourcesPage() {
         {/* Intimidation & Censorship */}
         <section className="bg-neutral-900 p-10 rounded-2xl border border-neutral-800 shadow-2xl relative overflow-hidden">
           <div className="flex items-center gap-3 mb-8">
-            <Newspaper className="text-crisis-red" size={28} aria-hidden="true" />
+            <Newspaper className="text-crisis-text" size={28} aria-hidden="true" />
             <h3 className="text-2xl font-black font-serif text-white uppercase tracking-tight">
               Intimidation & Corporate Capture
             </h3>
@@ -169,7 +169,7 @@ export default function SourcesPage() {
         {/* Corruption Cases */}
         <section className="bg-neutral-900 p-10 rounded-2xl border border-neutral-800 shadow-2xl relative overflow-hidden">
           <div className="flex items-center gap-3 mb-8">
-            <ShieldCheck className="text-crisis-red" size={28} aria-hidden="true" />
+            <ShieldCheck className="text-crisis-text" size={28} aria-hidden="true" />
             <h3 className="text-2xl font-black font-serif text-white uppercase tracking-tight">
               Corruption & Embezzlement Cases
             </h3>
@@ -178,7 +178,7 @@ export default function SourcesPage() {
             <SourceCard type="article" title="CBC: Tim Richardson — $700K Embezzlement" url="https://www.cbc.ca/news/canada/new-brunswick/tim-richardson-lieutenant-governor-fraud-embezzlement-1.5706694" description="Former Lt. Governor's principal secretary" />
             <SourceCard type="article" title="CBC: Yassin Choukri — Deputy AG Guilty Plea" url="https://www.cbc.ca/news/canada/new-brunswick/yassin-choukri-guilty-plea-1.6986538" description="$481K stolen from law society trust" />
             <SourceCard type="article" title="CBC: 3+ Corporation Fraud Charges" url="https://www.cbc.ca/news/canada/new-brunswick" description="19 RCMP charges, $1M+ irregularities" date="JUL 2022" />
-            <SourceCard type="article" title="NB Media Co-op: 3+ Corporation Investigation" url="https://nbmediacoop.org/?s=daniel+bard+3+corporation" description="Comprehensive coverage of procurement fraud" />
+            <SourceCard type="article" title="NB Media Co-op: 3+ Corporation Investigation" url="https://nbmediacoop.org/?s=daniel+bard+3+corporation" description="Full coverage of procurement fraud" />
             <SourceCard type="pdf" title="Auditor General: Travel Nurse Contracts (PDF)" url="https://www.agnb-vgnb.ca/uploads/volume_translations/81/report/agnb-V2-2025-Report_E.pdf" description="$173.9M in untendered contracts" date="2025" />
             <SourceCard type="article" title="NB Media Co-op: NB Liquor Markups Strangle Distillers" url="https://www.cbc.ca/news/canada/new-brunswick/alcohol-tariff-war-markups-9.7126326" description="Provincial monopoly hurts local producers" date="MAR 2026" />
           </div>

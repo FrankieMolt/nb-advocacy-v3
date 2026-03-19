@@ -47,13 +47,13 @@ export default function CorruptionPage() {
       {/* Hero Image */}
       <div className="mb-12 rounded-2xl overflow-hidden shadow-2xl">
         <Image 
-          src="https://i.cbc.ca/ais/1.7450203,1738694479000/full/max/0/default.jpg?im=Crop%2Crect%3D%2890%2C327%2C3795%2C2134%29%3BResize%3D1200" 
+          src="https://images.unsplash.com/photo-1555848962-6e79363ec58f?w=1200&q=80" 
           alt="Government building representing systemic corruption in New Brunswick"
           fill
           sizes="(max-width: 768px) 100vw, 1200px"
         />
-        <div className="bg-neutral-900 p-4 text-xs text-neutral-500 uppercase tracking-widest text-center">
-          Daniel Bard court proceedings — 19 RCMP charges for financial irregularities | <span className="text-neutral-600">CBC/Radio-Canada</span>
+        <div className="bg-neutral-900 p-4 text-xs text-neutral-400 uppercase tracking-widest text-center">
+          Daniel Bard court proceedings — 19 RCMP charges for financial irregularities | <span className="text-neutral-500">CBC/Radio-Canada</span>
         </div>
       </div>
 
@@ -79,7 +79,7 @@ export default function CorruptionPage() {
           </p>
           <div className="grid md:grid-cols-2 gap-8 my-8">
             <div className="bg-neutral-900 p-8 rounded-2xl border border-neutral-800 hover:border-crisis-red/50 transition-all shadow-xl relative overflow-hidden group">
-              <h3 className="text-2xl font-black mb-4 uppercase tracking-tight text-white group-hover:text-crisis-red transition-colors">
+              <h3 className="text-2xl font-black mb-4 uppercase tracking-tight text-white group-hover:text-crisis-text transition-colors">
                 Tim Richardson
               </h3>
               <p className="text-base text-neutral-400 mb-6 leading-relaxed">
@@ -89,12 +89,12 @@ export default function CorruptionPage() {
                 The theft continued undetected because Richardson controlled the financial 
                 records and had no independent oversight.
               </p>
-              <div className="flex items-center gap-2 text-[10px] font-black text-crisis-red uppercase tracking-[0.2em] bg-black/50 px-3 py-1 rounded-full w-fit">
+              <div className="flex items-center gap-2 text-[10px] font-black text-crisis-text uppercase tracking-[0.2em] bg-black/50 px-3 py-1 rounded-full w-fit">
                 <Lock size={12} aria-hidden="true" /> Status: Deceased / Case Closed
               </div>
             </div>
             <div className="bg-neutral-900 p-8 rounded-2xl border border-neutral-800 hover:border-crisis-red/50 transition-all shadow-xl relative overflow-hidden group">
-              <h3 className="text-2xl font-black mb-4 uppercase tracking-tight text-white group-hover:text-crisis-red transition-colors">
+              <h3 className="text-2xl font-black mb-4 uppercase tracking-tight text-white group-hover:text-crisis-text transition-colors">
                 Yassin Choukri
               </h3>
               <p className="text-base text-neutral-400 mb-6 leading-relaxed">
@@ -103,7 +103,7 @@ export default function CorruptionPage() {
                 serving as the province&apos;s top legal official. The irony: the 
                 person responsible for upholding the law was systematically breaking it.
               </p>
-              <div className="flex items-center gap-2 text-[10px] font-black text-crisis-red uppercase tracking-[0.2em] bg-black/50 px-3 py-1 rounded-full w-fit">
+              <div className="flex items-center gap-2 text-[10px] font-black text-crisis-text uppercase tracking-[0.2em] bg-black/50 px-3 py-1 rounded-full w-fit">
                 <Scale size={12} aria-hidden="true" /> Status: Convicted
               </div>
             </div>
@@ -139,7 +139,7 @@ export default function CorruptionPage() {
               <h4 className="text-white font-bold mb-1 uppercase text-sm">
                 Status Update: January 2026
               </h4>
-              <p className="text-neutral-500 text-sm italic">
+              <p className="text-neutral-400 text-sm italic">
                 &ldquo;Retrial began in Moncton Provincial Court following a
                 previous mistrial. Total financial irregularities exceeded $1
                 million.&rdquo;
@@ -174,28 +174,28 @@ export default function CorruptionPage() {
           </p>
 
           <div className="bg-neutral-900 border border-neutral-800 rounded-2xl p-8 my-8">
-            <h4 className="text-crisis-red font-black uppercase text-xs tracking-widest mb-4 flex items-center gap-2">
+            <h4 className="text-crisis-text font-black uppercase text-xs tracking-widest mb-4 flex items-center gap-2">
               <FileWarning size={16} aria-hidden="true" /> The Cover-Up Timeline
             </h4>
             <ul className="space-y-3 text-neutral-300 text-sm" role="list">
               <li className="flex items-start gap-3">
-                <span className="text-crisis-red font-black">2023-24</span>
+                <span className="text-crisis-text font-black">2023-24</span>
                 <span>Auditor General begins requesting travel nurse contract documents from Vitalité</span>
               </li>
               <li className="flex items-start gap-3">
-                <span className="text-crisis-red font-black">2024</span>
+                <span className="text-crisis-text font-black">2024</span>
                 <span>Vitalité invokes &quot;litigation privilege&quot; — refuses to provide records</span>
               </li>
               <li className="flex items-start gap-3">
-                <span className="text-crisis-red font-black">DEC 2025</span>
+                <span className="text-crisis-text font-black">DEC 2025</span>
                 <span>AG publishes partial report: $173.9M in untendered contracts confirmed</span>
               </li>
               <li className="flex items-start gap-3">
-                <span className="text-crisis-red font-black">JUNE 2025</span>
+                <span className="text-crisis-text font-black">JUNE 2025</span>
                 <span>Chief Justice DeWare rules litigation privilege overrides AG mandate</span>
               </li>
               <li className="flex items-start gap-3">
-                <span className="text-crisis-red font-black">2026</span>
+                <span className="text-crisis-text font-black">2026</span>
                 <span>Full internal records remain sealed. No one held accountable.</span>
               </li>
             </ul>
@@ -210,7 +210,7 @@ export default function CorruptionPage() {
           <p className="text-neutral-400 leading-relaxed mb-6">
             The provincial administration routinely bypasses public tenders
             through &quot;Regional Economic Development&quot; (RED) exemptions.
-            In the 2025-2026 period alone, Service New Brunswick utilized its
+            In the 2025-2026 period alone, Service New Brunswick used its
             full quota of <strong className="text-white">10 RED exemptions</strong>, awarding
             approximately <strong className="text-white">$10 million</strong> in untendered contracts to
             political favorites.
@@ -235,7 +235,7 @@ export default function CorruptionPage() {
         {/* Section 5: Whistleblower Suppression */}
         <section className="bg-red-900/5 p-10 rounded-3xl border border-red-900/20">
           <h2 className="text-3xl font-serif font-bold text-white mb-6 uppercase tracking-tighter flex items-center gap-3">
-            <UserCheck className="text-crisis-red" size={28} aria-hidden="true" />
+            <UserCheck className="text-crisis-text" size={28} aria-hidden="true" />
             The Whistleblower Trap
           </h2>
           <p className="text-neutral-400 leading-relaxed mb-6">
@@ -254,7 +254,7 @@ export default function CorruptionPage() {
             least likely to be protected</strong>.
           </p>
           <div className="bg-black/40 p-8 rounded-2xl border border-neutral-800">
-            <h4 className="text-crisis-red font-black uppercase text-[10px] tracking-[0.3em] mb-4">
+            <h4 className="text-crisis-text font-black uppercase text-[10px] tracking-[0.3em] mb-4">
               Mystery Disease Case Update
             </h4>
             <p className="text-white font-bold leading-relaxed mb-4 italic">
@@ -316,12 +316,13 @@ export default function CorruptionPage() {
 
         {/* Money Image */}
         <div className="my-12 rounded-2xl overflow-hidden shadow-2xl">
-          <img 
+          <Image 
             src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80" 
             alt="Money and documents representing government corruption and financial mismanagement"
-            className="w-full h-48 md:h-64 object-cover"
+            fill
+            sizes="(max-width: 768px) 100vw, 1200px"
           />
-          <div className="bg-neutral-900 p-3 text-xs text-neutral-500 uppercase tracking-widest text-center">
+          <div className="bg-neutral-900 p-3 text-xs text-neutral-400 uppercase tracking-widest text-center relative z-10">
             Over $200 million in documented fraud, embezzlement, and untendered contracts — and those are just the ones we know about
           </div>
         </div>

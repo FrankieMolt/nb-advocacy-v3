@@ -7,6 +7,8 @@ export const metadata: Metadata = {
 };
 import { PageWrapper } from '@/components/PageWrapper';
 import { BackLink } from '@/components/BackLink';
+import { PageHeader } from '@/components/PageHeader';
+import { CTASection } from '@/components/CTASection';
 import { DataCard } from '@/components/DataCard';
 import { Timeline } from '@/components/Timeline';
 import { QuoteBlock } from '@/components/QuoteBlock';
@@ -40,31 +42,23 @@ export default function InfrastructurePage() {
   return (
     <PageWrapper>
       <BackLink href="/" label="Back to Home" />
-      
-      <div className="mb-12">
-        <div className="flex items-center gap-3 mb-4">
-          <Construction className="w-10 h-10 text-crisis-red" aria-hidden="true" />
-          <h1 className="text-4xl font-black text-white uppercase tracking-tight">
-            Crumbling Infrastructure
-          </h1>
-        </div>
-        <p className="text-xl text-neutral-300 leading-relaxed">
-          297 bridges failing. $20 billion repair backlog. Fire response compromised.
-          New Brunswick's infrastructure is collapsing while the province defers maintenance.
-        </p>
-      </div>
+
+      <PageHeader
+        icon={Construction}
+        title="Crumbling Infrastructure"
+        quote="297 bridges failing. $20 billion repair backlog. Fire response compromised. New Brunswick's infrastructure is collapsing while the province defers maintenance."
+      />
 
       {/* Hero Image - Closed Covered Bridge */}
       <div className="mb-12 rounded-2xl overflow-hidden shadow-2xl">
         <Image
-          src="https://i.cbc.ca/ais/1.7272399,1721752607000/full/max/0/default.jpg?im=Crop%2Crect%3D%2820%2C87%2C645%2C362%29%3BResize%3D1200"
+          src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200&q=80"
           alt="Closed covered bridge in New Brunswick showing infrastructure neglect"
-          width={1200}
-          height={675}
-          className="w-full h-auto"
+          fill
+          sizes="(max-width: 768px) 100vw, 1200px"
         />
-        <div className="bg-neutral-900 p-4 text-xs text-neutral-500 uppercase tracking-widest text-center">
-          Wheaton Covered Bridge closed due to structural neglect | <span className="text-neutral-600">CBC/Radio-Canada</span>
+        <div className="bg-neutral-900 p-4 text-xs text-neutral-400 uppercase tracking-widest text-center relative z-10">
+          Wheaton Covered Bridge closed due to structural neglect | <span className="text-neutral-500">CBC/Radio-Canada</span>
         </div>
       </div>
 
@@ -98,7 +92,7 @@ export default function InfrastructurePage() {
           estimated at $20 billion. Many of these bridges were built before modern safety standards and have been deteriorating for decades.
         </p>
         <div className="bg-zinc-900 border border-crisis-red/30 rounded-lg p-6">
-          <h3 className="text-lg font-bold text-crisis-red mb-3 flex items-center gap-2">
+          <h3 className="text-lg font-bold text-crisis-text mb-3 flex items-center gap-2">
             <AlertTriangle className="w-5 h-5" aria-hidden="true" />
             What's At Stake
           </h3>
@@ -129,7 +123,7 @@ export default function InfrastructurePage() {
           causing serious structural damage. The driver was charged — his licence was suspended.
         </p>
         <p className="text-neutral-300 mb-6 leading-relaxed">
-          <strong className="text-crisis-red">Five weeks later</strong>, on October 30, 2025, the new Anderson Bridge 
+          <strong className="text-crisis-text">Five weeks later</strong>, on October 30, 2025, the new Anderson Bridge 
           was open to traffic. After 8.5 years of delays, the project was suddenly completed in just 35 days. 
           <strong className="text-white"> If it could be done in 5 weeks, why did it take 8.5 years?</strong>
         </p>
@@ -137,6 +131,19 @@ export default function InfrastructurePage() {
           quote="The bridge sat unfinished for 8.5 years. Then a truck hit it, and suddenly it was done in 5 weeks."
           author="Reform NB Investigation"
         />
+      </div>
+
+      {/* Section Break Image */}
+      <div className="my-12 rounded-2xl overflow-hidden shadow-2xl">
+        <Image 
+          src="https://images.unsplash.com/photo-1515162816999-a0c47dc192f7?w=1200&q=80" 
+          alt="Cracked road representing New Brunswick's deteriorating infrastructure"
+          fill
+          sizes="(max-width: 768px) 100vw, 1200px"
+        />
+        <div className="bg-neutral-900 p-3 text-xs text-neutral-400 uppercase tracking-widest text-center relative z-10">
+          Nearly 42% of NB roads rated poor or fair — a province falling apart while billions needed for repair
+        </div>
       </div>
 
       <div className="mb-12">
@@ -196,8 +203,9 @@ export default function InfrastructurePage() {
         </div>
       </div>
 
-      <div className="mb-12">
-        <h2 className="text-2xl font-bold text-white mb-6">Sources</h2>
+      {/* Sources */}
+      <section className="bg-neutral-900 border border-neutral-800 rounded-2xl p-8 mb-16">
+        <h3 className="text-xl font-black font-serif uppercase tracking-tight text-white mb-6">Sources</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <SourceCard 
             type="article"
@@ -228,7 +236,15 @@ export default function InfrastructurePage() {
             date="OCT 2025"
           />
         </div>
-      </div>
+      </section>
+
+      <CTASection
+        icon={Construction}
+        title="Our Infrastructure Is Collapsing."
+        description="297 bridges failing. $20 billion backlog. Emergency response compromised. Demand infrastructure investment."
+        buttonText="Take Action"
+        buttonHref="/take-action"
+      />
     </PageWrapper>
   );
 }

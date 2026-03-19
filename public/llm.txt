@@ -1,0 +1,17 @@
+# Reform NB - New Brunswick's Investigative Hub
+# https://reformnb.ca
+
+Reform NB is a decentralized investigative journalism project documenting systemic governance failure in New Brunswick, Canada. We report on healthcare collapse, housing crisis, corporate oligarchy (Irving, McCain, Cooke families), environmental destruction, and democratic erosion.
+
+## Key Topics
+- Healthcare: 2,199 ER deaths (2020-2024), 238,000 without family doctors
+- Housing: 1,500+ chronically homeless, 100+ deaths in 2025
+- Corporate capture: Irving family controls $30B+ wealth, media monopoly, Crown forests
+- Environment: 15,000 hectares glyphosate spraying annually, salmon collapse
+- Corruption: $173.9M travel nurse scandal, $63.4M Atcon writeoff
+
+## Sources
+All reporting is sourced from CBC News, CTV News, Global News, NB Media Co-op, Auditor General reports, court records, and government documents.
+
+## Contact
+Tips: reformnb-tips@proton.me (encrypted)

@@ -11,7 +11,7 @@ interface CaseStudyProps {
 
 export function CaseStudy({ type, date, title, location, content, status }: CaseStudyProps) {
   const icons = {
-    fatality: <User className="text-crisis-red" size={20} />,
+    fatality: <User className="text-crisis-text" size={20} />,
     fraud: <ShieldAlert className="text-crisis-gold" size={20} />,
     environmental: <AlertCircle className="text-green-600" size={20} />,
   };
@@ -21,16 +21,16 @@ export function CaseStudy({ type, date, title, location, content, status }: Case
       <div className="p-1 bg-neutral-800 flex justify-between items-center px-4">
         <div className="flex items-center gap-2">
           {icons[type]}
-          <span className="text-[10px] font-black uppercase tracking-tighter text-neutral-400">{type} REPORT {'//'} {date}</span>
+          <span className="text-sm font-black uppercase tracking-tighter text-white">{type} REPORT {'//'} {date}</span>
         </div>
-        <span className="text-[10px] font-bold text-crisis-red uppercase">{status}</span>
+        <span className="text-sm font-bold text-crisis-text uppercase">{status}</span>
       </div>
       <div className="p-6">
-        <h3 className="text-xl font-bold text-white mb-1 group-hover:text-crisis-red transition-colors">{title}</h3>
-        <div className="flex items-center gap-1 text-xs text-neutral-500 mb-4 font-mono uppercase tracking-widest">
+        <h3 className="text-xl font-bold text-white mb-1 group-hover:text-crisis-text transition-colors">{title}</h3>
+        <div className="flex items-center gap-1 text-sm text-white mb-4 font-mono uppercase tracking-widest">
           <Clock size={12} /> {location}
         </div>
-        <p className="text-neutral-400 text-sm leading-relaxed mb-4 italic border-l-2 border-neutral-800 pl-4">
+        <p className="text-white text-sm leading-relaxed mb-4 italic border-l-2 border-neutral-800 pl-4">
           &quot;{content}&quot;
         </p>
       </div>

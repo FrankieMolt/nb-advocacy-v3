@@ -3,6 +3,7 @@ import { TrendingDown, AlertCircle } from "lucide-react";
 import { PageWrapper } from "@/components/PageWrapper";
 import { BackLink } from "@/components/BackLink";
 import { PageHeader } from "@/components/PageHeader";
+import { RelatedPages } from "@/components/RelatedPages";
 import { CTASection } from "@/components/CTASection";
 import { DataCard } from "@/components/DataCard";
 import { Timeline } from "@/components/Timeline";
@@ -50,12 +51,12 @@ export default function EconomyPage() {
       {/* Hero Image */}
       <div className="mb-12 rounded-2xl overflow-hidden shadow-2xl">
         <Image 
-          src="https://i.cbc.ca/ais/5a5cca46-1e79-4235-a886-5da76df6d3ee,1760127597177/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C0%2C1920%2C1080%29%3BResize%3D1200" 
+          src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200&q=80" 
           alt="Electrical grid infrastructure representing NB Power debt crisis"
           fill
           sizes="(max-width: 768px) 100vw, 1200px"
         />
-        <div className="bg-neutral-900 p-4 text-xs text-neutral-500 uppercase tracking-widest text-center">
+        <div className="bg-neutral-900 p-4 text-xs text-neutral-400 uppercase tracking-widest text-center">
           $5.9 billion in NB Power debt — rate increases of 50% over six years proposed while emissions surge to 16-year highs
         </div>
         <div className="bg-neutral-900 p-2 text-xs text-neutral-400 uppercase tracking-widest text-center">
@@ -113,22 +114,23 @@ export default function EconomyPage() {
         {/* Child Poverty Video */}
         <div className="my-8">
           <YouTubeEmbed
-            videoId="Jv8eHqMg7zE"
+            videoId="N9I-HY3wfVM"
             title="CBC: Child poverty 'alarmingly high' in New Brunswick"
           />
-          <p className="text-center text-sm text-neutral-500 mt-4 italic">
+          <p className="text-center text-sm text-neutral-400 mt-4 italic">
             CBC coverage of the Human Development Council&apos;s 2026 report showing NB child poverty remains &quot;alarmingly high.&quot;
           </p>
         </div>
 
         {/* Child Poverty Image */}
         <div className="my-12 rounded-2xl overflow-hidden shadow-2xl">
-          <img 
+          <Image 
             src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=1200&q=80" 
             alt="Child in poverty representing New Brunswick's crushing child poverty rates"
-            className="w-full h-48 md:h-64 object-cover"
+            fill
+            sizes="(max-width: 768px) 100vw, 1200px"
           />
-          <div className="bg-neutral-900 p-3 text-xs text-neutral-500 uppercase tracking-widest text-center">
+          <div className="bg-neutral-900 p-3 text-xs text-neutral-400 uppercase tracking-widest text-center relative z-10">
             32,140 children in poverty — Campbellton at 41.2%, Indigenous reserves at 51.2%
           </div>
         </div>
@@ -141,68 +143,38 @@ export default function EconomyPage() {
           color="red"
         />
 
-        {/* Section 2: NB Power Debt Black Hole */}
+        {/* Section 2: NB Power Debt & Crisis */}
         <section>
-          <h2 className="text-3xl font-serif font-bold text-white mb-6 border-b border-neutral-800 pb-2 uppercase tracking-tighter italic">
-            The NB Power Debt Black Hole
-          </h2>
-          <p className="text-neutral-400 leading-relaxed mb-6">
-            NB Power carries an astounding <strong className="text-white">$5.9 Billion in debt</strong>.
-            Systemic mismanagement at the Point Lepreau nuclear station—which
-            operated only 27% of the time in 2024-25—forces the utility to buy
-            replacement power from out-of-province markets at costs reaching{" "}
-            <strong className="text-white">$9 million per day</strong> during peak demand.
-          </p>
-          <p className="text-neutral-400 leading-relaxed mb-6">
-            Rather than investing in local renewables, the utility is currently
-            pursuing the <strong className="text-white">$1 Billion RIGS gas plant</strong>—partnering
-            with the Missouri-based firm PROENERGY—a deal experts warn could
-            cost New Brunswickers up to $3.5 Billion over 25 years while
-            ignoring cheaper battery storage alternatives.
-          </p>
-
-          <div className="bg-neutral-900 border border-neutral-800 p-6 rounded-xl space-y-4 mb-6">
-            <h4 className="text-crisis-red font-black uppercase text-xs tracking-widest flex items-center gap-2">
-              <AlertCircle size={16} aria-hidden="true" /> The Industrial Giveaway
-            </h4>
-            <p className="text-sm text-neutral-300">
-              In early 2026, after J.D. Irving threatened layoffs at its Saint
-              John paper mill citing &quot;soaring electricity costs,&quot; the
-              provincial government immediately handed Irving Paper a staggering{" "}
-              <strong className="text-white">$45 million &quot;tariff relief&quot; grant</strong>. While
-              residents face a cumulative 19.4% rate hike, the oligarchy gets
-              its bills paid by the taxpayer.
+          <div className="bg-crisis-red/10 border border-crisis-red rounded-xl p-6 mb-8">
+            <h2 className="text-3xl font-serif font-bold text-white mb-4 uppercase tracking-tighter italic">
+              <a href="/climate-energy" className="hover:text-crisis-text transition-colors">
+                The NB Power Crisis: Debt, Emissions & Corporate Welfare
+              </a>
+            </h2>
+            <p className="text-neutral-400 leading-relaxed mb-4">
+              NB Power carries an astounding <strong className="text-white">$5.9 Billion in debt</strong>, operates only 27% of the time at Point Lepreau, and burns <strong className="text-white">4 million barrels of oil</strong> while claiming net-zero goals. For the complete analysis, see our full <a href="/climate-energy" className="text-crisis-text hover:text-white underline">Climate & Energy</a> investigation.
             </p>
-          </div>
-          
-          <div className="bg-neutral-900 border border-neutral-800 p-6 rounded-xl space-y-4">
-            <h4 className="text-crisis-red font-black uppercase text-xs tracking-widest flex items-center gap-2">
-              <AlertCircle size={16} aria-hidden="true" /> Emissions Surge While Rates Climb
-            </h4>
-            <p className="text-sm text-neutral-300">
-              In a stunning revelation at the March 2026 EUB rate hearing, NB Power admitted its 
-              greenhouse gas emissions have <strong className="text-white">surged to their highest level in over a decade</strong> — 
-              burning nearly <strong className="text-white">4 million barrels of oil</strong> in the past 12 months alone. 
-              Coleson Cove, its oil-fuelled generating station, burned through <strong className="text-white">$254.1 million</strong> worth 
-              of heavy fuel oil, pushing emissions up <strong className="text-white">60% over last year</strong> and almost certainly above 
-              the <strong className="text-white">3 million tonne</strong> threshold. Thermal generation hit a <strong className="text-white">16-year high</strong>. Carbon 
-              penalties will cost the utility <strong className="text-white">$49 million</strong> in the coming year. Meanwhile, the utility 
-              is requesting <strong className="text-white">rate increases of up to 50% over the next six years</strong>, with residential 
-              customers already facing a cumulative 19.4% hike. NB Power is simultaneously 
-              pitching a &ldquo;premium net-zero rate&rdquo; to customers while its actual emissions trajectory 
-              moves in the opposite direction.{" "}
-              <a href="https://www.cbc.ca/news/canada/new-brunswick/nb-power-emissions-surge-9.7128321" target="_blank" rel="noopener noreferrer" className="text-crisis-red hover:text-white underline">[CBC NB, Mar 14, 2026]</a>
-            </p>
+            <ul className="text-neutral-300 text-sm space-y-2">
+              <li>• <strong>$5.9B debt</strong> - Rate increases of 50% over 5 years proposed</li>
+              <li>• <strong>4M barrels of oil</strong> - Emissions at 16-year high (60% increase)</li>
+              <li>• <strong>$45M to Irving</strong> - Industrial welfare while residents face 19.4% rate hikes</li>
+              <li>• <strong>$49M carbon penalties</strong> - Passed directly to ratepayers</li>
+            </ul>
+            <div className="mt-4">
+              <a href="/climate-energy" className="inline-flex items-center gap-2 bg-crisis-red text-white font-black py-2 px-4 rounded-lg hover:bg-red-700 transition-colors text-sm uppercase tracking-widest">
+                Read Full Investigation <span className="text-xs">→</span>
+              </a>
+            </div>
           </div>
         </section>
 
         {/* NB Power Video */}
         <div className="my-12">
           <YouTubeEmbed
-            videoId="Q6hVf2wXpLg"
+            videoId="FLGCGc7sAUw"
             title="NB Power Crisis: Public hearings expose financial mismanagement"
           />
-          <p className="text-center text-sm text-neutral-500 mt-4 italic">
+          <p className="text-center text-sm text-neutral-400 mt-4 italic">
             Public hearings and journalism consistently expose the financial mismanagement at NB Power.
           </p>
         </div>
@@ -316,7 +288,7 @@ export default function EconomyPage() {
           />
           <p className="text-neutral-400 leading-relaxed mt-6">
             The government&apos;s own &ldquo;Difficult Decisions&rdquo; report proposed: closing schools under 100 students, privatizing cultural sites, reducing non-profit grants, and recovering unpaid student loans and medical bills. The letter demands instead: higher mining royalties, increased Crown land stumpage fees, and an end to subsidies for &ldquo;large, profitable corporations, particularly those that offshore profits.&rdquo;{" "}
-            <a href="https://nbmediacoop.org/2026/03/10/raise-taxes-on-super-rich-new-brunswickers-instead-of-cutting-services-open-letter/" target="_blank" rel="noopener noreferrer" className="text-crisis-red hover:text-white underline">[NB Media Co-op, Mar 10, 2026]</a>
+            <a href="https://nbmediacoop.org/2026/03/10/raise-taxes-on-super-rich-new-brunswickers-instead-of-cutting-services-open-letter/" target="_blank" rel="noopener noreferrer" className="text-crisis-text hover:text-white underline">[NB Media Co-op, Mar 10, 2026]</a>
           </p>
         </section>
 
@@ -330,12 +302,13 @@ export default function EconomyPage() {
 
         {/* Industrial Image */}
         <div className="my-12 rounded-2xl overflow-hidden shadow-2xl">
-          <img 
+          <Image 
             src="https://images.unsplash.com/photo-1513828583688-c52646db42da?w=1200&q=80" 
             alt="Industrial landscape representing corporate extraction in New Brunswick"
-            className="w-full h-48 md:h-64 object-cover"
+            fill
+            sizes="(max-width: 768px) 100vw, 1200px"
           />
-          <div className="bg-neutral-900 p-3 text-xs text-neutral-500 uppercase tracking-widest text-center">
+          <div className="bg-neutral-900 p-3 text-xs text-neutral-400 uppercase tracking-widest text-center relative z-10">
             The Company Province — $30 billion in billionaire wealth generated by extracting a province with Canada&apos;s highest child poverty
           </div>
         </div>
@@ -350,35 +323,35 @@ export default function EconomyPage() {
               <thead>
                 <tr className="border-b border-neutral-800">
                   <th className="text-left p-4 text-white font-black uppercase tracking-wider text-xs">Metric</th>
-                  <th className="text-left p-4 text-crisis-red font-black uppercase tracking-wider text-xs">NB</th>
+                  <th className="text-left p-4 text-crisis-text font-black uppercase tracking-wider text-xs">NB</th>
                   <th className="text-left p-4 text-neutral-400 font-black uppercase tracking-wider text-xs">National Avg</th>
                 </tr>
               </thead>
               <tbody>
                 <tr className="border-b border-neutral-800">
                   <td className="p-4 text-neutral-300">Child Poverty Rate</td>
-                  <td className="p-4 text-crisis-red font-bold">21.9%</td>
-                  <td className="p-4 text-neutral-500">17.7%</td>
+                  <td className="p-4 text-crisis-text font-bold">21.9%</td>
+                  <td className="p-4 text-neutral-400">17.7%</td>
                 </tr>
                 <tr className="border-b border-neutral-800">
                   <td className="p-4 text-neutral-300">Median Household Income</td>
-                  <td className="p-4 text-crisis-red font-bold">$67,260</td>
-                  <td className="p-4 text-neutral-500">$82,800</td>
+                  <td className="p-4 text-crisis-text font-bold">$67,260</td>
+                  <td className="p-4 text-neutral-400">$82,800</td>
                 </tr>
                 <tr className="border-b border-neutral-800">
                   <td className="p-4 text-neutral-300">HST Rate</td>
-                  <td className="p-4 text-crisis-red font-bold">15%</td>
-                  <td className="p-4 text-neutral-500">13% (avg)</td>
+                  <td className="p-4 text-crisis-text font-bold">15%</td>
+                  <td className="p-4 text-neutral-400">13% (avg)</td>
                 </tr>
                 <tr className="border-b border-neutral-800">
                   <td className="p-4 text-neutral-300">Energy Poverty Rate</td>
-                  <td className="p-4 text-crisis-red font-bold">25%</td>
-                  <td className="p-4 text-neutral-500">~15%</td>
+                  <td className="p-4 text-crisis-text font-bold">25%</td>
+                  <td className="p-4 text-neutral-400">~15%</td>
                 </tr>
                 <tr>
                   <td className="p-4 text-neutral-300">Population Below Poverty Line</td>
-                  <td className="p-4 text-crisis-red font-bold">14.4%</td>
-                  <td className="p-4 text-neutral-500">10.8%</td>
+                  <td className="p-4 text-crisis-text font-bold">14.4%</td>
+                  <td className="p-4 text-neutral-400">10.8%</td>
                 </tr>
               </tbody>
             </table>
@@ -407,6 +380,13 @@ export default function EconomyPage() {
           </div>
         </section>
       </div>
+
+      
+      <RelatedPages pages={[
+        { href: '/oligarchy', title: 'The Corporate Oligarchy', description: 'How Irving, McCain, Cooke families extract $30B+ from NB.' },
+        { href: '/budget-2026', title: 'Budget 2026-27', description: 'Record deficit. $45M to Irving Paper while services cut.' },
+        { href: '/child-poverty', title: 'Child Poverty', description: '21.9% child poverty rate. 41.2% in Campbellton.' }
+      ]} />
 
       <CTASection
         icon={TrendingDown}

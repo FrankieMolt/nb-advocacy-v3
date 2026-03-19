@@ -14,7 +14,7 @@ export default function Error({
     <div className="min-h-screen bg-black text-white py-20 selection:bg-crisis-red selection:text-white">
       <div className="container mx-auto px-6 max-w-4xl flex flex-col items-center justify-center min-h-[60vh] text-center">
         <AlertTriangle
-          className="text-crisis-red mb-8 animate-pulse"
+          className="text-crisis-text mb-8 animate-pulse"
           size={80}
           aria-hidden="true"
         />

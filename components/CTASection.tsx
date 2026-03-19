@@ -26,13 +26,13 @@ export function CTASection({
       <h3 className="text-4xl font-black mb-6 uppercase tracking-tighter text-white">
         {title}
       </h3>
-      <p className="text-xl text-neutral-400 mb-10 max-w-2xl mx-auto font-light italic leading-relaxed">
+      <p className="text-xl text-white mb-10 max-w-2xl mx-auto font-light italic leading-relaxed">
         &ldquo;{description}&rdquo;
       </p>
       <div className="flex flex-col sm:flex-row gap-6 justify-center">
         <Link
           href={buttonHref}
-          className="bg-crisis-red hover:bg-red-700 text-white font-black py-5 px-16 rounded-xl text-xl transition-all shadow-lg hover:scale-105 uppercase tracking-[0.3em]"
+          className="bg-crisis-red hover:bg-red-700 text-white font-black py-5 px-16 rounded-xl text-xl transition-all shadow-lg hover:scale-105 uppercase tracking-[0.3em] focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-4 focus:ring-offset-neutral-900"
           aria-label={buttonText}
         >
           {buttonText}

@@ -14,7 +14,7 @@ export function QuoteBlock({ quote, author, role, color = 'red', className = '' 
   };
 
   const textColors = {
-    red: 'text-crisis-red',
+    red: 'text-crisis-text',
     gold: 'text-crisis-gold',
     green: 'text-green-500',
   };
@@ -29,7 +29,7 @@ export function QuoteBlock({ quote, author, role, color = 'red', className = '' 
           — {author}
         </span>
         {role && (
-          <span className="text-xs text-neutral-500 mt-1 tracking-wider">
+          <span className="text-sm text-white mt-1 tracking-wider">
             {role}
           </span>
         )}

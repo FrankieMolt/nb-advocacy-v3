@@ -4,6 +4,7 @@
   --background: #050505;
   --foreground: #fafafa;
   --crisis-red: #b30000;
+  --crisis-red-text: #f87171;
   --crisis-dark: #0a0a0a;
   --crisis-gold: #d4a017;
 }
@@ -12,6 +13,7 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-crisis-red: var(--crisis-red);
+  --color-crisis-text: var(--crisis-red-text);
   --color-crisis-dark: var(--crisis-dark);
   --color-crisis-gold: var(--crisis-gold);
   
@@ -63,4 +65,91 @@ body {
 
 .animate-marquee:hover {
   animation-play-state: paused;
+}
+
+/* Fix section heading spacing */
+section h2, section h3 {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+section > h2:first-child, section > h3:first-child {
+  margin-top: 0;
+}
+
+/* Consistent section spacing */
+section {
+  margin-bottom: 4rem;
+}
+
+/* Improve paragraph readability */
+.prose p {
+  line-height: 1.75;
+  margin-bottom: 1rem;
+}
+
+/* Better link contrast */
+a.text-neutral-400:hover {
+  color: #f87171;
+}
+
+/* Consistent card hover effects */
+.group:hover .group-hover\:scale-110 {
+  transform: scale(1.1);
+}
+
+/* Improve focus visibility for accessibility */
+*:focus-visible {
+  outline: 2px solid #b30000;
+  outline-offset: 2px;
+}
+
+/* Better mobile touch targets */
+@media (max-width: 768px) {
+  a, button {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  .prose {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+}
+
+/* Smooth scroll for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Consistent image treatment */
+.rounded-2xl {
+  border-radius: 1rem;
+}
+
+/* Better quote styling */
+blockquote {
+  border-left: 4px solid #b30000;
+  padding-left: 1.5rem;
+  margin: 2rem 0;
+  font-style: italic;
+}
+
+/* Improve timeline visual hierarchy */
+.timeline-item {
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.5rem;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #b30000;
 }

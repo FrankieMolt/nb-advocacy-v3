@@ -67,12 +67,12 @@ export default function IrvingPage() {
       {/* Hero Image */}
       <div className="mb-12 rounded-2xl overflow-hidden shadow-2xl">
         <Image 
-          src="https://i.cbc.ca/ais/1.6635856,1686155638000/full/max/0/default.jpg?im=Crop%2Crect%3D%28283%2C185%2C1492%2C839%29%3BResize%3D1200" 
+          src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80" 
           alt="Industrial smokestacks representing corporate monopoly in New Brunswick"
           fill
           sizes="(max-width: 768px) 100vw, 1200px"
         />
-        <div className="bg-neutral-900 p-4 text-xs text-neutral-500 uppercase tracking-widest text-center">
+        <div className="bg-neutral-900 p-4 text-xs text-neutral-400 uppercase tracking-widest text-center">
           U.S. refineries pay 5× more in property taxes than Irving Oil — the lowest-taxed refinery in North America
         </div>
         <div className="bg-neutral-900 p-2 text-xs text-neutral-400 uppercase tracking-widest text-center">
@@ -117,10 +117,10 @@ export default function IrvingPage() {
           {monopolySectors.map((sector, i) => (
             <div key={i} className="bg-neutral-900 border border-neutral-800 rounded-xl p-6 hover:border-crisis-red/50 transition-all">
               <div className="flex items-center gap-3 mb-3">
-                <span className="text-crisis-red">{sector.icon}</span>
+                <span className="text-crisis-text">{sector.icon}</span>
                 <h4 className="text-white font-black uppercase tracking-tight text-sm">{sector.name}</h4>
               </div>
-              <p className="text-neutral-500 text-xs leading-relaxed">{sector.description}</p>
+              <p className="text-neutral-400 text-xs leading-relaxed">{sector.description}</p>
             </div>
           ))}
         </div>
@@ -128,7 +128,7 @@ export default function IrvingPage() {
         {/* Property Tax Scandal */}
         <section className="bg-neutral-900/50 p-10 rounded-3xl border border-neutral-800">
           <h2 className="text-3xl font-serif font-bold text-white mb-6 uppercase tracking-tighter flex items-center gap-3 italic">
-            <Landmark className="text-crisis-red" size={28} aria-hidden="true" />
+            <Landmark className="text-crisis-text" size={28} aria-hidden="true" />
             The Property Tax Scam
           </h2>
           <p className="text-neutral-400 leading-relaxed mb-6">
@@ -146,7 +146,7 @@ export default function IrvingPage() {
             produces a fraction of the energy at a fraction of the revenue.
           </p>
           <div className="bg-neutral-900 p-6 rounded-xl border border-crisis-red/30 mb-6">
-            <h4 className="text-crisis-red font-black uppercase text-xs tracking-widest mb-2 flex items-center gap-2">
+            <h4 className="text-crisis-text font-black uppercase text-xs tracking-widest mb-2 flex items-center gap-2">
               <TrendingDown size={14} aria-hidden="true" /> Retroactive Welfare
             </h4>
             <p className="text-sm text-neutral-300">
@@ -165,14 +165,14 @@ export default function IrvingPage() {
           </h2>
           <p className="text-neutral-400 leading-relaxed mb-6">
             The <strong className="text-white">&quot;Paradise Papers&quot;</strong> leak exposed that
-            the Irving family utilized complex corporate structures in Bermuda to
+            the Irving family used complex corporate structures in Bermuda to
             manage tax liabilities. By funneling insurance premiums to offshore
             shells like <strong className="text-white">F.M.A. Ltd.</strong>, they amassed millions in
             untaxed income while the province&apos;s social safety net crumbled.
           </p>
           <p className="text-neutral-400 leading-relaxed mb-6">
             In 1970, the Senate Special Committee on Mass Media called Irving&apos;s control of NB newspapers &ldquo;<strong className="text-white">about as flagrant an example of abusing the public interest as you&apos;re likely to find in Canada</strong>.&rdquo; Until 2022, the Irving family owned all three major English-language dailies — the <em>Telegraph-Journal</em>, <em>Daily Gleaner</em>, and <em>Times &amp; Transcript</em>.{" "}
-            <a href="https://nbmediacoop.org/2023/06/09/wire-crossed-how-the-irving-empire-jeopardized-free-press-in-new-brunswick/" target="_blank" rel="noopener noreferrer" className="text-crisis-red hover:text-white underline">[NB Media Co-op]</a>
+            <a href="https://nbmediacoop.org/2023/06/09/wire-crossed-how-the-irving-empire-jeopardized-free-press-in-new-brunswick/" target="_blank" rel="noopener noreferrer" className="text-crisis-text hover:text-white underline">[NB Media Co-op]</a>
           </p>
         </section>
 
@@ -183,7 +183,7 @@ export default function IrvingPage() {
             videoId="N9I-HY3wfVM"
             title="The Family That Owns New Brunswick — Spoke Media Documentary (140,000+ views)"
           />
-          <p className="text-center text-sm text-neutral-500 mt-4 italic">
+          <p className="text-center text-sm text-neutral-400 mt-4 italic">
             &ldquo;The Family That Owns New Brunswick&rdquo; by Ryan Forneri (Spoke Media) — 140,000+ views. 28% of viewership from New Brunswick.
           </p>
         </div>
@@ -198,34 +198,34 @@ export default function IrvingPage() {
 
         {/* Irving Trump Connection */}
         <div className="my-8 bg-neutral-900 p-6 rounded-xl border border-neutral-800">
-          <h4 className="text-crisis-red font-black uppercase text-xs tracking-widest mb-2">🤐 Silencing Dissent: The Cartoonist Firing</h4>
+          <h4 className="text-crisis-text font-black uppercase text-xs tracking-widest mb-2">🤐 Silencing Dissent: The Cartoonist Firing</h4>
           <p className="text-sm text-neutral-300 mb-3">
             In July 2019, Brunswick News (then owned by the Irving family) fired cartoonist <strong className="text-white">Michael de Adder</strong> and rejected his editorial cartoon depicting Donald Trump. The cartoon showed Trump standing over the bodies of drowned migrants. De Adder&apos;s contract was terminated the same day. The message was clear: <strong className="text-white">do not offend powerful allies</strong>.{" "}
-            <a href="https://nbmediacoop.org/2025/03/02/the-irvings-get-trumped/" target="_blank" rel="noopener noreferrer" className="text-crisis-red hover:text-white underline">[NB Media Co-op: The Irvings Get Trumped]</a>
+            <a href="https://nbmediacoop.org/2025/03/02/the-irvings-get-trumped/" target="_blank" rel="noopener noreferrer" className="text-crisis-text hover:text-white underline">[NB Media Co-op: The Irvings Get Trumped]</a>
           </p>
         </div>
 
         {/* Crown Lands / Forestry */}
         <div className="my-8 bg-neutral-900 p-6 rounded-xl border border-neutral-800">
-          <h4 className="text-crisis-red font-black uppercase text-xs tracking-widest mb-2">🌲 Crown Lands: The Forestry Monopoly</h4>
+          <h4 className="text-crisis-text font-black uppercase text-xs tracking-widest mb-2">🌲 Crown Lands: The Forestry Monopoly</h4>
           <p className="text-sm text-neutral-300 mb-4">
             J.D. Irving holds rights to approximately <strong className="text-white">2.7 million hectares</strong> of New Brunswick&apos;s Crown forests — public land — at below-market rates. The 2014 Crown Lands Act changes gave Irving a <strong className="text-white">21% increase</strong> in allowable softwood cut while slashing wildlife habitat protections. Irving&apos;s sawmills, paper mills, and trucking fleet are the sole beneficiaries of this public subsidy. Independent forestry operators have been squeezed out.
           </p>
           <p className="text-sm text-neutral-400">
             Meanwhile, Irving receives <strong className="text-white">$700,000 retroactive property tax refunds</strong> for its mills while spraying glyphosate over 15,000 hectares of public forest annually to maximize softwood yield.{" "}
-            <a href="https://nbmediacoop.org/?s=irving+crown+land" target="_blank" rel="noopener noreferrer" className="text-crisis-red hover:text-white underline">[NB Media Co-op: Crown Land]</a>
+            <a href="https://nbmediacoop.org/?s=irving+crown+land" target="_blank" rel="noopener noreferrer" className="text-crisis-text hover:text-white underline">[NB Media Co-op: Crown Land]</a>
           </p>
         </div>
           
         {/* Industrial Image */}
         <div className="my-8 rounded-2xl overflow-hidden shadow-2xl">
           <Image 
-            src="https://i.cbc.ca/ais/1.7243467,1719010481000/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C0%2C994%2C559%29%3BResize%3D1200" 
+            src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80" 
             alt="JK Irving representing Irving family's influence in New Brunswick"
             fill
             sizes="(max-width: 768px) 100vw, 1200px"
           />
-          <div className="bg-neutral-900 p-3 text-xs text-neutral-500 uppercase tracking-widest text-center">
+          <div className="bg-neutral-900 p-3 text-xs text-neutral-400 uppercase tracking-widest text-center">
             Vertical integration — from forests to fuel to retail — ensures no independent business can survive in the Company Province
           </div>
           <div className="bg-neutral-900 p-2 text-xs text-neutral-400 uppercase tracking-widest text-center">
@@ -280,7 +280,7 @@ export default function IrvingPage() {
             <Ship size={120} />
           </div>
           <h2 className="text-3xl font-serif font-bold text-white mb-6 uppercase tracking-tighter flex items-center gap-3 relative z-10 italic">
-            <Ship className="text-crisis-red" size={28} aria-hidden="true" />
+            <Ship className="text-crisis-text" size={28} aria-hidden="true" />
             Industrial Negligence
           </h2>
           <p className="text-neutral-400 leading-relaxed mb-6 relative z-10">
@@ -305,12 +305,13 @@ export default function IrvingPage() {
 
         {/* Forestry Image */}
         <div className="rounded-2xl overflow-hidden shadow-2xl">
-          <img 
+          <Image 
             src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=1200&q=80" 
             alt="Clear-cut forest representing industrial forestry monopoly in NB"
-            className="w-full h-48 md:h-64 object-cover"
+            fill
+            sizes="(max-width: 768px) 100vw, 1200px"
           />
-          <div className="bg-neutral-900 p-3 text-xs text-neutral-500 uppercase tracking-widest text-center">
+          <div className="bg-neutral-900 p-3 text-xs text-neutral-400 uppercase tracking-widest text-center relative z-10">
             Industrial monoculture tree plantations have replaced diverse Acadian forests across millions of hectares
           </div>
         </div>
@@ -347,7 +348,7 @@ export default function IrvingPage() {
           </p>
           <Link
             href="/take-action"
-            className="inline-block bg-white text-crisis-red font-black py-5 px-16 rounded-xl text-xl hover:bg-neutral-100 transition-all shadow-2xl hover:scale-105 uppercase tracking-widest"
+            className="inline-block bg-white text-crisis-text font-black py-5 px-16 rounded-xl text-xl hover:bg-neutral-100 transition-all shadow-2xl hover:scale-105 uppercase tracking-widest"
             aria-label="Join the petition"
           >
             Join the Petition

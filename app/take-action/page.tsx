@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Image from "next/image";
 import {
   Megaphone,
   Bitcoin,
@@ -14,6 +15,7 @@ import {
 import { PageWrapper } from "@/components/PageWrapper";
 import { BackLink } from "@/components/BackLink";
 import { PageHeader } from "@/components/PageHeader";
+import { ScrollLink } from "@/components/ScrollLink";
 
 export const metadata: Metadata = {
   title: "Take Action: Demand Accountability | Reform NB",
@@ -29,10 +31,11 @@ export default function TakeActionPage() {
 I am writing to demand immediate, federal intervention into the systematic governance failure and corporate capture of New Brunswick. The provincial government operates as a corporate HR department for monopolies, requiring a sweeping Public Inquiry and RCMP Commercial Crime investigation to dismantle the corruption.
 
 **FISCAL COLLAPSE & FRAUD:**
-- $1.33 billion deficit - highest in provincial history.
+- $1.39 billion deficit for Budget 2026-27 - highest in provincial history.
 - NB Power carries $5.9 billion in debt, paying $9M per day for replacement power during generation failures.
 - Failed corporate welfare investments like the $63.4M Atcon Group scandal result in total write-offs while social services are gutted.
 - The 2026 leaked 16-point plan attacking UNB & STU and slashing student financial aid.
+- $45M 'Industrial Blackmail' grant to Irving Paper while cutting education funding.
 
 **CORPORATE OLIGARCHY:**
 - The Irving, McCain, and Cooke families maintain absolute control over resources, media, and aquaculture.
@@ -68,12 +71,13 @@ Sincerely,
       
       {/* Hero Image */}
       <div className="mb-12 rounded-2xl overflow-hidden shadow-2xl">
-        <img 
+        <Image 
           src="https://images.unsplash.com/photo-1590012314607-cda9d9b699ae?w=1200&q=80" 
           alt="Protest rally representing New Brunswick citizens demanding accountability"
-          className="w-full h-48 md:h-64 object-cover"
+          fill
+          sizes="(max-width: 768px) 100vw, 1200px"
         />
-        <div className="bg-neutral-900 p-3 text-xs text-neutral-500 uppercase tracking-widest text-center">
+        <div className="bg-neutral-900 p-3 text-xs text-neutral-400 uppercase tracking-widest text-center relative z-10">
           New Brunswickers are mobilizing — from healthcare protests to housing advocacy, people are demanding change
         </div>
       </div>
@@ -95,7 +99,7 @@ Sincerely,
         <div className="grid gap-6" role="list">
           <div className="flex gap-4 items-start group" role="listitem">
             <CheckCircle2
-              className="text-crisis-red shrink-0 mt-1 group-hover:scale-110 transition-transform"
+              className="text-crisis-text shrink-0 mt-1 group-hover:scale-110 transition-transform"
               size={24}
               aria-hidden="true"
             />
@@ -115,7 +119,7 @@ Sincerely,
             role="listitem"
           >
             <CheckCircle2
-              className="text-crisis-red shrink-0 mt-1 group-hover:scale-110 transition-transform"
+              className="text-crisis-text shrink-0 mt-1 group-hover:scale-110 transition-transform"
               size={24}
               aria-hidden="true"
             />
@@ -135,7 +139,7 @@ Sincerely,
             role="listitem"
           >
             <CheckCircle2
-              className="text-crisis-red shrink-0 mt-1 group-hover:scale-110 transition-transform"
+              className="text-crisis-text shrink-0 mt-1 group-hover:scale-110 transition-transform"
               size={24}
               aria-hidden="true"
             />
@@ -154,7 +158,7 @@ Sincerely,
             role="listitem"
           >
             <CheckCircle2
-              className="text-crisis-red shrink-0 mt-1 group-hover:scale-110 transition-transform"
+              className="text-crisis-text shrink-0 mt-1 group-hover:scale-110 transition-transform"
               size={24}
               aria-hidden="true"
             />
@@ -178,7 +182,7 @@ Sincerely,
             <LucideMail size={100} />
           </div>
           <LucideMail
-            className="text-crisis-red mb-6 group-hover:scale-110 transition-transform"
+            className="text-crisis-text mb-6 group-hover:scale-110 transition-transform"
             size={40}
             aria-hidden="true"
           />
@@ -198,13 +202,38 @@ Sincerely,
           </a>
         </div>
 
+        {/* Action 1.5: Federal Investigation CTA */}
+        <div className="bg-crisis-red/20 p-8 border-2 border-crisis-red rounded-2xl hover:border-red-600 transition-all shadow-xl group relative overflow-hidden text-white">
+          <div className="absolute top-0 right-0 p-4 opacity-5" aria-hidden="true">
+            <ShieldAlert size={100} />
+          </div>
+          <ShieldAlert
+            className="text-red-500 mb-6 group-hover:scale-110 transition-transform"
+            size={40}
+            aria-hidden="true"
+          />
+          <h3 className="text-2xl font-black font-serif mb-4 uppercase tracking-tight text-red-500">
+            Demand Federal Investigation
+          </h3>
+          <p className="text-white/90 mb-8 leading-relaxed text-sm">
+            The evidence of corporate capture and government corruption in New Brunswick requires federal intervention. Join the call for an RCMP investigation into the $173.9M travel nurse scandal and systematic governance failure.
+          </p>
+          <ScrollLink
+            href="#petition"
+            className="w-full block text-center bg-white text-red-500 font-black py-4 rounded-lg hover:bg-neutral-100 transition-all shadow-lg uppercase tracking-widest text-xs"
+            aria-label="Sign the Federal Investigation Petition"
+          >
+            Sign Federal Investigation Petition
+          </ScrollLink>
+        </div>
+
         {/* Action 2: Allied Advocacy */}
         <div className="bg-neutral-900/50 p-8 border border-neutral-800 rounded-2xl hover:border-crisis-red transition-all shadow-xl group relative overflow-hidden text-white text-center">
           <div className="absolute top-0 right-0 p-4 opacity-5" aria-hidden="true">
             <Globe size={100} />
           </div>
           <PenTool
-            className="text-crisis-red mb-6 group-hover:scale-110 transition-transform mx-auto"
+            className="text-crisis-text mb-6 group-hover:scale-110 transition-transform mx-auto"
             size={40}
             aria-hidden="true"
           />
@@ -219,8 +248,7 @@ Sincerely,
             <a
               href="https://savemiramichisalmon.com"
               target="_blank"
-              rel="noopener noreferrer"
-              className="w-full block bg-white text-black font-black py-2 rounded hover:bg-neutral-200 transition-colors uppercase text-[10px] tracking-[0.2em]"
+              rel="noopener noreferrer" className="w-full block bg-white text-black font-black py-2 rounded hover:bg-neutral-200 transition-colors uppercase text-[10px] tracking-[0.2em]"
               aria-label="Visit Save Miramichi Salmon"
             >
               Save Miramichi Salmon
@@ -228,8 +256,7 @@ Sincerely,
             <a
               href="https://stopsprayingnb.ca/"
               target="_blank"
-              rel="noopener noreferrer"
-              className="w-full block bg-neutral-800 text-white font-black py-2 rounded hover:bg-neutral-700 transition-colors uppercase text-[10px] tracking-[0.2em]"
+              rel="noopener noreferrer" className="w-full block bg-neutral-800 text-white font-black py-2 rounded hover:bg-neutral-700 transition-colors uppercase text-[10px] tracking-[0.2em]"
               aria-label="Visit Stop Spraying NB"
             >
               Stop Spraying NB
@@ -237,8 +264,7 @@ Sincerely,
             <a
               href="https://nbmediacoop.org/"
               target="_blank"
-              rel="noopener noreferrer"
-              className="w-full block bg-neutral-800 text-white font-black py-2 rounded hover:bg-neutral-700 transition-colors uppercase text-[10px] tracking-[0.2em]"
+              rel="noopener noreferrer" className="w-full block bg-neutral-800 text-white font-black py-2 rounded hover:bg-neutral-700 transition-colors uppercase text-[10px] tracking-[0.2em]"
               aria-label="Visit NB Media Co-op"
             >
               NB Media Co-op
@@ -263,17 +289,16 @@ Sincerely,
             <div className="absolute top-2 right-4 text-[10px] font-black text-neutral-700 uppercase tracking-widest italic font-sans">
               Encrypted Transmission Path
             </div>
-            <p className="font-bold text-crisis-red mb-2 tracking-tighter"></p>
+            <p className="font-bold text-crisis-text mb-2 tracking-tighter"></p>
             <p>Office of the Prime Minister</p>
             <p>80 Wellington Street</p>
             <p>Ottawa, ON K1A 0A2</p>
-            <p className="mt-4 text-neutral-500 lowercase">pm@pm.gc.ca</p>
+            <p className="mt-4 text-neutral-400 lowercase">pm@pm.gc.ca</p>
           </div>
           <a
             href="https://www.ourcommons.ca/members/en"
             target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-neutral-800 text-white font-black py-3 px-8 rounded-lg hover:bg-neutral-700 transition-all uppercase tracking-widest text-[10px]"
+            rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-neutral-800 text-white font-black py-3 px-8 rounded-lg hover:bg-neutral-700 transition-all uppercase tracking-widest text-[10px]"
             aria-label="Find your MP on the House of Commons website"
           >
             Find Your MP Locator <LucideExternalLink size={12} />
@@ -299,18 +324,27 @@ Sincerely,
           </p>
 
           <div className="bg-black/80 p-6 rounded-xl border border-neutral-800 break-all font-mono text-[10px] md:text-sm text-[#FF6600] mb-6 text-center shadow-inner select-all selection:bg-[#FF6600] selection:text-black">
-            44AFFq5kSiGBoZ4NMDwYtN18obc8AemS33DBLWs3H7otXft3XjrpDtQGv7SqSsaBYBb98uNbr2VBBEt7f2wfn3RVGQBEP3A
+            47K21zBzgH5gdoTvLbF2pTQrsRUYsLRTVZkXCuQnyp4tXa4qWqNpfD8dXf2o5PL4R5PeQbEf7Z3xh9hy2BSqCnbD7SrRHHg
           </div>
 
-          <div className="flex justify-center">
+          <div className="flex flex-wrap justify-center gap-4 mb-6">
+            <a
+              href="https://cakewallet.com/"
+              target="_blank"
+              rel="noopener noreferrer" 
+              className="inline-flex items-center gap-2 bg-[#FF6600] text-black font-black py-2 px-4 rounded-lg hover:bg-[#ff8533] transition-all uppercase tracking-widest text-[10px]"
+              aria-label="Download CakeWallet for Monero"
+            >
+              <Bitcoin size={14} /> Get CakeWallet
+            </a>
             <a
               href="https://www.getmonero.org/get-started/what-is-monero/"
               target="_blank"
-              rel="noopener noreferrer"
-              className="text-[10px] font-black uppercase tracking-widest text-neutral-500 hover:text-white transition-colors underline decoration-crisis-red decoration-2 underline-offset-4"
+              rel="noopener noreferrer" 
+              className="inline-flex items-center gap-2 bg-neutral-800 text-white font-black py-2 px-4 rounded-lg hover:bg-neutral-700 transition-all uppercase tracking-widest text-[10px]"
               aria-label="Learn about Monero cryptocurrency"
             >
-              New to Monero?
+              Learn XMR
             </a>
           </div>
         </div>
@@ -332,8 +366,7 @@ Sincerely,
           <a
             href="https://twitter.com/intent/tweet?text=Investigate%20the%20New%20Brunswick%20government%20failure.%20End%20the%20Company%20Province.%20Read%20the%20full%20report%20at%20https://reformnb.ca%20%23ReformNB%20%23nbpoli"
             target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-white text-crisis-red font-black py-4 px-12 rounded-lg text-lg hover:bg-neutral-100 transition-all shadow-2xl hover:scale-105 uppercase tracking-[0.2em]"
+            rel="noopener noreferrer" className="inline-block bg-white text-crisis-text font-black py-4 px-12 rounded-lg text-lg hover:bg-neutral-100 transition-all shadow-2xl hover:scale-105 uppercase tracking-[0.2em]"
             aria-label="Share on X (Twitter)"
           >
             Dispatch to X
@@ -344,7 +377,7 @@ Sincerely,
         <div className="bg-neutral-900 p-12 border-2 border-dashed border-crisis-red rounded-3xl text-center md:col-span-2 mt-8 shadow-xl relative overflow-hidden text-white">
           <div className="absolute top-0 left-0 w-full h-full bg-red-900/5 pointer-events-none" aria-hidden="true"></div>
           <ShieldAlert
-            className="text-crisis-red mx-auto mb-6 animate-pulse"
+            className="text-crisis-text mx-auto mb-6 animate-pulse"
             size={64}
             aria-hidden="true"
           />
@@ -357,15 +390,66 @@ Sincerely,
             <strong>We protect our sources.</strong>
           </p>
           <div className="inline-block bg-black p-6 rounded-xl border border-neutral-800 font-mono text-xl text-white shadow-inner select-all relative">
-            <div className="absolute -top-3 left-4 bg-neutral-900 px-2 text-[10px] font-black uppercase tracking-widest text-crisis-red border border-crisis-red rounded-full">
+            <div className="absolute -top-3 left-4 bg-neutral-900 px-2 text-[10px] font-black uppercase tracking-widest text-crisis-text border border-crisis-red rounded-full">
               Encrypted Node
             </div>
             reformnb-tips@proton.me
           </div>
-          <p className="text-sm text-neutral-600 mt-8 italic font-black uppercase tracking-widest">
+          <p className="text-sm text-neutral-500 mt-8 italic font-black uppercase tracking-widest">
             VPN Recommended End-to-End Encryption Required
           </p>
         </div>
+
+        {/* Federal Investigation Petition */}
+        <section id="petition" className="mb-12 bg-crisis-red/10 border-2 border-crisis-red rounded-3xl p-8 md:p-12 text-white">
+          <div className="max-w-4xl mx-auto text-center">
+            <h3 className="text-3xl font-black font-serif uppercase tracking-tight mb-6">
+              Petition: Federal Investigation into NB Corruption
+            </h3>
+            <p className="text-lg mb-8 leading-relaxed max-w-3xl mx-auto">
+              We, the undersigned citizens of New Brunswick and Canada, demand that Prime Minister Mark Carney and Premier Susan Holt immediately:
+            </p>
+            <div className="grid md:grid-cols-2 gap-6 mb-8 text-left">
+              <div className="bg-black/30 p-6 rounded-lg">
+                <h4 className="font-bold text-lg mb-3 text-crisis-gold">1. Public Inquiry</h4>
+                <p className="text-neutral-300">
+                  Launch a federal Public Inquiry into the corporate capture of the New Brunswick government, including the $173.9M travel nurse scandal, NB Power debt crisis, and systematic tax evasion by billionaire families.
+                </p>
+              </div>
+              <div className="bg-black/30 p-6 rounded-lg">
+                <h4 className="font-bold text-lg mb-3 text-crisis-gold">2. RCMP Investigation</h4>
+                <p className="text-neutral-300">
+                  Initiate a Royal Canadian Mounted Police Commercial Crime investigation into the corruption, fraud, and collusion between government officials and corporate monopolies.
+                </p>
+              </div>
+              <div className="bg-black/30 p-6 rounded-lg">
+                <h4 className="font-bold text-lg mb-3 text-crisis-gold">3. Transparency Measures</h4>
+                <p className="text-neutral-300">
+                  Implement immediate transparency measures including publishing all government contracts, lobbyist meeting records, and corporate tax payment data.
+                </p>
+              </div>
+              <div className="bg-black/30 p-6 rounded-lg">
+                <h4 className="font-bold text-lg mb-3 text-crisis-gold">4. Protection Measures</h4>
+                <p className="text-neutral-300">
+                  Establish whistleblower protection programs and anti-retaliation safeguards for government employees who come forward with evidence of corruption.
+                </p>
+              </div>
+            </div>
+            <div className="bg-white/10 p-6 rounded-lg mb-8">
+              <p className="text-sm italic">
+                This petition represents the collective voice of New Brunswickers who have lost faith in provincial governance and demand federal intervention to restore democracy and accountability.
+              </p>
+            </div>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <button className="bg-crisis-red hover:bg-red-700 text-white font-black py-3 px-8 rounded-lg transition-all uppercase tracking-widest text-sm">
+                Sign the Petition
+              </button>
+              <button className="bg-neutral-800 hover:bg-neutral-700 text-white font-black py-3 px-8 rounded-lg transition-all uppercase tracking-widest text-sm">
+                Download PDF Version
+              </button>
+            </div>
+          </div>
+        </section>
       </div>
     </PageWrapper>
   );

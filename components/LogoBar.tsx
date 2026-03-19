@@ -9,7 +9,7 @@ export function LogoBar() {
 
   return (
     <div className="py-16 border-y border-neutral-900 mb-16 relative group">
-      <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-black px-4 text-[10px] font-black uppercase tracking-[0.4em] text-neutral-600">
+      <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-black px-4 text-sm font-black uppercase tracking-[0.4em] text-white">
         Entities of Interest
       </div>
       <div className="flex flex-wrap justify-center items-center gap-12 md:gap-20 opacity-20 grayscale contrast-150 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-1000">

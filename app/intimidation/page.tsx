@@ -28,7 +28,7 @@ const intimidationTimeline = [
   { date: "JUL 2019", title: "Cartoonist Michael de Adder Fired", description: "Brunswick News fires de Adder and rejects his Trump cartoon the day it goes viral. Irving family has US business interests.", color: "red" as const },
   { date: "2020", title: "Election Law Violations", description: "Irving and ForestNB run full-page political ads without registering as third parties. Elections NB confirms investigation.", color: "red" as const },
   { date: "2022", title: "Brunswick News Sold to PostMedia", description: "Irving sells media empire after 90+ years. PostMedia brings its own corporate editorial direction.", color: "gold" as const },
-  { date: "2023", title: "Wire Crossed: Free Press Report", description: "NB Media Co-op publishes comprehensive investigation into how Irving jeopardized free press in NB for decades.", color: "gold" as const },
+  { date: "2023", title: "Wire Crossed: Free Press Report", description: "NB Media Co-op publishes detailed probe into how Irving jeopardized free press in NB for decades.", color: "gold" as const },
   { date: "MAR 2025", title: "The Irvings Get Trumped", description: "Alain Deneault's analysis: Irving family 'cozied up' to Trump, fired cartoonist for offending powerful allies.", color: "red" as const },
   { date: "FEB 2026", title: "Indigenous Consultations 'Hollow'", description: "Indigenous-owned forestry company tells government that consultations are 'hollow without greater self-determination'.", color: "gold" as const },
 ];
@@ -57,12 +57,12 @@ export default function IntimidationPage() {
 
       {/* Hero Image */}
       <div className="my-10 rounded-2xl overflow-hidden shadow-2xl">
-        <img
-          src="https://i.cbc.ca/ais/1.5183857,1706136546000/full/max/0/default.jpg?im=Crop%2Crect%3D%282%2C0%2C1236%2C695%29%3BResize%3D1200"
+        <img loading="lazy"
+          src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200&q=80"
           alt="Censored newspaper with redaction marks"
           className="w-full h-64 md:h-80 object-cover"
         />
-        <div className="bg-neutral-900 p-4 text-xs text-neutral-500 uppercase tracking-widest text-center">
+        <div className="bg-neutral-900 p-4 text-xs text-neutral-400 uppercase tracking-widest text-center">
           New Brunswick&apos;s media landscape shaped by 90+ years of corporate ownership and editorial control
         </div>
       </div>
@@ -72,7 +72,7 @@ export default function IntimidationPage() {
         {/* Section 1: The Cartoonist They Fired */}
         <section className="bg-neutral-900/50 p-10 rounded-3xl border border-neutral-800 mb-10">
           <h2 className="text-3xl font-serif font-bold text-white mb-6 uppercase tracking-tighter flex items-center gap-3 italic">
-            <Ban className="text-crisis-red" size={28} aria-hidden="true" />
+            <Ban className="text-crisis-text" size={28} aria-hidden="true" />
             The Cartoonist They Fired
           </h2>
           <p className="text-neutral-400 leading-relaxed mb-6">
@@ -98,7 +98,7 @@ export default function IntimidationPage() {
             Brunswick. The 1970 Senate Special Committee on Mass Media called Irving&apos;s newspaper control 
             &ldquo;about as flagrant an example of abusing the public interest as you&apos;re likely to find 
             in Canada.&rdquo;{" "}
-            <a href="https://nbmediacoop.org/2025/03/02/the-irvings-get-trumped/" target="_blank" rel="noopener noreferrer" className="text-crisis-red hover:text-white underline">[NB Media Co-op: The Irvings Get Trumped]</a>
+            <a href="https://nbmediacoop.org/2025/03/02/the-irvings-get-trumped/" target="_blank" rel="noopener noreferrer" className="text-crisis-text hover:text-white underline">[NB Media Co-op: The Irvings Get Trumped]</a>
           </p>
         </section>
 
@@ -140,7 +140,7 @@ export default function IntimidationPage() {
         {/* Section 3: Election Law Violations */}
         <section className="bg-neutral-900/50 p-10 rounded-3xl border border-neutral-800 mb-10">
           <h2 className="text-3xl font-serif font-bold text-white mb-6 uppercase tracking-tighter flex items-center gap-3 italic">
-            <Scale className="text-crisis-red" size={28} aria-hidden="true" />
+            <Scale className="text-crisis-text" size={28} aria-hidden="true" />
             Breaking Election Laws
           </h2>
           <p className="text-neutral-400 leading-relaxed mb-6">
@@ -160,7 +160,7 @@ export default function IntimidationPage() {
             Every PC and Liberal candidate refused to sign the pledge to end herbicide spraying on Crown 
             lands. Only the Green Party (rated B+ by SSNB) and a handful of NDP and People&apos;s Alliance 
             candidates supported the ban.{" "}
-            <a href="https://nbmediacoop.org/2020/09/01/are-jdirving-and-forestnb-breaking-elections-nb-laws/" target="_blank" rel="noopener noreferrer" className="text-crisis-red hover:text-white underline">[NB Media Co-op: Breaking Election Laws?]</a>
+            <a href="https://nbmediacoop.org/2020/09/01/are-jdirving-and-forestnb-breaking-elections-nb-laws/" target="_blank" rel="noopener noreferrer" className="text-crisis-text hover:text-white underline">[NB Media Co-op: Breaking Election Laws?]</a>
           </p>
         </section>
 
@@ -181,7 +181,7 @@ export default function IntimidationPage() {
             practices — whether in media, academia, or conservation — the response is intimidation, 
             defunding, or termination. This is how corporate capture operates: not through explicit 
             censorship, but through <strong className="text-white">structural dependency</strong>.{" "}
-            <a href="https://nbmediacoop.org/2019/07/06/new-brunswick-forestry-college-purges-critic-of-glyphosate-and-defender/" target="_blank" rel="noopener noreferrer" className="text-crisis-red hover:text-white underline">[NB Media Co-op: Forestry College Purges Critic]</a>
+            <a href="https://nbmediacoop.org/2019/07/06/new-brunswick-forestry-college-purges-critic-of-glyphosate-and-defender/" target="_blank" rel="noopener noreferrer" className="text-crisis-text hover:text-white underline">[NB Media Co-op: Forestry College Purges Critic]</a>
           </p>
         </section>
 
@@ -201,27 +201,27 @@ export default function IntimidationPage() {
             <h4 className="text-crisis-gold font-black uppercase text-xs tracking-widest mb-4">Documented Intimidation Patterns</h4>
             <ul className="space-y-3 text-neutral-300 text-sm" role="list">
               <li className="flex items-start gap-3">
-                <span className="text-crisis-red font-black">•</span>
+                <span className="text-crisis-text font-black">•</span>
                 <span><strong>River access revocation:</strong> Threatened to block salmon conservation groups from accessing rivers if they oppose glyphosate (2017)</span>
               </li>
               <li className="flex items-start gap-3">
-                <span className="text-crisis-red font-black">•</span>
+                <span className="text-crisis-text font-black">•</span>
                 <span><strong>Academic purging:</strong> Instructors fired from forestry college for criticizing Irving practices (2019)</span>
               </li>
               <li className="flex items-start gap-3">
-                <span className="text-crisis-red font-black">•</span>
+                <span className="text-crisis-text font-black">•</span>
                 <span><strong>Cartoonist termination:</strong> De Adder fired same day his Trump cartoon went viral (2019)</span>
               </li>
               <li className="flex items-start gap-3">
-                <span className="text-crisis-red font-black">•</span>
+                <span className="text-crisis-text font-black">•</span>
                 <span><strong>Election law violations:</strong> Full-page political ads without third-party registration (2020)</span>
               </li>
               <li className="flex items-start gap-3">
-                <span className="text-crisis-red font-black">•</span>
+                <span className="text-crisis-text font-black">•</span>
                 <span><strong>Property tax intimidation:</strong> Government gives $700K refunds when Irving challenges assessments (2023)</span>
               </li>
               <li className="flex items-start gap-3">
-                <span className="text-crisis-red font-black">•</span>
+                <span className="text-crisis-text font-black">•</span>
                 <span><strong>Indigenous consultation dismissal:</strong> Wolastoqey told consultations are &quot;hollow&quot; without self-determination (2026)</span>
               </li>
             </ul>
@@ -235,7 +235,7 @@ export default function IntimidationPage() {
             columns={1}
             videos={[
               {
-                videoId: "rfYW4tpdXIQ",
+                videoId: "N9I-HY3wfVM",
                 title: "Corporate Capture in New Brunswick Documentary",
                 caption: "Documentaries by Charles Thériault and others expose corporate capture of New Brunswick's institutions."
               }
@@ -253,12 +253,12 @@ export default function IntimidationPage() {
 
         {/* Censored Image */}
         <div className="my-12 rounded-2xl overflow-hidden shadow-2xl">
-          <img
-            src="https://i.cbc.ca/ais/1.5058551,1552675328000/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C278%2C4032%2C2268%29%3BResize%3D1200"
+          <img loading="lazy"
+            src="https://images.unsplash.com/photo-1585828922344-85f0b67d5973?w=1200&q=80"
             alt="Newspapers representing media control and censorship"
             className="w-full h-48 md:h-64 object-cover"
           />
-          <div className="bg-neutral-900 p-3 text-xs text-neutral-500 uppercase tracking-widest text-center">
+          <div className="bg-neutral-900 p-3 text-xs text-neutral-400 uppercase tracking-widest text-center">
             Three generations of New Brunswickers grew up reading company-controlled newspapers — the damage to public discourse is immeasurable
           </div>
         </div>
@@ -278,7 +278,7 @@ export default function IntimidationPage() {
             <SourceCard type="article" title="NB Media Co-op: The Irvings Get Trumped" url="https://nbmediacoop.org/2025/03/02/the-irvings-get-trumped/" description="Cartoonist de Adder fired for Trump cartoon" date="MAR 2025" />
             <SourceCard type="article" title="NB Media Co-op: Irving Breaking Election Laws?" url="https://nbmediacoop.org/2020/09/01/are-jdirving-and-forestnb-breaking-elections-nb-laws/" description="Full-page ads without third-party registration" date="2020" />
             <SourceCard type="article" title="NB Media Co-op: Forestry College Purges Critic" url="https://nbmediacoop.org/2019/07/06/new-brunswick-forestry-college-purges-critic-of-glyphosate-and-defender/" description="Academic freedom suppressed" date="2019" />
-            <SourceCard type="article" title="NB Media Co-op: How Irving Jeopardized Free Press" url="https://nbmediacoop.org/2023/06/09/wire-crossed-how-the-irving-empire-jeopardized-free-press-in-new-brunswick/" description="Comprehensive investigation" date="2023" />
+            <SourceCard type="article" title="NB Media Co-op: How Irving Jeopardized Free Press" url="https://nbmediacoop.org/2023/06/09/wire-crossed-how-the-irving-empire-jeopardized-free-press-in-new-brunswick/" description="Detailed probe" date="2023" />
             <SourceCard type="article" title="NB Media Co-op: 'We Won't Be Intimidated'" url="https://nbmediacoop.org/2017/08/03/we-wont-be-intimidated-miramichi-salmon-group-on-forest-spraying/" description="Irving threatens salmon group over glyphosate" date="2017" />
             <SourceCard type="article" title="NB Media Co-op: Deneault on Arthur Irving" url="https://nbmediacoop.org/2024/05/19/dismal/" description="'Feudalistic counter-model' analysis" date="MAY 2024" />
           </div>

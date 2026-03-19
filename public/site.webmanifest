@@ -1,0 +1,12 @@
+{
+  "name": "Reform NB",
+  "short_name": "Reform NB",
+  "description": "New Brunswick's Investigative Hub",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#b30000",
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}

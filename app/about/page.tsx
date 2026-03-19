@@ -1,10 +1,12 @@
 import { Metadata } from "next";
+import Image from "next/image";
 import { BookOpen } from "lucide-react";
 import { PageWrapper } from "@/components/PageWrapper";
 import { BackLink } from "@/components/BackLink";
+import { CTASection } from "@/components/CTASection";
 
 export const metadata: Metadata = {
-  title: "About Us | Reform NB",
+  title: "About Reform NB: Citizen Accountability Platform | Reform NB",
   description:
     "Reform NB is a decentralized network of investigative journalists, former civil servants, and citizens exposing the systemic governance failure in New Brunswick.",
 };
@@ -24,6 +26,19 @@ export default function AboutPage() {
         <h1 className="text-5xl font-black font-serif tracking-tight uppercase">
           Our Mission
         </h1>
+      </div>
+
+      {/* Hero Image */}
+      <div className="mb-12 rounded-2xl overflow-hidden shadow-2xl">
+        <Image 
+          src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=1200&q=80" 
+          alt="New Brunswick landscape representing the province we fight for"
+          fill
+          sizes="(max-width: 768px) 100vw, 1200px"
+        />
+        <div className="bg-neutral-900 p-4 text-xs text-neutral-400 uppercase tracking-widest text-center relative z-10">
+          Reform NB — a decentralized network fighting for government accountability in the Company Province
+        </div>
       </div>
 
       <div className="prose prose-invert prose-lg max-w-none">
@@ -69,8 +84,16 @@ export default function AboutPage() {
         </p>
       </div>
 
+      <CTASection
+        icon={BookOpen}
+        title="Join the Investigation."
+        description="We are regular New Brunswickers who refused to look away. Help us expose the truth."
+        buttonText="Take Action"
+        buttonHref="/take-action"
+      />
+
       <div className="mt-16 pt-12 border-t border-neutral-800 text-center">
-        <p className="text-lg font-serif italic text-neutral-500">
+        <p className="text-lg font-serif italic text-neutral-400">
           &ldquo;The truth is not a series of isolated facts. It is the pattern
           they form.&rdquo;
         </p>

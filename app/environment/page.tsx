@@ -6,6 +6,8 @@ export const metadata: Metadata = {
 };
 import { PageWrapper } from '@/components/PageWrapper';
 import { BackLink } from '@/components/BackLink';
+import { RelatedPages } from "@/components/RelatedPages";
+import { CTASection } from '@/components/CTASection';
 import { DataCard } from '@/components/DataCard';
 import { Timeline } from '@/components/Timeline';
 import { QuoteBlock } from '@/components/QuoteBlock';
@@ -58,12 +60,12 @@ export default function EnvironmentPage() {
       {/* Hero Image */}
       <div className="my-10 rounded-2xl overflow-hidden shadow-2xl">
         <Image
-          src="https://i.cbc.ca/ais/1.7649604,1759431860000/full/max/0/default.jpg?im=Crop%2Crect%3D%2830%2C0%2C1516%2C852%29%3BResize%3D1200"
+          src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1200&q=80"
           alt="Aerial view of forest clearcutting - devastated landscape"
           fill
           sizes="(max-width: 768px) 100vw, 1200px"
         />
-        <div className="bg-neutral-900 p-4 text-xs text-neutral-500 uppercase tracking-widest text-center">
+        <div className="bg-neutral-900 p-4 text-xs text-neutral-400 uppercase tracking-widest text-center">
           New Brunswick&apos;s Crown forests are clearcut and sprayed with glyphosate — destroying salmon habitat and poisoning watersheds
         </div>
       </div>
@@ -73,7 +75,7 @@ export default function EnvironmentPage() {
         {/* Section 1: Salmon Collapse */}
         <section className="bg-neutral-900/50 p-10 rounded-3xl border border-neutral-800 mb-10">
           <h2 className="text-3xl font-serif font-bold text-white mb-6 uppercase tracking-tighter flex items-center gap-3 italic">
-            <Fish className="text-crisis-red" size={28} aria-hidden="true" />
+            <Fish className="text-crisis-text" size={28} aria-hidden="true" />
             The Wild Atlantic Salmon Collapse
           </h2>
           <p className="text-neutral-400 leading-relaxed mb-6">
@@ -104,10 +106,10 @@ export default function EnvironmentPage() {
               the wild salmon are still dying. The knock-out blow isn&apos;t coming from fishing. 
               It&apos;s coming from our forests.&rdquo;
             </p>
-            <div className="text-xs font-black text-crisis-red uppercase tracking-[0.3em]">
+            <div className="text-xs font-black text-crisis-text uppercase tracking-[0.3em]">
               — Inka Milewski, NB Media Co-op (2015)
             </div>
-            <a href="https://nbmediacoop.org/2015/11/13/wild-salmons-knock-out-blow/" target="_blank" rel="noopener noreferrer" className="text-crisis-red hover:text-white underline text-sm mt-2 inline-block">[NB Media Co-op: Wild Salmon&apos;s Knock-Out Blow]</a>
+            <a href="https://nbmediacoop.org/2015/11/13/wild-salmons-knock-out-blow/" target="_blank" rel="noopener noreferrer" className="text-crisis-text hover:text-white underline text-sm mt-2 inline-block">[NB Media Co-op: Wild Salmon&apos;s Knock-Out Blow]</a>
           </div>
         </section>
 
@@ -140,7 +142,7 @@ export default function EnvironmentPage() {
             spraying on Crown forests in 2001. New Brunswick continues to spray more than any other 
             province — 40% of forest land cut in 2014 was sprayed with glyphosate, compared to 28% 
             in Ontario and 11% in Nova Scotia.{" "}
-            <a href="https://nbmediacoop.org/2017/08/03/we-wont-be-intimidated-miramichi-salmon-group-on-forest-spraying/" target="_blank" rel="noopener noreferrer" className="text-crisis-red hover:text-white underline">[NB Media Co-op: We Won&apos;t Be Intimidated]</a>
+            <a href="https://nbmediacoop.org/2017/08/03/we-wont-be-intimidated-miramichi-salmon-group-on-forest-spraying/" target="_blank" rel="noopener noreferrer" className="text-crisis-text hover:text-white underline">[NB Media Co-op: We Won&apos;t Be Intimidated]</a>
           </p>
         </section>
 
@@ -151,7 +153,7 @@ export default function EnvironmentPage() {
             columns={1}
             videos={[
               {
-                videoId: "S4wHbp4OzLc",
+                videoId: "FLGCGc7sAUw",
                 title: "Atlantic Salmon Conservation Miramichi River",
                 caption: "The Miramichi River — once the world's greatest Atlantic salmon river — faces collapse from industrial forestry."
               }
@@ -162,7 +164,7 @@ export default function EnvironmentPage() {
         {/* Section 3: Lake Poisoning */}
         <section className="bg-neutral-900/50 p-10 rounded-3xl border border-neutral-800 mb-10">
           <h2 className="text-3xl font-serif font-bold text-white mb-6 uppercase tracking-tighter flex items-center gap-3 italic">
-            <Skull className="text-crisis-red" size={28} aria-hidden="true" />
+            <Skull className="text-crisis-text" size={28} aria-hidden="true" />
             The Lake Poisoning Controversy
           </h2>
           <p className="text-neutral-400 leading-relaxed mb-6">
@@ -187,7 +189,7 @@ export default function EnvironmentPage() {
             to poison a lake to save salmon, <strong className="text-white">clearcuts and glyphosate-sprayed 
             plantations</strong> dotted the landscape around the same watershed — the real drivers of salmon 
             habitat destruction.{" "}
-            <a href="https://nbmediacoop.org/2021/08/18/wolastoqiyik-women-stop-smallmouth-bass-poisoning-in-miramichi-lake-for-now/" target="_blank" rel="noopener noreferrer" className="text-crisis-red hover:text-white underline">[NB Media Co-op: Wolastoqiyik Women Stop Poisoning]</a>
+            <a href="https://nbmediacoop.org/2021/08/18/wolastoqiyik-women-stop-smallmouth-bass-poisoning-in-miramichi-lake-for-now/" target="_blank" rel="noopener noreferrer" className="text-crisis-text hover:text-white underline">[NB Media Co-op: Wolastoqiyik Women Stop Poisoning]</a>
           </p>
         </section>
 
@@ -214,7 +216,7 @@ export default function EnvironmentPage() {
             The Wolastoqey have never ceded or surrendered title to their land. The chiefs declared: 
             &ldquo;Reckless resource extraction through mining, forestry and other activities has left 
             our rivers, forests, and lakes on the brink of decimation.&rdquo;{" "}
-            <a href="https://nbmediacoop.org/2021/12/01/wolastoqey-nations-claim-title-to-land-owned-by-jd-irving-and-other-companies-due-to-reckless-resource-extraction/" target="_blank" rel="noopener noreferrer" className="text-crisis-red hover:text-white underline">[NB Media Co-op: Wolastoqey Land Title Claim]</a>
+            <a href="https://nbmediacoop.org/2021/12/01/wolastoqey-nations-claim-title-to-land-owned-by-jd-irving-and-other-companies-due-to-reckless-resource-extraction/" target="_blank" rel="noopener noreferrer" className="text-crisis-text hover:text-white underline">[NB Media Co-op: Wolastoqey Land Title Claim]</a>
           </p>
         </section>
 
@@ -256,7 +258,7 @@ export default function EnvironmentPage() {
             customers willing to pay more for clean energy. Meanwhile, carbon penalties on the utility 
             will hit $49 million in 2026, rising to $69 million by 2028-2029 — costs passed directly 
             to ratepayers facing already unaffordable bills.{" "}
-            <a href="https://www.cbc.ca/news/canada/new-brunswick/nb-power-emissions-surge-9.7128321" target="_blank" rel="noopener noreferrer" className="text-crisis-red hover:text-white underline">[CBC: NB Power Emissions Surge, Mar 13, 2026]</a>
+            <a href="https://www.cbc.ca/news/canada/new-brunswick/nb-power-emissions-surge-9.7128321" target="_blank" rel="noopener noreferrer" className="text-crisis-text hover:text-white underline">[CBC: NB Power Emissions Surge, Mar 13, 2026]</a>
           </p>
           <p className="text-neutral-400 leading-relaxed">
             The contradiction is stark: NB Power asks customers to pay a <strong className="text-white">premium</strong> for 
@@ -274,7 +276,7 @@ export default function EnvironmentPage() {
             columns={1}
             videos={[
               {
-                videoId: "uh7d5rHNO10",
+                videoId: "N9I-HY3wfVM",
                 title: "New Brunswick Forest Industry Documentary",
                 caption: "Documentaries and testimony expose the corporate capture of New Brunswick's forests."
               }
@@ -293,12 +295,12 @@ export default function EnvironmentPage() {
         {/* Polluted Water Image */}
         <div className="my-12 rounded-2xl overflow-hidden shadow-2xl">
           <Image
-            src="https://i.cbc.ca/ais/1.6943853,1692727406000/full/max/0/default.jpg?im=Crop%2Crect%3D%2865%2C0%2C1490%2C838%29%3BResize%3D1200"
+            src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1200&q=80"
             alt="Foggy forest landscape representing environmental degradation in New Brunswick"
             fill
             sizes="(max-width: 768px) 100vw, 1200px"
           />
-          <div className="bg-neutral-900 p-3 text-xs text-neutral-500 uppercase tracking-widest text-center">
+          <div className="bg-neutral-900 p-3 text-xs text-neutral-400 uppercase tracking-widest text-center">
             New Brunswick's environment under siege — from glyphosate spraying to record emissions to chemical spills
           </div>
         </div>
@@ -318,6 +320,21 @@ export default function EnvironmentPage() {
           </div>
         </section>
       </div>
+
+      
+      <RelatedPages pages={[
+        { href: '/climate-energy', title: 'Climate & Energy', description: 'NB Power burns 4M barrels of oil. Emissions at 16-year high.' },
+        { href: '/fisheries', title: 'Fisheries in Crisis', description: '96% collapse of Miramichi salmon. DFO negligence documented.' },
+        { href: '/indigenous-rights', title: 'Indigenous Rights', description: 'Wolastoqey land title lawsuit. Glyphosate on unceded territory.' }
+      ]} />
+
+      <CTASection
+        icon={Fish}
+        title="The Rivers Are Dying."
+        description="96% salmon collapse. Glyphosate poisoning. Chemical spills. Demand ecological accountability."
+        buttonText="Take Action"
+        buttonHref="/take-action"
+      />
     </PageWrapper>
   );
 }
