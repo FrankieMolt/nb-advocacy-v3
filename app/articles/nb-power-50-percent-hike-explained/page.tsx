@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "NB Power 50% Hike: Record Fossil Fuels, Record Debt",
   description: "NB Power burned 4M barrels of oil — most in 16 years — while proposing 50% rate hikes. $5.9B debt. 27% capacity. The death spiral explained.",
   keywords: "NB Power rate increase 2026, NB Power debt, Coleson Cove fossil fuel, energy poverty New Brunswick, NB Power 50% rate hike, EUB hearing, New Brunswick electricity rates, NB Power mismanagement, Irving Paper electricity discount, NB Power net zero greenwashing",
-  alternates: { canonical: "https://reformnb.ca/articles/nb-power-50-percent-hike-explained/" },
+  alternates: { canonical: "https://nbreform.ca/articles/nb-power-50-percent-hike-explained/" },
   openGraph: {
     title: "NB Power 50% Hike: Record Fossil Fuels, Record Debt | Reform NB",
     description: "NB Power burned 4M barrels of heavy fuel oil — most in 16 years — while asking ratepayers to fund a 'net-zero' transition. Your bills are going up.",
@@ -31,6 +31,8 @@ export default function ArticlePage() {
         { title: "Reform NB: NB Power Rate Hearing LIVE Coverage", url: "/articles/nb-power-rate-hearing-2026/" },
       ]}
     >
+      <h1 className="text-4xl md:text-5xl font-black font-serif tracking-tight uppercase mb-8">NB Power 50% Hike: Record Fossil Fuels, Record Debt</h1>
+
       {/* Live Hearing Alert */}
       <div className="bg-crisis-red/10 border border-crisis-red rounded-xl p-6 mb-8 flex items-start gap-4">
         <AlertTriangle className="text-white shrink-0 mt-1" size={24} />

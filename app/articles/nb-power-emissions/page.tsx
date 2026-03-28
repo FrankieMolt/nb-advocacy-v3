@@ -4,7 +4,7 @@ import { ArticleLayout } from "@/components/ArticleLayout";
 export const metadata: Metadata = {
   title: "NB Power: 4M Barrels Oil, 16-Year High",
   description: "NB Power burned 4 million barrels of oil. Emissions hit 16-year high. $254M at Coleson Cove alone.",
-  alternates: { canonical: "https://reformnb.ca/articles/nb-power-emissions/" },
+  alternates: { canonical: "https://nbreform.ca/articles/nb-power-emissions/" },
   openGraph: {
     title: "NB Power Burns 4 Million Barrels of Oil: Emissions Hit 16-Year High",
     description: "New EUB filings reveal NB Power burned nearly 4 million barrels of oil in 12 months, pushing emissions to 3M+ tonnes — a 16-year high.",
@@ -29,6 +29,8 @@ export default function ArticlePage() {
         { title: "CTV News: NB Power applies for 4.75% rate hike", url: "https://www.ctvnews.ca/atlantic/new-brunswick/article/nb-power-applies-for-475-per-cent-rate-hike-for-2026/" },
       ]}
     >
+      <h1 className="text-4xl md:text-5xl font-black font-serif tracking-tight uppercase mb-8">NB Power: 4M Barrels Oil, 16-Year High</h1>
+
       <p className="text-xl text-white leading-relaxed mb-8">
         New Brunswick's Energy and Utilities Board filings reveal a utility in crisis. NB Power burned nearly <strong className="text-white">4 million barrels of oil</strong> in just 12 months, pushing greenhouse gas emissions past 3 million tonnes — a level not seen since 2010. The data comes as the utility seeks a 4.75% rate increase for 2026, compounding a 50% rate hike over the past six years.
       </p>

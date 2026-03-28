@@ -12,7 +12,7 @@ import { SourceCard } from "@/components/SourceCard";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  alternates: { canonical: "https://reformnb.ca/articles/holt-lobbying-scandal/" },
+  alternates: { canonical: "https://nbreform.ca/articles/holt-lobbying-scandal/" },
   title: "Liberal Lobbyists Line Up to Influence Holt Government",
   description: "Former Liberal premiers Brian Gallant and Shawn Graham register as lobbyists. Ex-employees now lobbying their former boss. The revolving door spins.",
   keywords: [
@@ -119,6 +119,8 @@ export default function HoltLobbyingPage() {
       </div>
 
       <div className="prose prose-invert prose-lg max-w-none space-y-16">
+        <h1 className="text-4xl md:text-5xl font-black font-serif tracking-tight uppercase mb-8">Liberal Lobbyists Line Up to Influence Holt Government</h1>
+
         {/* Section 1: The Gallant Connection */}
         <section>
           <h2 className="text-3xl font-serif font-bold text-white mb-6 border-b border-neutral-800 pb-2 uppercase tracking-tighter italic">

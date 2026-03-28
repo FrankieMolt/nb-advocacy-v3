@@ -12,7 +12,7 @@ import { SourceCard } from "@/components/SourceCard";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  alternates: { canonical: "https://reformnb.ca/articles/blaine-higgs-controversies/" },
+  alternates: { canonical: "https://nbreform.ca/articles/blaine-higgs-controversies/" },
   title: "Blaine Higgs: Policy 713 and the Downfall",
   description: "The premier who rolled back LGBTQ protections, fired dissenting ministers, and lost his party. How Higgs's social conservatism brought down a government.",
   keywords: [
@@ -118,6 +118,8 @@ export default function BlaineHiggsPage() {
       </div>
 
       <div className="prose prose-invert prose-lg max-w-none space-y-16">
+        <h1 className="text-4xl md:text-5xl font-black font-serif tracking-tight uppercase mb-8">Blaine Higgs: Policy 713 and the Downfall</h1>
+
         {/* Section 1: Policy 713 */}
         <section>
           <h2 className="text-3xl font-serif font-bold text-white mb-6 border-b border-neutral-800 pb-2 uppercase tracking-tighter italic">

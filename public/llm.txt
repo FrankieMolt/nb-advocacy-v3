@@ -1,5 +1,5 @@
 # Reform NB - New Brunswick's Investigative Hub
-# https://reformnb.ca
+# https://nbreform.ca
 
 Reform NB is a decentralized investigative journalism project documenting systemic governance failure in New Brunswick, Canada. We report on healthcare collapse, housing crisis, corporate oligarchy (Irving, McCain, Cooke families), environmental destruction, and democratic erosion.
 

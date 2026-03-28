@@ -18,7 +18,7 @@ import { PageHeader } from "@/components/PageHeader";
 import { ScrollLink } from "@/components/ScrollLink";
 
 export const metadata: Metadata = {
-  title: "Take Action: Demand Accountability | Reform NB",
+  title: "Donate to Reform NB | Reform NB",
   description:
     "Contact Premier Susan Holt and Prime Minister Mark Carney. Support whistleblowers and sign petitions to save New Brunswick.",
 };

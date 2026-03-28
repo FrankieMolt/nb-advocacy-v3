@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   title: "Child Poverty: 32,140 Children Living in Poverty in NB",
   description: "21.9% child poverty rate in New Brunswick. 32,140 children in poverty. 51.2% on Indigenous reserves. 47.8% in single-parent households. NB has the highest HST in Canada at 15%.",
   keywords: "child poverty New Brunswick, Campaign 2000, poverty rate, Indigenous poverty, food insecurity, child welfare, Campbellton poverty, single parent poverty",
-  alternates: { canonical: "https://reformnb.ca/child-poverty/" },
+  alternates: { canonical: "https://nbreform.ca/child-poverty/" },
   openGraph: {
     title: "32,140 Children in Poverty: NB's Shame | Reform NB",
     description: "One in five children lives in poverty in New Brunswick. On Indigenous reserves, it's one in two. This is a policy choice — not an inevitability.",
@@ -81,6 +81,8 @@ export default function ChildPovertyPage() {
             <span className="text-white">32,140 Children</span> in Poverty
           </h2>
           <div className="prose prose-invert prose-lg max-w-none text-white space-y-6">
+            <h1 className="text-4xl md:text-5xl font-black font-serif tracking-tight uppercase mb-8">Child Poverty: 32,140 Children Living in Poverty in NB</h1>
+
             <p>
               According to the <strong className="text-white">February 2026 Campaign 2000 Report Card</strong>, compiled by the Human Development Council, New Brunswick has a <strong className="text-white">21.9% child poverty rate</strong> — meaning nearly <strong className="text-white">one in five children</strong> lives below the poverty line. That's 32,140 children.
             </p>

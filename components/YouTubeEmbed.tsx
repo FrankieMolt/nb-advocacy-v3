@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 
 interface YouTubeEmbedProps {
   videoId: string;
@@ -17,11 +18,13 @@ export function YouTubeEmbed({ videoId, title, className = '' }: YouTubeEmbedPro
       {!loaded && (
         <div className="absolute inset-0 flex items-center justify-center">
           {!imgError && (
-            <img
+            <Image
               src={`https://img.youtube.com/vi/${videoId}/hqdefault.jpg`}
               alt={title}
-              className="absolute inset-0 w-full h-full object-cover"
+              fill
+              className="object-cover"
               onError={() => setImgError(true)}
+              unoptimized
             />
           )}
           {imgError && (

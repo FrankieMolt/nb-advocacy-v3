@@ -5,7 +5,7 @@ import { RelatedPages } from "@/components/RelatedPages";
 export const metadata: Metadata = {
   title: "NB Power Spends $88.4M on Hired Guns for Lepreau",
   description: "NB Power plans to spend $88.4M over 3 years on outside experts to fix chronic reliability problems at Point Lepreau. Plant offline 616 days in 4 years.",
-  alternates: { canonical: "https://reformnb.ca/articles/nb-power-lepreau-spending/" },
+  alternates: { canonical: "https://nbreform.ca/articles/nb-power-lepreau-spending/" },
   openGraph: {
     title: "NB Power Spends $88.4M on Outside Experts for Troubled Lepreau Plant",
     description: "With no interested investors, utility turns to pricey experts. Plant offline 616 of last 1,460 days.",
@@ -28,6 +28,8 @@ export default function ArticlePage() {
         { title: "NB Power: 10-Year Plan (2021-2030)", url: "https://www.nbpower.com/media/1489656/10-year-plan-2021-to-2030.pdf" },
       ]}
     >
+      <h1 className="text-4xl md:text-5xl font-black font-serif tracking-tight uppercase mb-8">NB Power Spends $88.4M on Hired Guns for Lepreau</h1>
+
       <p className="text-white leading-relaxed mb-6">
         New Brunswick Power is spending <strong className="text-white">$88.4 million over three years</strong> on outside experts from Ontario Power Generation to run the chronically unreliable Point Lepreau Nuclear Generating Station — a plant that has been offline for repairs and maintenance a total of <strong className="text-white">616 days in the last four years</strong>.
       </p>

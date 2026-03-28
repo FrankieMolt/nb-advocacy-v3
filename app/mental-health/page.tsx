@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   title: "Mental Health Crisis: Waiting Days for Care, Dying in ERs",
   description: "NB has among the worst mental health services in Canada. People wait days in ERs for mental health beds. Severe shortage of psychiatrists, psychologists, and social workers. Opioid crisis ravaging rural communities.",
   keywords: "mental health New Brunswick, psychiatric care, ER mental health, opioid crisis NB, youth mental health, psychiatrist shortage, NB healthcare crisis",
-  alternates: { canonical: "https://reformnb.ca/mental-health/" },
+  alternates: { canonical: "https://nbreform.ca/mental-health/" },
   openGraph: {
     title: "NB's Mental Health Crisis: Failed by a Broken System | Reform NB",
     description: "Among the worst mental health services in Canada. Days-long ER waits for psychiatric beds. Crisis-level shortages of mental health professionals. The crisis no one is fixing.",

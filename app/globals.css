@@ -1,5 +1,14 @@
 @import "tailwindcss";
 
+/* Respect user's motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
 :root {
   --background: #050505;
   --foreground: #fafafa;
@@ -93,6 +102,48 @@ a.text-neutral-400:hover {
   color: #f87171;
 }
 
+/* Fix crisis-text contrast on interactive elements — use solid red (4.6:1) for links/arrows */
+a.text-crisis-text:hover,
+a.text-crisis-text:focus {
+  color: #ef4444 !important; /* red-500 — 4.6:1 contrast on black/gradient */
+  transition: color 0.2s ease;
+}
+
+/* Nav link underline animation */
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #f87171;
+  transition: width 0.2s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Crisis text — ensure sufficient contrast for interactive use */
+.crisis-text-readable {
+  color: #ef4444; /* red-500 — 4.6:1 contrast on black */
+}
+
+/* CTA button hover — subtle scale + shadow */
+.cta-btn {
+  transition: all 0.2s ease;
+}
+
+.cta-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 25px rgba(179, 0, 0, 0.4);
+}
+
 /* Consistent card hover effects */
 .group:hover .group-hover\:scale-110 {
   transform: scale(1.1);
@@ -102,6 +153,12 @@ a.text-neutral-400:hover {
 *:focus-visible {
   outline: 2px solid #b30000;
   outline-offset: 2px;
+}
+
+/* Footer link hover — better contrast */
+footer a:hover {
+  color: #ef4444 !important;
+  transition: color 0.2s ease;
 }
 
 /* Better mobile touch targets */

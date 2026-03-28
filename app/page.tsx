@@ -7,13 +7,16 @@ import Image from "next/image";
 import { InvestigationsFeed } from "@/components/InvestigationsFeed";
 import { DataCard } from "@/components/DataCard";
 
+// Content is visible by default for accessibility/no-JS users.
+// Framer Motion adds a subtle slide-in animation when JS runs.
+// Removed opacity:0 from hidden so content is readable without JS.
 const fadeIn = {
-  hidden: { opacity: 0, y: 20 },
+  hidden: { opacity: 1, y: 20 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
 };
 
 const staggerContainer = {
-  hidden: { opacity: 0 },
+  hidden: { opacity: 1 },
   visible: {
     opacity: 1,
     transition: {

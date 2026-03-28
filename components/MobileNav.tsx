@@ -41,7 +41,7 @@ export function MobileNav() {
     <>
       {/* Mobile Hamburger */}
       <button
-        className="md:hidden text-white hover:text-white transition-colors p-3 -m-3 min-w-[44px] min-h-[44px] flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-crisis-red focus:ring-offset-2 focus:ring-offset-black rounded"
+        className="md:hidden text-white p-3 -m-3 min-w-[44px] min-h-[44px] flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-crisis-red focus:ring-offset-2 focus:ring-offset-black rounded transition-all duration-200 hover:text-neutral-300"
         onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
         aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
         aria-expanded={mobileMenuOpen}
@@ -52,7 +52,7 @@ export function MobileNav() {
       {/* Mobile Menu */}
       {mobileMenuOpen && (
         <nav
-          className="md:hidden bg-black/95 backdrop-blur-xl border-b border-neutral-800 py-4 absolute top-full left-0 right-0 z-40 max-h-[85vh] overflow-y-auto"
+          className="md:hidden bg-black/95 backdrop-blur-xl border-b border-neutral-800 py-4 absolute top-full left-0 right-0 z-40 max-h-[85vh] overflow-y-auto animate-in slide-in-from-top-2 duration-200"
           aria-label="Mobile navigation"
         >
           <div className="container mx-auto px-6 max-w-5xl flex flex-col">
@@ -60,7 +60,7 @@ export function MobileNav() {
               <div key={group.label} className="border-b border-neutral-800 last:border-b-0">
                 {/* Group header — acts as accordion toggle */}
                 <button
-                  className="w-full flex items-center justify-between py-4 text-left focus:outline-none focus:ring-2 focus:ring-crisis-red rounded"
+                  className="w-full flex items-center justify-between py-4 text-left focus:outline-none focus:ring-2 focus:ring-crisis-red rounded transition-all duration-200 hover:bg-neutral-900"
                   onClick={() => toggleGroup(group.label)}
                   aria-expanded={openGroups.has(group.label)}
                 >
@@ -69,7 +69,7 @@ export function MobileNav() {
                   </span>
                   <ChevronDown
                     size={16}
-                    className={`text-neutral-500 transition-transform ${
+                    className={`text-neutral-500 transition-transform duration-200 ${
                       openGroups.has(group.label) ? "rotate-180" : ""
                     }`}
                   />
@@ -83,7 +83,7 @@ export function MobileNav() {
                         key={link.href}
                         href={link.href}
                         onClick={closeMenu}
-                        className="text-lg font-bold uppercase tracking-wider text-white hover:text-crisis-gold transition-colors py-2 focus:outline-none focus:text-crisis-gold focus:underline"
+                        className="text-lg font-bold uppercase tracking-wider text-white hover:text-crisis-gold transition-all duration-200 py-2 focus:outline-none focus:text-crisis-gold focus:underline"
                       >
                         {link.label}
                       </a>
@@ -97,7 +97,7 @@ export function MobileNav() {
             <a
               href={takeActionLink.href}
               onClick={closeMenu}
-              className="mt-4 text-center text-lg font-black uppercase tracking-wider text-white bg-crisis-red hover:bg-red-800 transition-colors py-3 rounded focus:outline-none focus:ring-2 focus:ring-white"
+              className="mt-4 text-center text-lg font-black uppercase tracking-wider text-white bg-crisis-red hover:bg-red-800 transition-all duration-200 py-3 rounded focus:outline-none focus:ring-2 focus:ring-white hover:shadow-lg hover:shadow-red-900/30"
             >
               {takeActionLink.label}
             </a>

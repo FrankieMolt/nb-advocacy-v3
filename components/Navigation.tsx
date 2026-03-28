@@ -39,7 +39,7 @@ export function Navigation() {
           onMouseLeave={handleMouseLeave}
         >
           <button
-            className="flex items-center gap-1 text-sm font-bold uppercase tracking-wider text-white hover:text-neutral-300 transition-colors px-3 py-2 focus:outline-none focus:ring-2 focus:ring-crisis-red focus:ring-offset-2 focus:ring-offset-black rounded"
+            className="nav-link flex items-center gap-1 text-sm font-bold uppercase tracking-wider text-white hover:text-neutral-300 transition-all duration-200 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-crisis-red focus:ring-offset-2 focus:ring-offset-black rounded"
             onClick={() => setOpenGroup(openGroup === group.label ? null : group.label)}
             aria-expanded={openGroup === group.label}
             aria-haspopup="true"
@@ -58,7 +58,7 @@ export function Navigation() {
                 <a
                   key={link.href}
                   href={link.href}
-                  className="block px-4 py-2.5 text-sm font-semibold text-white hover:bg-neutral-800 hover:text-crisis-gold transition-colors focus:outline-none focus:bg-neutral-800 focus:text-crisis-gold"
+                  className="block px-4 py-2.5 text-sm font-semibold text-white hover:bg-neutral-800 hover:text-crisis-gold transition-all duration-200 focus:outline-none focus:bg-neutral-800 focus:text-crisis-gold"
                   onClick={() => setOpenGroup(null)}
                 >
                   {link.label}
@@ -72,7 +72,7 @@ export function Navigation() {
       {/* Take Action accent button */}
       <a
         href={takeActionLink.href}
-        className="ml-2 text-sm font-black uppercase tracking-wider px-4 py-2 bg-crisis-red text-white hover:bg-red-800 rounded transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black"
+        className="ml-2 text-sm font-black uppercase tracking-wider px-4 py-2 bg-crisis-red text-white hover:bg-red-800 rounded transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black hover:shadow-lg hover:shadow-red-900/30"
       >
         {takeActionLink.label}
       </a>

@@ -4,7 +4,7 @@ import { ArticleLayout } from "@/components/ArticleLayout";
 export const metadata: Metadata = {
   title: "2,199 ER Deaths: NB Healthcare Failure",
   description: "Auditor General: 2,199 patients died after arriving at NB ERs (2020-2024). 43% not triaged in time.",
-  alternates: { canonical: "https://reformnb.ca/articles/healthcare-er-deaths/" },
+  alternates: { canonical: "https://nbreform.ca/articles/healthcare-er-deaths/" },
   openGraph: {
     title: "2,199 ER Deaths: NB Healthcare Crisis — Auditor General Report",
     description: "2,199 patients pronounced dead after ER arrival in just 4 years. 43% never triaged in time. Province has 'no strategy.'",
@@ -29,6 +29,8 @@ export default function ArticlePage() {
         
       ]}
     >
+      <h1 className="text-4xl md:text-5xl font-black font-serif tracking-tight uppercase mb-8">2,199 ER Deaths: NB Healthcare Failure</h1>
+
       <p className="text-xl text-white leading-relaxed mb-8">
         In December 2025, New Brunswick Auditor General Paul Martin released a report that confirmed what patients had been screaming about for years: <strong className="text-white">2,199 people</strong> walked into emergency rooms across the province between 2020 and 2024 and were pronounced dead. Not treated. Not stabilized. Dead. And 43% of them were never seen by a doctor within medically safe timeframes.
       </p>

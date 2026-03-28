@@ -4,7 +4,7 @@ import { ArticleLayout } from "@/components/ArticleLayout";
 export const metadata: Metadata = {
   title: "Tent Cities: NB Housing Catastrophe",
   description: "1,500+ homeless across NB cities. 440 youth without shelter. 100+ deaths in 2025.",
-  alternates: { canonical: "https://reformnb.ca/articles/housing-crisis-2026/" },
+  alternates: { canonical: "https://nbreform.ca/articles/housing-crisis-2026/" },
   openGraph: {
     title: "Tent Cities and 440 Youth Without Shelter: NB's Housing Catastrophe",
     description: "1,500+ chronically homeless across Moncton, Saint John, and Fredericton. 440 youth without shelter. 100+ deaths.",
@@ -28,6 +28,8 @@ export default function ArticlePage() {
         { title: "Global News: Dear Moncton — homelessness crisis doubles", url: "https://globalnews.ca/news/nb-homelessness-crisis-moncton/" },
       ]}
     >
+      <h1 className="text-4xl md:text-5xl font-black font-serif tracking-tight uppercase mb-8">Tent Cities: NB Housing Catastrophe</h1>
+
       <p className="text-xl text-white leading-relaxed mb-8">
         New Brunswick's population surged by <strong className="text-white">12% in just four years</strong> — from 775,000 to 869,000 — driven by aggressive immigration targets and interprovincial migration. But the housing supply didn't keep pace. The result: <strong className="text-white">1,500+ people now chronically homeless</strong> across Moncton, Saint John, and Fredericton, with tent cities becoming a permanent fixture of the urban landscape.
       </p>

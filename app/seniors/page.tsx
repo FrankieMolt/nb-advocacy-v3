@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   title: "Seniors Care: Nursing Home Crisis, Underfunded Home Care",
   description: "NB has an aging population and a severe shortage of nursing home beds. Home care workers paid poverty wages. Rural seniors isolated. Palliative care access varies by region. A system in crisis.",
   keywords: "seniors care New Brunswick, nursing home shortage, home care, palliative care, aging population, nursing home waitlist, rural seniors isolation",
-  alternates: { canonical: "https://reformnb.ca/seniors/" },
+  alternates: { canonical: "https://nbreform.ca/seniors/" },
   openGraph: {
     title: "Growing Old in NB: Abandoned by a Broken System | Reform NB",
     description: "Severe nursing home bed shortage. Underfunded home care with workers earning poverty wages. Rural seniors isolated without services. Palliative care that depends on your postal code.",

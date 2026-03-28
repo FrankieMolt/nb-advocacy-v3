@@ -4,7 +4,7 @@ import { ArticleLayout } from "@/components/ArticleLayout";
 export const metadata: Metadata = {
   title: "$1.8M Settlement: Health Minister Dornan's Firing Exposed",
   description: "Province paid $1.8M to settle Dr. John Dornan's unjust dismissal case. Fired as Horizon CEO after ER patient death, now NB Health Minister.",
-  alternates: { canonical: "https://reformnb.ca/articles/dornan-firing-settlement/" },
+  alternates: { canonical: "https://nbreform.ca/articles/dornan-firing-settlement/" },
   openGraph: {
     title: "$1.8M Settlement: The Dornan Firing Scandal | Reform NB",
     description: "Higgs fired Horizon CEO John Dornan during a press conference. The province fought him in court for 2 years, then quietly paid $1.8M of taxpayer money to settle. Dornan is now Health Minister.",
@@ -29,6 +29,8 @@ export default function ArticlePage() {
         { title: "CBC: Dornan drops appeal of $2M payout (2024)", url: "https://www.cbc.ca/news/canada/new-brunswick/province-drops-appeal-john-dornan-fired-horizon-ceo-2-million-payout-1.7174114" },
       ]}
     >
+      <h1 className="text-4xl md:text-5xl font-black font-serif tracking-tight uppercase mb-8">$1.8M Settlement: Health Minister Dornan's Firing Exposed</h1>
+
       <h2>The Firing</h2>
       <p>
         On July 12, 2022, Darrell Mesheau, 78, spent seven hours waiting for care at the Dr. Everett Chalmers Regional Hospital emergency department in Fredericton. He was discovered unresponsive by a nurse at 4:30 a.m. He died.

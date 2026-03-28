@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "238K Without a Doctor: NB Healthcare in Freefall",
   description: "Nearly 1 in 3 New Brunswickers lacks a family doctor. 2,199 ER deaths in 4 years. 40% of hospital beds blocked by ALC patients. $173.9M travel nurse scandal. The full picture of NB healthcare collapse.",
   keywords: "NB healthcare, doctor shortage, ER deaths, ALC patients, travel nurses, Horizon Health, Vitalité, 238K, family doctor, New Brunswick health crisis",
-  alternates: { canonical: "https://reformnb.ca/articles/healthcare-crisis-2026/" },
+  alternates: { canonical: "https://nbreform.ca/articles/healthcare-crisis-2026/" },
   openGraph: {
     title: "238K Without a Doctor: New Brunswick Healthcare in Freefall | Reform NB",
     description: "Nearly 1 in 3 New Brunswickers has no family doctor. 2,199 ER deaths in 4 years. The full anatomy of healthcare system collapse.",
@@ -32,6 +32,8 @@ export default function ArticlePage() {
         { title: "Reform NB: ER Deaths Report", url: "/articles/healthcare-er-deaths" },
       ]}
     >
+      <h1 className="text-4xl md:text-5xl font-black font-serif tracking-tight uppercase mb-8">238K Without a Doctor: NB Healthcare in Freefall</h1>
+
       <p className="text-xl text-white leading-relaxed mb-8">
         New Brunswick&apos;s healthcare system is not struggling. It is <strong className="text-white">failing</strong>. Nearly one in three residents has no family doctor. Patients are dying in emergency rooms after waiting hours without being seen. And the government&apos;s solution — funneling $173.9 million to private travel nurse agencies — has enriched corporations while leaving hospitals understaffed.
       </p>

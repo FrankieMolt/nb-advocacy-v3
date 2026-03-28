@@ -10,7 +10,7 @@ import { QuoteBlock } from "@/components/QuoteBlock";
 import { SourceCard } from "@/components/SourceCard";
 
 export const metadata: Metadata = {
-  alternates: { canonical: "https://reformnb.ca/budget-2026/" },
+  alternates: { canonical: "https://nbreform.ca/budget-2026/" },
   title: "NB Budget 2026-27: $1.39B Deficit, $45M Irving Subsidy, Services Cut",
   description:
     "Record $1.39B deficit. $45M to Irving Paper while universities cut. Veterinary services eliminated. 10 heritage sites closing. Full analysis with verified sources.",
@@ -162,6 +162,8 @@ export default function Budget2026Page() {
           Record Deficit & Fiscal Crisis
         </h2>
         <div className="prose prose-invert max-w-none mb-8">
+          <h1 className="text-4xl md:text-5xl font-black font-serif tracking-tight uppercase mb-8">NB Budget 2026-27: $1.39B Deficit, $45M Irving Subsidy, Services Cut</h1>
+
           <p className="text-neutral-300 text-lg leading-relaxed">
             The Holt Liberal government tabled its 2026-27 budget on March 17, 2026, projecting a{" "}
             <strong className="text-white">record $1.39 billion deficit</strong> — the largest in New

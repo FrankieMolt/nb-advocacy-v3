@@ -39,7 +39,10 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@ReformNB",
   },
-  metadataBase: new URL("https://reformnb.ca"),
+  metadataBase: new URL("https://nbreform.ca"),
+  alternates: {
+    canonical: "https://nbreform.ca",
+  },
 };
 
 export const viewport = "width=device-width, initial-scale=1";

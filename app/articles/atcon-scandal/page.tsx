@@ -11,7 +11,7 @@ import { SourceCard } from "@/components/SourceCard";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  alternates: { canonical: "https://reformnb.ca/articles/atcon-scandal/" },
+  alternates: { canonical: "https://nbreform.ca/articles/atcon-scandal/" },
   title: "The Atcon Scandal: $70M Lost",
   description: "When Liberal cabinet approved $70M in loans for a failing company despite civil servant warnings. Premier Shawn Graham found in conflict of interest. Taxpayers paid the price.",
   keywords: [
@@ -124,6 +124,8 @@ export default function AtconScandalPage() {
       </div>
 
       <div className="prose prose-invert prose-lg max-w-none space-y-16">
+        <h1 className="text-4xl md:text-5xl font-black font-serif tracking-tight uppercase mb-8">The Atcon Scandal: $70M Lost</h1>
+
         {/* Section 1: What Happened */}
         <section>
           <h2 className="text-3xl font-serif font-bold text-white mb-6 border-b border-neutral-800 pb-2 uppercase tracking-tighter italic">

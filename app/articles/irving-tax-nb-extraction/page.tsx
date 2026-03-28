@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Irving Tax: 5x Less Property Tax Than US Refineries",
   description: "Irving Oil pays 5x less property tax than US refineries. Controls 2.7M hectares of Crown forest. Owned 90% of NB media. The full extraction picture.",
   keywords: "Irving family New Brunswick, Irving property tax, Irving monopoly, Irving Oil taxes, Irving forestry Crown land, Irving media monopoly, James Irving, Arthur Irving, Irving wealth $30 billion, New Brunswick oligarchy, Irving Paper electricity, corporate capture New Brunswick, vertical monopoly Irving",
-  alternates: { canonical: "https://reformnb.ca/articles/irving-tax-nb-extraction/" },
+  alternates: { canonical: "https://nbreform.ca/articles/irving-tax-nb-extraction/" },
   openGraph: {
     title: "Irving Tax: 5x Less Property Tax | Reform NB",
     description: "The Irving family's $30B+ empire: below-market Crown forest access, preferential NB Power rates, lowest property taxes in North America. NB pays the price.",
@@ -31,6 +31,8 @@ export default function ArticlePage() {
         { title: "Reform NB: Irving Monopoly — Forestry & Media", url: "/articles/irving-monopoly-forestry-media/" },
       ]}
     >
+      <h1 className="text-4xl md:text-5xl font-black font-serif tracking-tight uppercase mb-8">Irving Tax: 5x Less Property Tax Than US Refineries</h1>
+
       <p className="text-xl text-white leading-relaxed mb-8">
         In any functioning democracy, the wealthiest pay proportionally. In New Brunswick, the <strong className="text-white">Irving family</strong> — worth an estimated <strong className="text-white">$14.5 billion</strong> — pays property taxes at a fraction of what comparable operations pay in the United States. This isn't a loophole. It's the system working exactly as designed.
       </p>

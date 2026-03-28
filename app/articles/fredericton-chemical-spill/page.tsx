@@ -4,7 +4,7 @@ import { ArticleLayout } from "@/components/ArticleLayout";
 export const metadata: Metadata = {
   title: "Fredericton Chemical Spill: Cancer Risk",
   description: "Cancer-causing chemical coats Fredericton roads. XL Plating responsible. Government slow to respond.",
-  alternates: { canonical: "https://reformnb.ca/articles/fredericton-chemical-spill/" },
+  alternates: { canonical: "https://nbreform.ca/articles/fredericton-chemical-spill/" },
   openGraph: {
     title: "Fredericton Chemical Spill: Cancer-Causing Substance Coats City Roads",
     description: "Cancer-causing chemical coated Fredericton roads. Government slow to respond. Preliminary sodium traces detected.",
@@ -27,6 +27,8 @@ export default function ArticlePage() {
         { title: "CBC: Fredericton firm identified in chemical spill", url: "https://www.cbc.ca/news/canada/new-brunswick/fredericton-chemical-spill-firm-identified" },
       ]}
     >
+      <h1 className="text-4xl md:text-5xl font-black font-serif tracking-tight uppercase mb-8">Fredericton Chemical Spill: Cancer Risk</h1>
+
       <p className="text-xl text-white leading-relaxed mb-8">
         A potentially <strong className="text-white">cancer-causing chemical</strong> coated roads across Fredericton in early March 2026. Preliminary testing detected traces of sodium-based compounds. Residents reported a strong chemical odor across multiple neighborhoods hours before any official notification. By the time the province issued a public advisory, the substance had been present on roads and in storm drains for approximately 18 hours.
       </p>

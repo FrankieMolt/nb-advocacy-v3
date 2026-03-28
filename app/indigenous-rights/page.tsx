@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   title: "Indigenous Rights: Stolen Land, Broken Treaties",
   description: "Wolastoqey land title claims, Mi'kmaq treaty rights, Elsipogtog anti-fracking protests, residential schools, and ongoing Indigenous sovereignty struggles in New Brunswick.",
   keywords: "Wolastoqey, Mi'kmaq, Indigenous rights NB, land title claim, Elsipogtog, fracking protest, treaty rights, residential schools, unceded territory, First Nations New Brunswick",
-  alternates: { canonical: "https://reformnb.ca/indigenous-rights/" },
+  alternates: { canonical: "https://nbreform.ca/indigenous-rights/" },
   openGraph: {
     title: "Indigenous Rights in New Brunswick: Land, Treaties, and Sovereignty | Reform NB",
     description: "The Wolastoqey Nation is pursuing landmark title claims over NB. Mi'kmaq treaty rights persist. Elsipogtog stood against fracking. The fight for Indigenous sovereignty continues.",

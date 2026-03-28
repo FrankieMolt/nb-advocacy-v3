@@ -16,7 +16,10 @@ export function FacebookGroupEmbed({
   showMetadata = true,
 }: FacebookGroupEmbedProps) {
   return (
-    <div className="bg-neutral-900 border border-neutral-800 rounded-xl p-4 text-center">
+    <div
+      className="bg-neutral-900 border border-neutral-800 rounded-xl p-4 text-center"
+      style={{ width, height }}
+    >
       <div className="flex items-center justify-center gap-3 mb-4">
         <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-lg">
           f
@@ -29,7 +32,7 @@ export function FacebookGroupEmbed({
       <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-4">
         <p className="text-sm text-blue-800">
           Facebook embed requires their JavaScript SDK.{" "}
-          <a href="https://www.facebook.com/groups/2100356297072209" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-600">
+          <a href={`https://www.facebook.com/groups/${groupId}`} target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-600">
             Visit the group directly →
           </a>
         </p>

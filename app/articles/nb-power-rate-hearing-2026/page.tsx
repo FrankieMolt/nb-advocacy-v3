@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: "NB Power Rate Hearing LIVE: 50% Hike (EL-003-2025)",
   description: "EUB hearings on NB Power's proposed 50% rate increase. Watch Day 7 live streams. Your money is on the line. EL-003-2025.",
   keywords: "NB Power, rate increase, EUB hearing, EL-003-2025, rate hike, energy poverty, New Brunswick, utilities board, live stream, Coleson Cove",
-  alternates: { canonical: "https://reformnb.ca/articles/nb-power-rate-hearing-2026/" },
+  alternates: { canonical: "https://nbreform.ca/articles/nb-power-rate-hearing-2026/" },
   openGraph: {
     title: "NB Power Rate Hearing LIVE: 50% Hike | Reform NB",
     description: "EUB hearings on NB Power's proposed 50% rate increase. Watch the live streams. Your money is on the line.",
@@ -41,6 +41,8 @@ export default function ArticlePage() {
         { title: "Reform NB: NB Power's $5.9B Debt Trap", url: "/climate-energy" },
       ]}
     >
+      <h1 className="text-4xl md:text-5xl font-black font-serif tracking-tight uppercase mb-8">NB Power Rate Hearing LIVE: 50% Hike (EL-003-2025)</h1>
+
       {/* Alert Banner */}
       <div className="bg-crisis-red/10 border border-crisis-red rounded-xl p-6 mb-8 flex items-start gap-4">
         <AlertTriangle className="text-white shrink-0 mt-1" size={24} />

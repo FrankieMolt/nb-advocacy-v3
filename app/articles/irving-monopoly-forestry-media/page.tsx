@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "The Irving Empire: 2.7M Hectares of Crown Forest and 90% Media Control",
   description: "How the Irving family controls 2.7 million hectares of NB public forest at below-market rates and maintained 90% media monopoly for 90+ years. The anatomy of a Canadian oligarchy.",
   keywords: "Irving, J.D. Irving, NB forests, Crown Lands Act, media monopoly, NB newspapers, Irving Oil, oligarchy, New Brunswick, clear-cutting, glyphosate, Arthur Irving, James Irving",
-  alternates: { canonical: "https://reformnb.ca/articles/irving-monopoly-forestry-media/" },
+  alternates: { canonical: "https://nbreform.ca/articles/irving-monopoly-forestry-media/" },
   openGraph: {
     title: "The Irving Empire: 2.7M Hectares, 90% Media, $30B Wealth | Reform NB",
     description: "How one family controls New Brunswick's forests, newspapers, oil, and government. The anatomy of a Canadian oligarchy.",
@@ -32,6 +32,8 @@ export default function ArticlePage() {
         { title: "Reform NB: The Oligarchy", url: "/oligarchy" },
       ]}
     >
+      <h1 className="text-4xl md:text-5xl font-black font-serif tracking-tight uppercase mb-8">The Irving Empire: 2.7M Hectares of Crown Forest and 90% Media Control</h1>
+
       <p className="text-xl text-white leading-relaxed mb-8">
         In New Brunswick, one family controls the forests, the oil, the newspapers, the construction contracts, and the political machinery that keeps it all running. The Irving group of companies — spanning forestry, oil refining, media, transportation, shipbuilding, and agriculture — is not just the largest employer in the province. It is the <strong className="text-white">de facto government</strong>.
       </p>

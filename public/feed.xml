@@ -2,52 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Reform NB — Investigative Journalism</title>
-    <link>https://reformnb.ca</link>
+    <link>https://nbreform.ca</link>
     <description>New Brunswick's Investigative Hub covering healthcare, housing, oligarchy, and environment</description>
     <language>en-ca</language>
     <lastBuildDate>Mon, 17 Mar 2026 00:00:00 GMT</lastBuildDate>
-    <atom:link href="https://reformnb.ca/feed.xml" rel="self" type="application/rss+xml"/>
+    <atom:link href="https://nbreform.ca/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>2,199 ER Deaths: Auditor General Confirms Healthcare Failure</title>
-      <link>https://reformnb.ca/articles/healthcare-er-deaths/</link>
+      <link>https://nbreform.ca/articles/healthcare-er-deaths/</link>
       <description>Auditor General confirms 2,199 patients pronounced deceased after arriving at NB ERs between 2020-2024. 43% not seen within safe triage times.</description>
       <pubDate>Fri, 13 Dec 2025 00:00:00 GMT</pubDate>
-      <guid>https://reformnb.ca/articles/healthcare-er-deaths/</guid>
+      <guid>https://nbreform.ca/articles/healthcare-er-deaths/</guid>
     </item>
     <item>
       <title>Campbellton at 41%: The 2026 NB Poverty Report Card</title>
-      <link>https://reformnb.ca/articles/poverty-campbellton/</link>
+      <link>https://nbreform.ca/articles/poverty-campbellton/</link>
       <description>Latest HDC data reveals 4 out of 10 children in Campbellton living in poverty. Indigenous reserves at 51.2%.</description>
       <pubDate>Wed, 25 Feb 2026 00:00:00 GMT</pubDate>
-      <guid>https://reformnb.ca/articles/poverty-campbellton/</guid>
+      <guid>https://nbreform.ca/articles/poverty-campbellton/</guid>
     </item>
     <item>
       <title>NB Power Burns 4M Barrels of Oil: Emissions Hit 16-Year High</title>
-      <link>https://reformnb.ca/articles/nb-power-emissions/</link>
+      <link>https://nbreform.ca/articles/nb-power-emissions/</link>
       <description>New EUB filings reveal NB Power burned nearly 4 million barrels of oil in 12 months, pushing emissions to 3M+ tonnes.</description>
       <pubDate>Fri, 14 Mar 2026 00:00:00 GMT</pubDate>
-      <guid>https://reformnb.ca/articles/nb-power-emissions/</guid>
+      <guid>https://nbreform.ca/articles/nb-power-emissions/</guid>
     </item>
     <item>
       <title>Fredericton Chemical Spill: Government Slow to Respond</title>
-      <link>https://reformnb.ca/articles/fredericton-chemical-spill/</link>
+      <link>https://nbreform.ca/articles/fredericton-chemical-spill/</link>
       <description>A potentially cancer-causing chemical coated roads across Fredericton. The government's slow response raises regulatory capture questions.</description>
       <pubDate>Fri, 14 Mar 2026 00:00:00 GMT</pubDate>
-      <guid>https://reformnb.ca/articles/fredericton-chemical-spill/</guid>
+      <guid>https://nbreform.ca/articles/fredericton-chemical-spill/</guid>
     </item>
     <item>
       <title>Tent Cities and 440 Youth Without Shelter</title>
-      <link>https://reformnb.ca/articles/housing-crisis-2026/</link>
+      <link>https://nbreform.ca/articles/housing-crisis-2026/</link>
       <description>1,500+ chronically homeless across Moncton, Saint John, and Fredericton. 100+ unhoused deaths in 2025.</description>
       <pubDate>Sat, 01 Mar 2026 00:00:00 GMT</pubDate>
-      <guid>https://reformnb.ca/articles/housing-crisis-2026/</guid>
+      <guid>https://nbreform.ca/articles/housing-crisis-2026/</guid>
     </item>
     <item>
       <title>NB: The Irving Company Province</title>
-      <link>https://reformnb.ca/articles/irving-company-province/</link>
+      <link>https://nbreform.ca/articles/irving-company-province/</link>
       <description>One family dominates a province. 1.8M acres of forest. 20 newspapers. Canada's largest refinery. An oligarchy unparalleled in the developed world.</description>
       <pubDate>Tue, 01 Apr 2025 00:00:00 GMT</pubDate>
-      <guid>https://reformnb.ca/articles/irving-company-province/</guid>
+      <guid>https://nbreform.ca/articles/irving-company-province/</guid>
     </item>
   </channel>
 </rss>

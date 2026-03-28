@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   title: "Climate & Energy: Record Fossil Fuels, Fake Net-Zero",
   description: "NB Power burns 4M barrels of oil. 3M+ tonnes CO2. $5.9B debt. Claims net-zero while setting 16-year fossil fuel records.",
   keywords: "NB Power, Coleson Cove, heavy fuel oil, emissions, carbon tax, net-zero, climate change NB, renewable energy, tidal power, Bay of Fundy",
-  alternates: { canonical: "https://reformnb.ca/climate-energy/" },
+  alternates: { canonical: "https://nbreform.ca/climate-energy/" },
   openGraph: {
     title: "NB Power's Climate Betrayal: Record Emissions, Fake Net-Zero | Reform NB",
     description: "While claiming net-zero by 2035, NB Power burned 4M barrels of heavy fuel oil in 12 months — most fossil fuel generation in 16 years.",

@@ -31,34 +31,9 @@ const nextConfig: NextConfig = {
     optimizeCss: true, // Critical CSS inlining
   },
   
-  // Headers for caching (applied via vercel.json or netlify.toml for static export)
-  async headers() {
-    return [
-      {
-        source: '/(.*)',
-        headers: [
-          { key: 'X-Content-Type-Options', value: 'nosniff' },
-          { key: 'X-Frame-Options', value: 'DENY' },
-          { key: 'X-XSS-Protection', value: '1; mode=block' },
-          { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
-        ],
-      },
-      {
-        // Cache static assets aggressively
-        source: '/static/(.*)',
-        headers: [
-          { key: 'Cache-Control', value: 'public, max-age=31536000, immutable' },
-        ],
-      },
-      {
-        // Cache images
-        source: '/(.*).(jpg|jpeg|png|webp|avif|svg|ico)',
-        headers: [
-          { key: 'Cache-Control', value: 'public, max-age=86400, stale-while-revalidate=604800' },
-        ],
-      },
-    ];
-  },
+  // Headers for caching are handled via vercel.json or netlify.toml for static export
+  // The async headers() function is incompatible with output: 'export'
+  // (kept here as a comment for reference - security headers should be set at hosting level)
 };
 
 export default nextConfig;

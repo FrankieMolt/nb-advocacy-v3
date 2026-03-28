@@ -11,7 +11,7 @@ import { SourceCard } from "@/components/SourceCard";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  alternates: { canonical: "https://reformnb.ca/articles/irving-company-province/" },
+  alternates: { canonical: "https://nbreform.ca/articles/irving-company-province/" },
   title: "New Brunswick: The Irving Company Province",
   description: "One family dominates a province. 1.8M acres of forest. 20 newspapers. Canada's largest refinery. An oligarchy unparalleled in the developed world.",
   keywords: [
@@ -80,6 +80,8 @@ export default function IrvingCompanyProvincePage() {
       </div>
 
       <div className="prose prose-invert prose-lg max-w-none space-y-16">
+        <h1 className="text-4xl md:text-5xl font-black font-serif tracking-tight uppercase mb-8">New Brunswick: The Irving Company Province</h1>
+
         {/* Section 1: Irving Everywhere */}
         <section>
           <h2 className="text-3xl font-serif font-bold text-white mb-6 border-b border-neutral-800 pb-2 uppercase tracking-tighter italic">

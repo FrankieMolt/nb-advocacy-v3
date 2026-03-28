@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: "Community Voices: NB Power Ratepayer Stories",
   description: "From the NB Power Rants Facebook group (20K+ members) to EUB hearing testimony — New Brunswickers struggling with electricity costs speak out.",
   keywords: "NB Power Rants Facebook, New Brunswick electricity complaints, NB Power community response, EUB public hearing testimony, NB energy poverty stories, New Brunswick ratepayer voices, NB Power customer anger, New Brunswick electricity bills, NB Power rate hearing public comments",
-  alternates: { canonical: "https://reformnb.ca/articles/nb-community-voices-nb-power/" },
+  alternates: { canonical: "https://nbreform.ca/articles/nb-community-voices-nb-power/" },
   openGraph: {
     title: "Community Voices: NB Power Ratepayer Stories | Reform NB",
     description: "20,000+ NB Power Rants members share their struggles with rising electricity costs. The voices the utility doesn't want you to hear.",
@@ -31,6 +31,8 @@ export default function ArticlePage() {
         { title: "Reform NB: NB Power Rate Hearing LIVE", url: "/articles/nb-power-rate-hearing-2026/" },
       ]}
     >
+      <h1 className="text-4xl md:text-5xl font-black font-serif tracking-tight uppercase mb-8">Community Voices: NB Power Ratepayer Stories</h1>
+
       {/* Facebook Group CTA */}
       <div className="bg-blue-900/20 border border-blue-800/50 rounded-xl p-6 mb-8 flex items-start gap-4">
         <Users className="text-blue-400 shrink-0 mt-1" size={24} />

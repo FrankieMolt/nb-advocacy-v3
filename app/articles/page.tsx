@@ -10,7 +10,7 @@ import { FileSearch, Send } from "lucide-react";
 export const metadata: Metadata = {
   title: "Investigative Journalism: NB Government & Corporate Accountability | Reform NB",
   description: "In-depth investigative reporting on healthcare collapse, corporate oligarchy, environmental destruction, and government corruption in New Brunswick, Canada.",
-  alternates: { canonical: "https://reformnb.ca/articles/" },
+  alternates: { canonical: "https://nbreform.ca/articles/" },
   openGraph: {
     title: "Investigative Articles | Reform NB",
     description: "In-depth reporting on New Brunswick's systemic governance failures. Real data, real sources.",
@@ -174,7 +174,7 @@ export default function ArticlesPage() {
             <Link
               key={article.slug}
               href={`/articles/${article.slug}/`}
-              className="group flex flex-col md:flex-row gap-6 items-stretch bg-neutral-900/50 border border-neutral-800 rounded-xl overflow-hidden hover:border-neutral-700 transition-all"
+              className="group flex flex-col md:flex-row gap-6 items-stretch bg-neutral-900/50 border border-neutral-800 rounded-xl overflow-hidden hover:border-neutral-700 hover:bg-neutral-900/70 transition-all duration-200"
             >
               <div className="relative w-full md:w-64 h-48 md:h-auto shrink-0">
                 <Image
@@ -188,15 +188,15 @@ export default function ArticlesPage() {
               </div>
               <div className="p-6 flex-1 flex flex-col justify-center">
                 <div className="flex items-center gap-3 mb-3">
-                  <span className="text-white font-black text-sm font-mono">{article.date}</span>
-                  <span className="text-sm font-bold text-white uppercase tracking-widest px-2 py-1 bg-black border border-neutral-800 rounded">
+                  <span className="text-neutral-300 font-black text-sm font-mono">{article.date}</span>
+                  <span className="text-sm font-bold text-white uppercase tracking-widest px-2 py-1 bg-black border border-neutral-800 rounded transition-colors duration-200">
                     {article.category}
                   </span>
                 </div>
-                <h2 className="text-xl md:text-2xl font-bold text-white group-hover:text-white transition-colors mb-3 leading-tight">
+                <h2 className="text-xl md:text-2xl font-bold text-white mb-3 leading-tight group-hover:text-neutral-100 transition-colors duration-200">
                   {article.title}
                 </h2>
-                <p className="text-white group-hover:text-white transition-colors leading-relaxed">
+                <p className="text-neutral-400 leading-relaxed group-hover:text-neutral-300 transition-colors duration-200">
                   {article.description}
                 </p>
               </div>

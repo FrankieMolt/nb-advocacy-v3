@@ -37,7 +37,6 @@ export default function robots(): MetadataRoute.Robots {
         allow: '/',
       },
     ],
-    sitemap: 'https://reformnb.ca/sitemap.xml',
-    host: 'https://reformnb.ca',
+    sitemap: 'https://nbreform.ca/sitemap.xml',
   };
 }

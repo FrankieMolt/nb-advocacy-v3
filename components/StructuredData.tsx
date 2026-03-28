@@ -22,7 +22,7 @@ export function ArticleSchema({ title, description, datePublished, dateModified,
     "publisher": {
       "@type": "Organization",
       "name": "Reform NB",
-      "logo": { "@type": "ImageObject", "url": "https://reformnb.ca/icon-512.png" }
+      "logo": { "@type": "ImageObject", "url": "https://nbreform.ca/icon-512.png" }
     },
     "mainEntityOfPage": { "@type": "WebPage", "@id": url }
   };
@@ -54,8 +54,8 @@ export function OrganizationSchema() {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Reform NB",
-    "url": "https://reformnb.ca",
-    "logo": "https://reformnb.ca/icon-512.png",
+    "url": "https://nbreform.ca",
+    "logo": "https://nbreform.ca/icon-512.png",
     "description": "Decentralized investigative journalism covering New Brunswick governance failure",
     "sameAs": []
   };
@@ -70,11 +70,11 @@ export function WebSiteSchema() {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "Reform NB",
-    "url": "https://reformnb.ca",
+    "url": "https://nbreform.ca",
     "description": "New Brunswick's Investigative Hub — Healthcare, Housing, Oligarchy, Environment",
     "potentialAction": {
       "@type": "SearchAction",
-      "target": "https://reformnb.ca/?q={search_term_string}",
+      "target": "https://nbreform.ca/?q={search_term_string}",
       "query-input": "required name=search_term_string"
     }
   };

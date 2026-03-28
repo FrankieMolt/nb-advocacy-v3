@@ -4,7 +4,7 @@ import { ArticleLayout } from "@/components/ArticleLayout";
 export const metadata: Metadata = {
   title: "Campbellton 41%: NB Child Poverty",
   description: "41% child poverty in Campbellton. Provincial average 21.9%. Indigenous reserves at 51%.",
-  alternates: { canonical: "https://reformnb.ca/articles/poverty-campbellton/" },
+  alternates: { canonical: "https://nbreform.ca/articles/poverty-campbellton/" },
   openGraph: {
     title: "Campbellton at 41%: The 2026 NB Poverty Report Card",
     description: "4 out of 10 children in Campbellton in poverty. Indigenous reserves at 51.2%. Provincial average 21.9%.",
@@ -28,6 +28,8 @@ export default function ArticlePage() {
         { title: "SJ HDC: Living Wages in New Brunswick 2025", url: "https://sjhdc.ca/research-and-reports/" },
       ]}
     >
+      <h1 className="text-4xl md:text-5xl font-black font-serif tracking-tight uppercase mb-8">Campbellton 41%: NB Child Poverty</h1>
+
       <p className="text-xl text-white leading-relaxed mb-8">
         The latest Human Development Council data delivers a stark verdict: <strong className="text-white">4 out of 10 children in Campbellton</strong> are living in poverty. On Indigenous reserves, the rate hits 51.2% — more than half of all children. The provincial average of 21.9% masks staggering regional inequality that splits the province into two realities.
       </p>

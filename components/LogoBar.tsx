@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export function LogoBar() {
   const logos = [
     { src: "/logos/irving-oil.svg", alt: "Irving Oil" },
@@ -14,12 +16,15 @@ export function LogoBar() {
       </div>
       <div className="flex flex-wrap justify-center items-center gap-12 md:gap-20 opacity-20 grayscale contrast-150 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-1000">
         {logos.map((logo, i) => (
-          <img
+          <Image
             key={i}
             src={logo.src}
             alt={logo.alt}
+            width={120}
+            height={40}
             className="h-8 md:h-10 w-auto object-contain"
             loading="lazy"
+            unoptimized
           />
         ))}
       </div>
